@@ -1,0 +1,14 @@
+Reference: ./2-tun-driver/src/origin_ko/ccm.ko
+Candidate: ./2-tun-driver/src/tun_lab/probe/mg_abi_probe.ko
+vermagic=4.9.84 SMP preempt mod_unload ARMv7 thumb2 p2v8 
+vermagic=4.9.84 SMP preempt mod_unload ARMv7 thumb2 p2v8 
+Reference module size/init/exit: ('0x200', '0xe8', '0x1cc')
+Candidate module size/init/exit: ('0x200', '0xe8', '0x1cc')
+mg_module_exit_offset = 0x1cc (460)
+mg_module_init_offset = 0xe8 (232)
+mg_sizeof_module = 0x200 (512)
+mg_sizeof_net_device = 0x440 (1088)
+mg_sizeof_sk_buff = 0xa8 (168)
+mg_sizeof_sock = 0x200 (512)
+MODULE_ABI_BASELINE_MATCH
+This only checks basic module ABI, not all network structure layouts or runtime safety.

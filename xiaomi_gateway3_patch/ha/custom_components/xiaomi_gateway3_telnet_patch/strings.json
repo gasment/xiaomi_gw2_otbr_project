@@ -1,0 +1,59 @@
+{
+  "title": "Xiaomi Gateway 3 Telnet Password Patch",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Protect a gateway",
+        "description": "Set the gateway IP and intended root password. This does not change the gateway password. After installing the startup hook, restart Home Assistant BEFORE setting the gateway password.",
+        "data": {
+          "host": "Gateway IP address",
+          "password": "Root password",
+          "install_bootstrap": "Install early startup hook"
+        },
+        "data_description": {
+          "password": "Use the same password later in the gateway script. Stored by HA as private config entry data.",
+          "install_bootstrap": "Adds a marked block to custom_components/__init__.py and retains its existing code. XiaomiGateway3 files are not changed."
+        }
+      }
+    },
+    "error": {
+      "invalid_host": "Enter a valid IP address.",
+      "invalid_password": "Enter a nonempty single-line password, at most 256 UTF-8 bytes.",
+      "bootstrap_required": "Install the startup hook to guarantee deletion blocking before XiaomiGateway3 starts.",
+      "bootstrap_failed": "Cannot safely write the startup hook. Check custom_components permissions and existing initializer syntax.",
+      "already_configured": "This gateway already has a patch entry."
+    },
+    "abort": {
+      "already_configured": "This gateway is already configured."
+    },
+    "create_entry": {
+      "default": "Restart Home Assistant to activate the early hook before setting the gateway root password. An initial retry/restart-required status is expected."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Gateway password settings",
+        "description": "Changing these settings does not change the password on the gateway. Leave the password blank to keep it.",
+        "data": {
+          "host": "Gateway IP address",
+          "password": "New root password"
+        },
+        "data_description": {
+          "password": "Blank keeps the existing password; the saved password is never shown."
+        }
+      }
+    },
+    "error": {
+      "invalid_host": "Enter a valid IP address.",
+      "invalid_password": "Enter a valid single-line password, at most 256 UTF-8 bytes.",
+      "already_configured": "Another patch entry already uses this IP."
+    }
+  },
+  "issues": {
+    "restart_required": {
+      "title": "Restart Home Assistant to activate the gateway password patch",
+      "description": "The early startup hook is installed. Restart Home Assistant before changing the gateway root password. No XiaomiGateway3 source file or gateway password was changed."
+    }
+  }
+}

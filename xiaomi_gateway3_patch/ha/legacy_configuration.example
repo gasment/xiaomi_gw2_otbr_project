@@ -1,0 +1,4 @@
+xiaomi_gateway3_telnet_patch:
+  gateways:
+    "192.0.2.10":
+      password: !secret gw2_root_password

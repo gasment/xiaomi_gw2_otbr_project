@@ -1,0 +1,1 @@
+Linux version 4.9.84 (yanjinming@embd-normal-2004) (gcc version 9.1.0 (GCC) ) #1 SMP PREEMPT Wed Aug 19 11:58:20 CST 2026

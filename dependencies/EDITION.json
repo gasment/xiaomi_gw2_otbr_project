@@ -1,0 +1,8 @@
+{
+  "edition": "github-source",
+  "version": "0.2.0",
+  "external_dependencies_included": false,
+  "prebuilt_releases_included": false,
+  "runtime_payload_modified": false,
+  "kernel_zip_required": false
+}

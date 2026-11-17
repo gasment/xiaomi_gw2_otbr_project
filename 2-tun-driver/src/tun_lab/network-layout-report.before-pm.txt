@@ -1,0 +1,5 @@
+Original bridge.ko netdev_priv offset: 0x540
+Candidate sizeof(net_device): 0x480
+Candidate netdev_priv offset (ALIGN32): 0x480
+NETWORK_LAYOUT_ANCHOR_MISMATCH
+No runtime compatibility conclusion. Do not load any module yet.

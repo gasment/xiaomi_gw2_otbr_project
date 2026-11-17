@@ -1,0 +1,33 @@
+{
+  "project_version": "0.2.5",
+  "release_date": "2026-11-17",
+  "gateway": "GATEWAY_ADDRESS",
+  "kernel": "4.9.84",
+  "profile": "bbr-userspace-af-packet",
+  "host_binary_sha256": "b059a2d9f3fb20544d17659f7680dbfd5cfd272b9edca975be0b6724078f48e8",
+  "assistant_compilation_performed": true,
+  "gateway_mutation_performed": true,
+  "firmware_flash_byte_comparison_available": false,
+  "large_external_source_dependencies_included": true,
+  "runtime_dependency_binaries_included": [
+    "openmiio_agent"
+  ],
+  "archive_deployment_file_matches": 39,
+  "installed_file_matches": 45,
+  "boot_chain_file_matches": 5,
+  "shared_build_sources_directory": "0-build-src",
+  "shared_dependency_datasets": 10,
+  "shared_component_links": 18,
+  "optional_upstream_sources_missing": 3,
+  "project_version_source": "VERSION",
+  "build_root": ".",
+  "development_archive_used_for_build": false,
+  "source_version": "0.2.5",
+  "frozen_deployment_version": "0.2.5",
+  "source_build_status": "rebuilt_and_reboot_accepted_0015",
+  "user_compilation_performed": true,
+  "current_release_evidence": "release-audit/RELEASE-0.2.5.json",
+  "stock_firmware_baseline": "1.0.8_0015",
+  "kernel_build": "Linux version 4.9.84 (yanjinming@embd-normal-2004) (gcc version 9.1.0 (GCC) ) #1 SMP PREEMPT Wed Aug 19 11:58:20 CST 2026",
+  "baseline_runtime_evidence": "release-audit/BASELINE-1.0.8_0015.json"
+}

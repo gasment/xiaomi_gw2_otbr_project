@@ -1,0 +1,5 @@
+# Add these lines to /config/custom_components/__init__.py.
+# Create the file if absent; retain existing content. Place after any
+# __future__ imports, before any XiaomiGateway3 imports.
+from .xiaomi_gateway3_telnet_patch.early import install_early_hooks
+install_early_hooks()

@@ -1,0 +1,134 @@
+[
+  {
+    "method": "GET",
+    "path": "/get_properties",
+    "handler": "handle_openthread_network_properties_request",
+    "wrapped": true
+  },
+  {
+    "method": "GET",
+    "path": "/topology",
+    "handler": "handle_ot_resource_network_diagnostics_request",
+    "wrapped": true
+  },
+  {
+    "method": "GET",
+    "path": "/node_information",
+    "handler": "handle_ot_resource_node_information_request",
+    "wrapped": true
+  },
+  {
+    "method": "GET",
+    "path": "/ipaddr",
+    "handler": "handle_openthread_ipaddr_list_request",
+    "wrapped": true
+  },
+  {
+    "method": "GET",
+    "path": "/srp",
+    "handler": "thread_br_srp_snapshot",
+    "wrapped": true
+  },
+  {
+    "method": "GET",
+    "path": "/node",
+    "handler": "handle_ot_resource_node_information_request",
+    "wrapped": false
+  },
+  {
+    "method": "GET",
+    "path": "/node/state",
+    "handler": "handle_ot_resource_node_state_request",
+    "wrapped": false
+  },
+  {
+    "method": "GET",
+    "path": "/node/rloc",
+    "handler": "handle_ot_resource_node_rloc_request",
+    "wrapped": false
+  },
+  {
+    "method": "GET",
+    "path": "/node/rloc16",
+    "handler": "handle_ot_resource_node_rloc16_request",
+    "wrapped": false
+  },
+  {
+    "method": "GET",
+    "path": "/node/ext-address",
+    "handler": "handle_ot_resource_node_extaddress_request",
+    "wrapped": false
+  },
+  {
+    "method": "GET",
+    "path": "/node/network-name",
+    "handler": "handle_ot_resource_node_network_name_request",
+    "wrapped": false
+  },
+  {
+    "method": "GET",
+    "path": "/node/leader-data",
+    "handler": "handle_ot_resource_node_leader_data_request",
+    "wrapped": false
+  },
+  {
+    "method": "GET",
+    "path": "/node/num-of-router",
+    "handler": "handle_ot_resource_node_numofrouter_request",
+    "wrapped": false
+  },
+  {
+    "method": "GET",
+    "path": "/node/ext-panid",
+    "handler": "handle_ot_resource_node_extpanid_request",
+    "wrapped": false
+  },
+  {
+    "method": "GET",
+    "path": "/node/ba-id",
+    "handler": "handle_ot_resource_node_baid_request",
+    "wrapped": false
+  },
+  {
+    "method": "GET",
+    "path": "/diagnostics",
+    "handler": "handle_ot_resource_network_diagnostics_request",
+    "wrapped": false
+  },
+  {
+    "method": "GET",
+    "path": "/node/dataset/active",
+    "handler": "explicit dispatcher",
+    "wrapped": false
+  },
+  {
+    "method": "GET",
+    "path": "/commissioner/api/status",
+    "handler": "explicit dispatcher",
+    "wrapped": false
+  },
+  {
+    "method": "POST",
+    "path": "/commissioner/api/control",
+    "handler": "explicit dispatcher",
+    "wrapped": false
+  },
+  {
+    "method": "POST",
+    "path": "/ping",
+    "handler": "explicit dispatcher",
+    "wrapped": true
+  },
+  {
+    "method": "POST",
+    "path": "/node_restart",
+    "handler": "EHR1 remote node restart",
+    "wrapped": true,
+    "request_fields": [
+      "address",
+      "ext_address",
+      "rloc16"
+    ],
+    "reboots_local_br": false
+  }
+]

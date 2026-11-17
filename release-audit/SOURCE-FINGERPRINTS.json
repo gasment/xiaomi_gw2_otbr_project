@@ -1,0 +1,3204 @@
+{
+  "1-openssh": [
+    {
+      "path": "BUILD-PROVENANCE.txt",
+      "sha256": "5a6414d3df1217d77dcf4d09a69f6fe377dd3b7fa0f6b9bbdd3bef0c16516176"
+    },
+    {
+      "path": "build.sh",
+      "sha256": "786a973733b2b771e602d004f0a83776c7afe62ecc0be2cd38747282583996f9"
+    },
+    {
+      "path": "openssh-portable/.depend",
+      "sha256": "ece60c828785ff8cdff30bcf3c0c7ac96ad01bbf25b68760564c2e6667455b33"
+    },
+    {
+      "path": "openssh-portable/.git_allowed_signers",
+      "sha256": "c5eabac5d19706a1df329e645c99f1ca28b6140dea37e578e1848311616d5208"
+    },
+    {
+      "path": "openssh-portable/.git_allowed_signers.asc",
+      "sha256": "14b0c522a723a4b2a3c86eadfb2032495bc4990e0c2d69aea562f88b1405fd59"
+    },
+    {
+      "path": "openssh-portable/.gitignore",
+      "sha256": "4932eea89548d119d53ae2a200bba8b2b381f67b597d119015b8f0b8b7935050"
+    },
+    {
+      "path": "openssh-portable/.skipped-commit-ids",
+      "sha256": "521464e8ee43e16ad6d8f0cb1917951fe82991eacb355f33b9baf6747b67c67a"
+    },
+    {
+      "path": "openssh-portable/CREDITS",
+      "sha256": "7ce5ace3ef0c9859b1bce11f16b55764918098df7c252fedc0af0ac1cc19cf7a"
+    },
+    {
+      "path": "openssh-portable/ChangeLog",
+      "sha256": "60c392a5384d597d8cedac78e147accd739b77faad5d8c2e01fae46db4fc4c98"
+    },
+    {
+      "path": "openssh-portable/INSTALL",
+      "sha256": "cc2f99e7ddf2e2caaad53c3322c64d5c55c8b6fca89dcc56da4cda37018f34fa"
+    },
+    {
+      "path": "openssh-portable/LICENCE",
+      "sha256": "5bb5b160726ef5756e4f32fe95b35249c294962419650f48d05134b486d27ccb"
+    },
+    {
+      "path": "openssh-portable/Makefile.in",
+      "sha256": "48aca700f84de35ce4a478bd95688d219a23eaa8cc4287f648b21ff35a38d26f"
+    },
+    {
+      "path": "openssh-portable/OVERVIEW",
+      "sha256": "e316829db4e08ef17fc6d3b0c20a992de0f936043a28fbcf8840e28247ab0827"
+    },
+    {
+      "path": "openssh-portable/PROTOCOL",
+      "sha256": "4a9e7f6d26d3f59deae825ab11ca34a4ffb260b47a19b5a174ddfd1ee009bca4"
+    },
+    {
+      "path": "openssh-portable/PROTOCOL.agent",
+      "sha256": "1092c17faa25c715b2da4e43481e2c0359de1d15b81491866053e7212126d4c6"
+    },
+    {
+      "path": "openssh-portable/PROTOCOL.key",
+      "sha256": "8479c767aeb256e4b2465d23f96dd98998d4210f12c0c9b41bd0a6f1f2e6f17c"
+    },
+    {
+      "path": "openssh-portable/PROTOCOL.krl",
+      "sha256": "4656a4e7cb213f8c1c29d4659852c6bd2f25dd3d111aa7ca76c485a2a31b2eae"
+    },
+    {
+      "path": "openssh-portable/PROTOCOL.mux",
+      "sha256": "fb3dead01961a8a5008222025357d193f1a5e2a15b8f36b0fd362245ca33d315"
+    },
+    {
+      "path": "openssh-portable/PROTOCOL.sshsig",
+      "sha256": "98b23514fa8174cbf63370900aa65814abf74483fd3138cc30bae891fb97636e"
+    },
+    {
+      "path": "openssh-portable/PROTOCOL.u2f",
+      "sha256": "ae8540bf6158991dab27ab40d726e071ca746c2c6a33e65217550b24cae6ae47"
+    },
+    {
+      "path": "openssh-portable/README",
+      "sha256": "52803726b9e51435d261b4a56e4b33f18dd0cc5b9762dbce6f8b8f1450ba50c6"
+    },
+    {
+      "path": "openssh-portable/README.dns",
+      "sha256": "e1aed1364b3c5fee3d204acd43cdc0a0bbd0a015d01843645ede1fb0ea76bc7c"
+    },
+    {
+      "path": "openssh-portable/README.md",
+      "sha256": "a7d14381e5bffeb73c3b83c89f72223dc82e05b7de76aef37c8301b0e3c79cd2"
+    },
+    {
+      "path": "openssh-portable/README.platform",
+      "sha256": "39db9aad936514ed500a75f7efe7baf0e0f1447a23b666884de405650d73154d"
+    },
+    {
+      "path": "openssh-portable/README.privsep",
+      "sha256": "8b62e16d27fdce6d25f4420b4f366f12fd125b562a1a27ca97426ebc6951bf7e"
+    },
+    {
+      "path": "openssh-portable/SECURITY.md",
+      "sha256": "48af11a2c98aa8e6117d73e6dc31d765b7e3e8f78563dde55ff68a1fdeac1918"
+    },
+    {
+      "path": "openssh-portable/TODO",
+      "sha256": "c47548cd16fcf56f8b379dea13678068bc8b537d6712365474abb49ab550e706"
+    },
+    {
+      "path": "openssh-portable/aclocal.m4",
+      "sha256": "3d1266e032336970d491d4c335dce941596fd71b7447f3b766cf05101398459c"
+    },
+    {
+      "path": "openssh-portable/addr.c",
+      "sha256": "bf5010b389395493c0a6a765cff5cbedeae8c395a2c62e4adc558bb3fdd5bb1c"
+    },
+    {
+      "path": "openssh-portable/addr.h",
+      "sha256": "566c81cb4022d59f2c4b7c6b2cd7c365b1c2cd264df3ef5e8080aceb6853722f"
+    },
+    {
+      "path": "openssh-portable/addrmatch.c",
+      "sha256": "8f05951061bb1c11242bba658eb85d8043d65d55d93b18724bafe6e2b34f161e"
+    },
+    {
+      "path": "openssh-portable/atomicio.c",
+      "sha256": "d33492b5c62fe5390b40b947908d3d2ba99569ada9384b328c2a7347a94ea23d"
+    },
+    {
+      "path": "openssh-portable/atomicio.h",
+      "sha256": "4de5812e4b50ed5ce09a65487cf70dbd2a16fea2db1741a067c9e3950a444e75"
+    },
+    {
+      "path": "openssh-portable/audit-bsm.c",
+      "sha256": "180c65313596ef916dc7f469a1a974075c1e2ef02787495db72112a6c372888d"
+    },
+    {
+      "path": "openssh-portable/audit-linux.c",
+      "sha256": "73b7df9088af583fd2596894c0eb75df5f285678d1fe6c04ba2741495e15cbc2"
+    },
+    {
+      "path": "openssh-portable/audit.c",
+      "sha256": "6dfebad604aaf66a986a033d45f79c191d7a4ddc776f3a19e26e8d8adea26f0b"
+    },
+    {
+      "path": "openssh-portable/audit.h",
+      "sha256": "88698d98fa0947b1245a1daedb5ce8558050493fb2755752904fee9f5c04c6b4"
+    },
+    {
+      "path": "openssh-portable/auth-bsdauth.c",
+      "sha256": "b05926e501a13b58e9a4c075f3f841255375acbfc14181091e47604adfd78344"
+    },
+    {
+      "path": "openssh-portable/auth-krb5.c",
+      "sha256": "a02bb09874d8f76f1813567de90505c0737079a1eb1370de81e0de395e6e3b52"
+    },
+    {
+      "path": "openssh-portable/auth-options.c",
+      "sha256": "03016c44eb9f19b0bafae58622d59b029a0ae4c3b75f08b8ffdf20f170cd84f6"
+    },
+    {
+      "path": "openssh-portable/auth-options.h",
+      "sha256": "8dfcdfe79a876dfabedffc20e764fa77a9d137283d70d337ee0d2fb7a25aea18"
+    },
+    {
+      "path": "openssh-portable/auth-pam.c",
+      "sha256": "a59b74f31f811f001a257b96cf66b68e9c3a2d24e23186eead99c113f7b233ce"
+    },
+    {
+      "path": "openssh-portable/auth-pam.h",
+      "sha256": "3147bc959aa14f0637e351ac44905175a8f42be27384ef01d63a2dc2af043636"
+    },
+    {
+      "path": "openssh-portable/auth-passwd.c",
+      "sha256": "f272bd2f9d55350e0e7926be0beef3d6cb4d6bfaf7c2dedcd47b453c4a459dd3"
+    },
+    {
+      "path": "openssh-portable/auth-rhosts.c",
+      "sha256": "0bb372604ac41204999dacb76223edce9aa4dcee151cd04a4985718f77b17752"
+    },
+    {
+      "path": "openssh-portable/auth-shadow.c",
+      "sha256": "b7bd01d73f5d1e59929f135361090443ce24da082288bddc68be99d2f1982cd3"
+    },
+    {
+      "path": "openssh-portable/auth-sia.c",
+      "sha256": "7ecdef859f3d55d7c5981d5827d3f78670b529f369776f040d49fa786a6d8a17"
+    },
+    {
+      "path": "openssh-portable/auth-sia.h",
+      "sha256": "4d0d4a6b0854db6c1a1419bce8bd330035fb6919a4a9fa2d55f0997f415e30b8"
+    },
+    {
+      "path": "openssh-portable/auth.c",
+      "sha256": "655c2f9ba721a20af65b02798ec4170a8be520b55522c40a0b7c936ca13ae095"
+    },
+    {
+      "path": "openssh-portable/auth.h",
+      "sha256": "90aac2049840889f2f27ab929e838687eb9496221cc37407809618166b35540f"
+    },
+    {
+      "path": "openssh-portable/auth2-chall.c",
+      "sha256": "41c62017ef6a11bb9fa408ba4c9a70299a9a4bbe4281fccffa126340f1b3ae32"
+    },
+    {
+      "path": "openssh-portable/auth2-gss.c",
+      "sha256": "4c9b5fb9f640d7211f7a8608a05017fb9d1e1b9b535110b1741087b3ec802ef3"
+    },
+    {
+      "path": "openssh-portable/auth2-hostbased.c",
+      "sha256": "373b5bed8a29a2fedb3e782e29111747f6f0a56ad2293411fee40f0eaa4641f3"
+    },
+    {
+      "path": "openssh-portable/auth2-kbdint.c",
+      "sha256": "1a1d2749ca03b0f79123fe558b2c203c474af58b43f361d6846ba82d3dc8ce58"
+    },
+    {
+      "path": "openssh-portable/auth2-methods.c",
+      "sha256": "f10eba78c261ce921c14520a2520c3d202b867ae6f95c2526be7d297ec223a0a"
+    },
+    {
+      "path": "openssh-portable/auth2-none.c",
+      "sha256": "51c0970d7cb4efb3b5a6dfa56ad26ddfaa810a8d90d4f64dcabfa46445008beb"
+    },
+    {
+      "path": "openssh-portable/auth2-passwd.c",
+      "sha256": "8037a6003a7485d9a5f6c6c24051be7c67d0f8c9927a7efa4a0f098c748c564f"
+    },
+    {
+      "path": "openssh-portable/auth2-pubkey.c",
+      "sha256": "055f03800e9a1e35e408dcc47f9245b57377e493c06503497c36450fc060657e"
+    },
+    {
+      "path": "openssh-portable/auth2-pubkeyfile.c",
+      "sha256": "3e9bc43621375d957103dd31dc7ad5a039496c9236e99ae3bb20c61492430501"
+    },
+    {
+      "path": "openssh-portable/auth2.c",
+      "sha256": "af445834c6dc31d7c3a20d7bf57c56dac8f0778027cf8c387ad34e7920950be6"
+    },
+    {
+      "path": "openssh-portable/authfd.c",
+      "sha256": "ec5c3faf5a43c467cb8660c9eb7057496b3b5a0fa01662777fb4fc65a25733af"
+    },
+    {
+      "path": "openssh-portable/authfd.h",
+      "sha256": "304c513cba26aa089132439e161e5d0e5ecfef83aac83cb8635ee7591865414d"
+    },
+    {
+      "path": "openssh-portable/authfile.c",
+      "sha256": "65022ea9eb7342f73c095609dda72ce922eda28b9c6adcc4c887bf79189967ad"
+    },
+    {
+      "path": "openssh-portable/authfile.h",
+      "sha256": "61098621f2075d0f25874cf3c837833245e03bdb763c996e85c2f89f20b91e29"
+    },
+    {
+      "path": "openssh-portable/bitmap.c",
+      "sha256": "ab9dd575c9109b5a7ba4565b5903f298c9849849766e1702fbfc49c7a1a35673"
+    },
+    {
+      "path": "openssh-portable/bitmap.h",
+      "sha256": "ed04e5bbaf7908a0d71e89ea565f49d04ec769a2d5de47bb6a83b3b5dd2a697e"
+    },
+    {
+      "path": "openssh-portable/buildpkg.sh.in",
+      "sha256": "06804c83b73be9085b346c24efa87a5e96d7a389e437917ccb72934e4fa5fb85"
+    },
+    {
+      "path": "openssh-portable/canohost.c",
+      "sha256": "72e3bcd359c9a2adad1270d511e9714ea75cd907111882e4ea09b49c9e941e81"
+    },
+    {
+      "path": "openssh-portable/canohost.h",
+      "sha256": "63d1205b3a7e26611615ba17029871fb4d141425cbe14f0215dcc817a57aaf15"
+    },
+    {
+      "path": "openssh-portable/chacha.c",
+      "sha256": "95ce939a64c50d43718f3af3dbc70c0fda0ff6cf95017ab1180fa72d2e37bf1f"
+    },
+    {
+      "path": "openssh-portable/chacha.h",
+      "sha256": "973365da4c42cd30564b90a415b1eb1658c1d81099337b7d4c33dc9c33f44998"
+    },
+    {
+      "path": "openssh-portable/channels.c",
+      "sha256": "4307c7c646b06301b1098f0575761660df654289b1c91dc833aead339793bb56"
+    },
+    {
+      "path": "openssh-portable/channels.h",
+      "sha256": "04c21ebcc329de145d1bdeddca87177350b12b6273b8f1cde7ef3fd92ff67305"
+    },
+    {
+      "path": "openssh-portable/cipher-aes.c",
+      "sha256": "33a7a0bfd31198c984c131a2477f98148792b70cb69276afc3aa0d8f8b1e9bca"
+    },
+    {
+      "path": "openssh-portable/cipher-aesctr.c",
+      "sha256": "a50c0caea9142fdf03f010c194d01db5183ea0bee0b1d02528f46b7dc65ea7bd"
+    },
+    {
+      "path": "openssh-portable/cipher-aesctr.h",
+      "sha256": "253d2da1cb2866eba3fcf6df7c39f0fdc2cb3552291e39fef556f8423dda4792"
+    },
+    {
+      "path": "openssh-portable/cipher-chachapoly-libcrypto.c",
+      "sha256": "d7f839e229014b1f7199651dc2b54de122c3eb81ae48b7c0ed65ef3c86638ebe"
+    },
+    {
+      "path": "openssh-portable/cipher-chachapoly.c",
+      "sha256": "97719334d0a47131f89a6ce41cdfc4f6a1dedc348f8c39b422018aa3c1564c93"
+    },
+    {
+      "path": "openssh-portable/cipher-chachapoly.h",
+      "sha256": "bd32366093db2a7f3ede2bc8b40510614478fc575cdcc218c8ba3c0c04a066b3"
+    },
+    {
+      "path": "openssh-portable/cipher.c",
+      "sha256": "786b491ef1617443cd2afa692e283360f2a94bc07a5c9aa144675400ef023f48"
+    },
+    {
+      "path": "openssh-portable/cipher.h",
+      "sha256": "4fb4a9878f2418460afff3e7b44eaa658db4e5d38578160c35f168d6589a1ea7"
+    },
+    {
+      "path": "openssh-portable/cleanup.c",
+      "sha256": "a38a74e3907b12454fa9462cd7941c5f0a9eb951443f28c28114c0b04c094424"
+    },
+    {
+      "path": "openssh-portable/clientloop.c",
+      "sha256": "55ffaf8b35ac33efe7c9237e584239a0f4e2537541c1b3ecc9467b2d3f63d9fd"
+    },
+    {
+      "path": "openssh-portable/clientloop.h",
+      "sha256": "5f47a9bb4ac89233c75d9bbea12d3bda1a652e6ece3096ab597e9477062e5979"
+    },
+    {
+      "path": "openssh-portable/compat.c",
+      "sha256": "8c953c13f47b63a9da75ea8d56bcde56a88d4d71789203afe795a5cd7b2feb23"
+    },
+    {
+      "path": "openssh-portable/compat.h",
+      "sha256": "11818cc386dfacd10d4a3d434d5374b5e612c7405cf568ba9ac45b9c6ba3def7"
+    },
+    {
+      "path": "openssh-portable/config.guess",
+      "sha256": "36b03244d5bc0fee6c3b69013d2d4fe3027ae7e05e1dd566dbbd84a3639c3ca9"
+    },
+    {
+      "path": "openssh-portable/config.h.in",
+      "sha256": "47ad0d41a4045236375ef61bebdf94913d231cdd77840262220cb8cd22509ee3"
+    },
+    {
+      "path": "openssh-portable/config.sub",
+      "sha256": "0114ee98bffafc27c4d48abea22b6a542fa6fe45c949ca0d2ea1999d395f4197"
+    },
+    {
+      "path": "openssh-portable/configure",
+      "sha256": "9b9885258afcabac8c526dc97a993beb25c3d6c67fe8916623f9e31a577a7d42"
+    },
+    {
+      "path": "openssh-portable/configure.ac",
+      "sha256": "8cdda6c3b5b9bb632339b22abefd8db6d2b1d4ddf805d37d49f0bbb23b081ed2"
+    },
+    {
+      "path": "openssh-portable/contrib/Makefile",
+      "sha256": "7c63b1a7487690a4b84f5a712e25ff9a58ba8ef7aaee77003e1a51e32582da93"
+    },
+    {
+      "path": "openssh-portable/contrib/README",
+      "sha256": "07881d5e13aa3cdcb55d5748a15a46f49dd8af3f6d3646ab8f667bbabe4fc57e"
+    },
+    {
+      "path": "openssh-portable/contrib/aix/README",
+      "sha256": "57953bb4fd5162a4688f0bef5d113e9f033dab94a75c93ca0fb568b46465955b"
+    },
+    {
+      "path": "openssh-portable/contrib/aix/buildbff.sh",
+      "sha256": "a9ff06007abb1abfb9ae34dcf36f9978a333062da177859d40a97acb4e2dc289"
+    },
+    {
+      "path": "openssh-portable/contrib/aix/inventory.sh",
+      "sha256": "63da4937c30e80169c685a3c2671f808015ddf2b3a54ba79a60958a83f98aefc"
+    },
+    {
+      "path": "openssh-portable/contrib/aix/pam.conf",
+      "sha256": "42f5d788d58ab8f570c1ef0000cd7458ba787285d1eee023079c7d980a7e7361"
+    },
+    {
+      "path": "openssh-portable/contrib/cygwin/Makefile",
+      "sha256": "84b0ed907ce8519c9fb0f6589e57872daf938201ea723688d779472af8d37dbb"
+    },
+    {
+      "path": "openssh-portable/contrib/cygwin/README",
+      "sha256": "1fc1d1ca21ac7cef668e2188839f516939eff77f50dc44974c166eeee56b6d54"
+    },
+    {
+      "path": "openssh-portable/contrib/cygwin/ssh-host-config",
+      "sha256": "d15fa313733a8717a319d57c3be4dd750a9a9a07974011f44e137d7e7b9276ee"
+    },
+    {
+      "path": "openssh-portable/contrib/cygwin/ssh-user-config",
+      "sha256": "6cbdf4b98ba3a9e82132249545871a91c7ec7177a4d3fc49240c9a1cb43955cd"
+    },
+    {
+      "path": "openssh-portable/contrib/cygwin/sshd-inetd",
+      "sha256": "b808aa7ab20e7e9ab362a0b1b2c4bd96d8e31ce1cc95ed68d814e42db41c6b1f"
+    },
+    {
+      "path": "openssh-portable/contrib/findssl.sh",
+      "sha256": "b10123b92ddac4ff3e5d003eed44e92c39693dd8c7d197c99b006aacf80fdaf3"
+    },
+    {
+      "path": "openssh-portable/contrib/gnome-ssh-askpass1.c",
+      "sha256": "fec3c4f4d31bbb1bf2e9844d9d189d799a3b78c7f1527fd0260f6621bf1204a1"
+    },
+    {
+      "path": "openssh-portable/contrib/gnome-ssh-askpass2.c",
+      "sha256": "f03038e4ff8a37ec10b55d7bbddcc56e28db84fdb67c40813cb308df0d3ca344"
+    },
+    {
+      "path": "openssh-portable/contrib/gnome-ssh-askpass3.c",
+      "sha256": "d1392c807854784cacf556cd06c851e43fb52ed565b70ac879776f7389088fc6"
+    },
+    {
+      "path": "openssh-portable/contrib/gnome-ssh-askpass4.c",
+      "sha256": "c4a8bc6c7a2c061f77de40fb12ef214ab8728638760cfde47c75f15e31b51952"
+    },
+    {
+      "path": "openssh-portable/contrib/hpux/README",
+      "sha256": "dcf0f973350c1c96aa149ec393eeba06a410f057c4b58227ee1ad2f48d72f0ec"
+    },
+    {
+      "path": "openssh-portable/contrib/hpux/egd",
+      "sha256": "7883e9400507bf3b02f41ed70679058e12dc1b4901664660d1ccf760469c1edd"
+    },
+    {
+      "path": "openssh-portable/contrib/hpux/egd.rc",
+      "sha256": "54c9809ec1c31e5c5217179566a1a3f4bc1f5a926e9645c75c5adfcf2f649d7a"
+    },
+    {
+      "path": "openssh-portable/contrib/hpux/sshd",
+      "sha256": "9c535378073e03be43b80df72e668df145b4660d9b96074bd9d92de9efbce864"
+    },
+    {
+      "path": "openssh-portable/contrib/hpux/sshd.rc",
+      "sha256": "2b7c01043d1cc6c629e9e67ab1d6855c739fe0e2130369db43a162bf3a9710de"
+    },
+    {
+      "path": "openssh-portable/contrib/redhat/gnome-ssh-askpass.csh",
+      "sha256": "8f138fd7caf5183aed0d2085c1f7d1746255d890ba26409084d4882c0b59880a"
+    },
+    {
+      "path": "openssh-portable/contrib/redhat/gnome-ssh-askpass.sh",
+      "sha256": "d5ce176b494616eb798d5465a616e046eaa06ec513bf32314a2211a9b3b080bf"
+    },
+    {
+      "path": "openssh-portable/contrib/redhat/openssh.spec",
+      "sha256": "6d5dacfe28c8499e17f2a9d72b4ab6b2d2a1539e17046b46ff8c07f59fd67ff8"
+    },
+    {
+      "path": "openssh-portable/contrib/redhat/sshd.init",
+      "sha256": "c46aff76780293a7f9aa031adb3cd63b6d65ab912fcb8590d5ca73b426927927"
+    },
+    {
+      "path": "openssh-portable/contrib/redhat/sshd.pam",
+      "sha256": "0e22f3300dbee762b4957c3c93d07ed98e5b6093e6c9f038e3017c96e1575d0c"
+    },
+    {
+      "path": "openssh-portable/contrib/solaris/README",
+      "sha256": "f3dfc87068d7154b5314b2e4f7ce00e7544449a61b98cf3eadc00f8b12a09d2b"
+    },
+    {
+      "path": "openssh-portable/contrib/ssh-copy-id",
+      "sha256": "a331afd275d386fd1a699e42fa1514699cf86c744ef62df3e5240d89e1443650"
+    },
+    {
+      "path": "openssh-portable/contrib/ssh-copy-id.1",
+      "sha256": "ab85a3d3a7267eba91744582ec53ec5bd778188469bf3bd5900013bdac5ee990"
+    },
+    {
+      "path": "openssh-portable/contrib/sshd.pam.freebsd",
+      "sha256": "964a7b712913010021c44938e6628ad4e906e255259950205972872ad318ff99"
+    },
+    {
+      "path": "openssh-portable/contrib/sshd.pam.generic",
+      "sha256": "97518ca0e26eab55432e2d9437fe1fbb41c4db164aed8d37eb57676ea908a6e0"
+    },
+    {
+      "path": "openssh-portable/contrib/suse/openssh.spec",
+      "sha256": "c2d972a2e52975354f152dfced4329ca9b00855e74fc181b6e9c61efed61c94c"
+    },
+    {
+      "path": "openssh-portable/contrib/suse/rc.config.sshd",
+      "sha256": "597fc0baaa1bf21a1111b5dd520d52f974ab2a9becc451b0e39959839ddbb6d8"
+    },
+    {
+      "path": "openssh-portable/contrib/suse/rc.sshd",
+      "sha256": "c4d5532d1b208f1b5a7edb01911d917e11a9f4c55f4646dd72153056712f0307"
+    },
+    {
+      "path": "openssh-portable/contrib/suse/sysconfig.ssh",
+      "sha256": "a5168d12c66cf2dd90fb9e79fd10d844c2e883b346850e9f558ac7479eef583f"
+    },
+    {
+      "path": "openssh-portable/crypto_api.h",
+      "sha256": "a5dfae9a14f2206307f72c50d5ee40dccc523b86b0b162b192dd9363660a1a77"
+    },
+    {
+      "path": "openssh-portable/defines.h",
+      "sha256": "df5c5322c78f97c04f70bbe7b253f6a186827f7e8fd6813b4748b9f2784de184"
+    },
+    {
+      "path": "openssh-portable/dh.c",
+      "sha256": "fd7fb78c3f7e6b21ff0e03184309e53264bbb871c657edeb3ea773f9b7959fb7"
+    },
+    {
+      "path": "openssh-portable/dh.h",
+      "sha256": "b34a29a7dc79d6610d3959b9ff5ab6364f617b507f4d06c693e0d9a8ad60b14f"
+    },
+    {
+      "path": "openssh-portable/digest-libc.c",
+      "sha256": "91b4de4e1036d1f0a69a681da5927901a9d51e30e1a5b90955e9425afc8f3076"
+    },
+    {
+      "path": "openssh-portable/digest-openssl.c",
+      "sha256": "fda3fd462eee40d03e2dde96a27e6c50d42257e90334b54c288ec01a1f838796"
+    },
+    {
+      "path": "openssh-portable/digest.h",
+      "sha256": "0731c31fceb5fc2429d9f9c541a4da87cf52338b7e560240de263803d70a7277"
+    },
+    {
+      "path": "openssh-portable/dispatch.c",
+      "sha256": "f2724738369a88830e1b73d70cec3b1b75eea5e4ee79ee10102e2f67edb25fb7"
+    },
+    {
+      "path": "openssh-portable/dispatch.h",
+      "sha256": "baaa88f9395f201e2a8201688aa5696319fbbcf5dfb3856519b962403bec435d"
+    },
+    {
+      "path": "openssh-portable/dns.c",
+      "sha256": "abf1ecc96f33a5b0537d3bfe3352e90cb843985181807ca4932703d501d236ba"
+    },
+    {
+      "path": "openssh-portable/dns.h",
+      "sha256": "d1c858163e388f69451ca8cf9d56c265d0e29389b4160b38aeb00c8aba9284bb"
+    },
+    {
+      "path": "openssh-portable/ed25519-openssl.c",
+      "sha256": "0625d840686cfae85bc4f708954bf1843563e4d6a8801cde15445a9d1a97c77b"
+    },
+    {
+      "path": "openssh-portable/ed25519.c",
+      "sha256": "b7ea423527789267ff46ed9df3f5ddc74f13c14d0671da43f1d813452bf632a1"
+    },
+    {
+      "path": "openssh-portable/ed25519.sh",
+      "sha256": "b2413fd71d3e61b52c3481b11874134d533a13f520d6437da64c0cd3ac8b4bef"
+    },
+    {
+      "path": "openssh-portable/entropy.c",
+      "sha256": "61255ece32783d183e425518a3a960b84af195a6e61fe264f4ee14748bd06d5f"
+    },
+    {
+      "path": "openssh-portable/entropy.h",
+      "sha256": "c2fc05989e22669bb3bbdcccf43a725ac7ada0c8d20e2ab0df648d876d1662a7"
+    },
+    {
+      "path": "openssh-portable/fatal.c",
+      "sha256": "e4c3d1911fce87b3ef281d8964710e20a8e0f5cfa3650d4c152b9aa93117be1f"
+    },
+    {
+      "path": "openssh-portable/fixalgorithms",
+      "sha256": "d7dbf35c7c5c7bd9cead6704b479ecee4c524003831cb21e42e66a7167424280"
+    },
+    {
+      "path": "openssh-portable/fixpaths",
+      "sha256": "4b8e1511950b6ca1c4bcac27bedf2fac6a4bd098434a9caa925eee1a8f592d4a"
+    },
+    {
+      "path": "openssh-portable/groupaccess.c",
+      "sha256": "acada1ebb2601c0bcf1216139bb6e5a8606986ff389aec32a190b4883296d1df"
+    },
+    {
+      "path": "openssh-portable/groupaccess.h",
+      "sha256": "701f00061663df8d18a9aca2c0f61ccf5a512d27a17d20f1e0f4893246ebcdaf"
+    },
+    {
+      "path": "openssh-portable/gss-genr.c",
+      "sha256": "48744d49a4734327ed66d5c43e65e6bbf58efc9cbd51369d0c1e42a2cf68c82e"
+    },
+    {
+      "path": "openssh-portable/gss-serv-krb5.c",
+      "sha256": "f95fcb5239363a1f0ad1a797067fe18892c27c176ced1673ea632118bb899c47"
+    },
+    {
+      "path": "openssh-portable/gss-serv.c",
+      "sha256": "20b488ff39390059a24bfa21202be53193e82a89db1de5324e8614e90581afd4"
+    },
+    {
+      "path": "openssh-portable/hmac.c",
+      "sha256": "bc271410a9efda0922ddbe5f0c79dcde295f7056031bccf48f6bcb2982a9fa69"
+    },
+    {
+      "path": "openssh-portable/hmac.h",
+      "sha256": "fc7ec97c7bbb33192e96558c51073f507678a9ed1efd89d7516fdfdbdaf106c1"
+    },
+    {
+      "path": "openssh-portable/hostfile.c",
+      "sha256": "8f1834d162410ef28118210a9fdceb0c530fefcb484abab3d400e228eea8f23e"
+    },
+    {
+      "path": "openssh-portable/hostfile.h",
+      "sha256": "d5b96d113199bc95097fa1b4b808df5a66ab1b5fa5deaa96eb349b5fc0fc0148"
+    },
+    {
+      "path": "openssh-portable/includes.h",
+      "sha256": "fbff8dd95e2e6f116a64c5fb4ab8ce4f7469136371d522aacce745f98a5c23ea"
+    },
+    {
+      "path": "openssh-portable/install-sh",
+      "sha256": "3d7488bebd0cfc9b5c440c55d5b44f1c6e2e3d3e19894821bae4a27f9307f1d2"
+    },
+    {
+      "path": "openssh-portable/kex-names.c",
+      "sha256": "64f5c598b1f449d6f1f8f945762799676bee63332eb1ae94982cf00f926b7cc1"
+    },
+    {
+      "path": "openssh-portable/kex.c",
+      "sha256": "401d756e1043cb812c81c48cd637d243bc4b46b3df5b1a5a5623aa53bd1962bb"
+    },
+    {
+      "path": "openssh-portable/kex.h",
+      "sha256": "c0dc609955b904ed7c2ce615d391e92597062d7e990557c2b075008e73fcb779"
+    },
+    {
+      "path": "openssh-portable/kexc25519.c",
+      "sha256": "d0e4bdd8c338f1f6f72c04be9af0bef2f878f19b1bf594993f67ec90fcb96f38"
+    },
+    {
+      "path": "openssh-portable/kexdh.c",
+      "sha256": "f558dff8d3ab830045fb387394732e1fc527321a80587ba18f8e4ecdea8d31b0"
+    },
+    {
+      "path": "openssh-portable/kexecdh.c",
+      "sha256": "5af055a250f738ca94f3f63dc03caab124f5da6b18ed410a50c127b34bbed2f0"
+    },
+    {
+      "path": "openssh-portable/kexgen.c",
+      "sha256": "c0883be0df79da2a557846cd6261b88a03fc393fd450d9a6ba7c8f084b7b4150"
+    },
+    {
+      "path": "openssh-portable/kexgex.c",
+      "sha256": "1896a254f60815b253dfc595f416b2e2f2a47c16861dbe70ff4e84c2a8bcf8fb"
+    },
+    {
+      "path": "openssh-portable/kexgexc.c",
+      "sha256": "5f425efc3db4974c8141c1cca74b9b1dfb7f67443e4fc2735e8b2cb7e78e0ef9"
+    },
+    {
+      "path": "openssh-portable/kexgexs.c",
+      "sha256": "bcf3f40744e595f8e0939830e4d3db082bae03cfba691a806589f5db727fe9c3"
+    },
+    {
+      "path": "openssh-portable/kexmlkem768ecdh.c",
+      "sha256": "fd12ecaa66302dbd164d57b3b380e0a5d210d508c9be1bda8829ede09cdc0426"
+    },
+    {
+      "path": "openssh-portable/kexmlkem768x25519.c",
+      "sha256": "0fbdf9f4baeab94f58cd420a85ac9fe7d8a6f5a049ddda2e3285500a5572cf84"
+    },
+    {
+      "path": "openssh-portable/kexsntrup761x25519.c",
+      "sha256": "2eb6d559632e432c03cc9dc5d9d388ecb8bec79c83ea4ac52dfbb5133c0c3c0b"
+    },
+    {
+      "path": "openssh-portable/krl.c",
+      "sha256": "83bd8bc74e99ec2ba77eedc89eb4b69256c982c0d3d5a0519259c93eb92c99a6"
+    },
+    {
+      "path": "openssh-portable/krl.h",
+      "sha256": "185c84b2f105a624e4b3fd8df86c2c508b0b46c592a4547d6a3f482a811cdb8a"
+    },
+    {
+      "path": "openssh-portable/libcrux-mlkem-mldsa.c",
+      "sha256": "aee509b8a767aa487b2c22d0e2f88de5bd062c766a0dc6454d7e2ae65e19774a"
+    },
+    {
+      "path": "openssh-portable/libcrux_internal.h",
+      "sha256": "4e5d912e00ac0f585f29d7735fc547d0b7d2ceb134129c1074d3bc4892f79290"
+    },
+    {
+      "path": "openssh-portable/log.c",
+      "sha256": "7a74de1d23092e05f7b55e5fd9d38da6ff1c9b0620c682cde5b014f0511c00f6"
+    },
+    {
+      "path": "openssh-portable/log.h",
+      "sha256": "f6f6ed589320afab5d829d0786a40d9518bd517ea267ddd1941f7bb550ba4e18"
+    },
+    {
+      "path": "openssh-portable/loginrec.c",
+      "sha256": "e08a800dedbeb581c4a64e73f39eee3e5a74b9c719472ef07fa46ef10591c949"
+    },
+    {
+      "path": "openssh-portable/loginrec.h",
+      "sha256": "7fa185de90a71af44cf29eee9be641b3c8697762faa0cfc49a1d3f2bce89c9b5"
+    },
+    {
+      "path": "openssh-portable/logintest.c",
+      "sha256": "10f6159a0b5119ca4a01c103ebda049e65e386df951349263d725495c59129dd"
+    },
+    {
+      "path": "openssh-portable/m4/openssh.m4",
+      "sha256": "d8173675e050efb0f61f51ccf095d6f4e6cacdae3ad6c7cf5d4ecc78beb3c764"
+    },
+    {
+      "path": "openssh-portable/mac.c",
+      "sha256": "8db491f34549d8c74b6cc526acaa47e4ce7b7e7c76e505a6ee795f3dacbd5b9a"
+    },
+    {
+      "path": "openssh-portable/mac.h",
+      "sha256": "6094634c0d8c569cbf6dc1411c8ba3d06d1635607e0d317ce74f82b08723a8ee"
+    },
+    {
+      "path": "openssh-portable/match.c",
+      "sha256": "442a26d8461908406d7ccf2410df434f391c0c0cf7cff9770ff3cbc2fda01ec4"
+    },
+    {
+      "path": "openssh-portable/match.h",
+      "sha256": "ad5e8e9f05cd5fdc87d48d3642a43a28b0ca019c151ba40e5af02df379cef0c4"
+    },
+    {
+      "path": "openssh-portable/mdoc2man.awk",
+      "sha256": "89beab9f04ec56da866983a02b4c8de17b3631c8b251d255cf088d1372140875"
+    },
+    {
+      "path": "openssh-portable/misc-agent.c",
+      "sha256": "c78a9a5a84cc72c6c922761d1ee245edaaba07dd9bb4b0267ea49101f95c3911"
+    },
+    {
+      "path": "openssh-portable/misc.c",
+      "sha256": "2810682247cf51463873750a6b280e7b05581e4e61114c98cfe24b02ce7d4be1"
+    },
+    {
+      "path": "openssh-portable/misc.h",
+      "sha256": "9d629fab1b11604a23952b6ed9c0d77639c17afd4f882f831494513d9b2b3b2c"
+    },
+    {
+      "path": "openssh-portable/mkinstalldirs",
+      "sha256": "bbbcc8b2134c9610372c8b8897ecfbe51af05c6dca9ce42dd34385a1f63155af"
+    },
+    {
+      "path": "openssh-portable/mlkem_mldsa.sh",
+      "sha256": "ef432947642a74dabd817a953674ffeddc5027a37332b57d59023d98399c92e2"
+    },
+    {
+      "path": "openssh-portable/moduli",
+      "sha256": "1d89ab9d686ceada1f7869cb7cbf2d3ef041f5054bc148ffa182b6f718e15c81"
+    },
+    {
+      "path": "openssh-portable/moduli.0",
+      "sha256": "e4f507ed5c9fb2e0ba157b0792cd48ca6623ef6bbb07b1e6a59ab397dacb21eb"
+    },
+    {
+      "path": "openssh-portable/moduli.5",
+      "sha256": "2ead1482393252b103de3cd5c31c1a025e7b7b746357799175d3001f18d781f9"
+    },
+    {
+      "path": "openssh-portable/moduli.c",
+      "sha256": "f2cb63f454436df3e2339c0440139cb561baba57b273b77536ea140b59488672"
+    },
+    {
+      "path": "openssh-portable/monitor.c",
+      "sha256": "9f9a420650103bf54e684ac367bf6adc6eb01831e0fa30d3334d615e766c947d"
+    },
+    {
+      "path": "openssh-portable/monitor.h",
+      "sha256": "ebf97b6fba7f92665930b9231b8c0c316c9123df663dd5f4f7b7f4952b145021"
+    },
+    {
+      "path": "openssh-portable/monitor_fdpass.c",
+      "sha256": "f16ba1e68be5745b4b02b7b7260e6a3e18d67e785671baa693ab68a56f62804e"
+    },
+    {
+      "path": "openssh-portable/monitor_fdpass.h",
+      "sha256": "4eed07461b2182c97d1e8b33e4e360a7865f3d0efc7f542be048c93cf26d9028"
+    },
+    {
+      "path": "openssh-portable/monitor_wrap.c",
+      "sha256": "75fba57a6fccf02bcdf61f05c07e3c210b8819c1b97be6b99c359b1c78734860"
+    },
+    {
+      "path": "openssh-portable/monitor_wrap.h",
+      "sha256": "c500fdadfca36b32e5d4ec4d6f079f8e0cce64077c9fab06f923e00d623ff737"
+    },
+    {
+      "path": "openssh-portable/msg.c",
+      "sha256": "4b0e688545b9894991765fc41affdc8dff8158104c2f05e016aec72d7caf452c"
+    },
+    {
+      "path": "openssh-portable/msg.h",
+      "sha256": "d77b2b89cf1d26ee53a48c85b5849cd23b22978df19a37f91209ce3ea9869d39"
+    },
+    {
+      "path": "openssh-portable/mux.c",
+      "sha256": "431a9eaea78c8080f8176d1247d27a508113b421e455c468fc9f6765cd5e9128"
+    },
+    {
+      "path": "openssh-portable/myproposal.h",
+      "sha256": "2d390158f9ae54d6db2efc6cdf89b2bc7782ae1d1886b4618448dfc0e2e1717d"
+    },
+    {
+      "path": "openssh-portable/nchan.c",
+      "sha256": "e52bf5d4ef6662ead58ad2e07f9ea496bd89e55e4e88b39bc13f1102d34dc681"
+    },
+    {
+      "path": "openssh-portable/nchan.ms",
+      "sha256": "594231d75f89e7b540594bc96c2276d4c0f3680073969874cc577d199dac50ac"
+    },
+    {
+      "path": "openssh-portable/nchan2.ms",
+      "sha256": "301f7f33e0d10438deae2764bc72e9eccf04e6025a1ebdda529418722aa31168"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/Makefile.in",
+      "sha256": "e0f84535b12fc18cbb5c100e40f19a3d5ad7541638b8be43dac9c86573c9584b"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/arc4random.c",
+      "sha256": "1a36d78929cd4314ffd9e8951143dedc253ff5e2166a0f752b78d5400d9d51da"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/arc4random.h",
+      "sha256": "fa284a96d832208ab0d6864ca053fe0777e5cdd87cd5778c56a4feb2a2e73ff1"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/arc4random_uniform.c",
+      "sha256": "1f1be278531b575c33fb8f86ecbe7790709a2ae125dc5028179c8ae3d2653174"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/base64.c",
+      "sha256": "0523fc1e2fd1e44bf337672ac05b62d0c1b0f35daa48e792d240613cdfdf64ee"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/base64.h",
+      "sha256": "00bea8185808a7f087e975f21ad4e023ca303841cec35b20c12e8de8fd6d1ddb"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/basename.c",
+      "sha256": "5b3e4c49064c4470928ca6584927e03bae6a1f0d937f2ec00d8a2e9839ae82cb"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bcrypt_pbkdf.c",
+      "sha256": "37eb9b8c19d1090a144fcd601360038a56d5379a8f51d0f7d091d74a727a5e4c"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bindresvport.c",
+      "sha256": "e78adc356ca3943059f3dd2bd571ee0683a01f52fefd9bf09358abbf6d4e4601"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/blf.h",
+      "sha256": "8c110caed5a31a330c8f60d942e9a4fbf42860ec575484c5ad509379d09379f6"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/blowfish.c",
+      "sha256": "c1ce17befab237bb2e360dd0cf58f0123f27ac4d2458b8db4cc27775c9db403c"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-asprintf.c",
+      "sha256": "3078aeecdfc3fb27e756a671bde143fd200eb919018fadadf6380f6f33201482"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-closefrom.c",
+      "sha256": "07af9a3752c6e01ba603a82ee711c368dead6a3139df14a7e08de34bbc75b6db"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-cygwin_util.c",
+      "sha256": "ff508ea2515750646093777b6fca67e8f60ad8cde28605f4f76e6d8212f1aeff"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-cygwin_util.h",
+      "sha256": "231e098adb921e74b176be6d3c5b5b5eb2a2dffc4e013ae806a14526283ed413"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-err.c",
+      "sha256": "46c1079ab6ce0403e8f1d20f2d19cfcf62077dee0ba15db8ee81454338079fe1"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-flock.c",
+      "sha256": "7eb1e35cbc761e2d6011ab467d85a66feeee020a5408ee7f824582856e17f632"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-getentropy.c",
+      "sha256": "24447ad0694b3f3c9d3ae3b4f9fbddfc3d3ef6e96f3b555e6cad3f9626fe489d"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-getline.c",
+      "sha256": "0ae4779d71f456e4ff891c90cfb378704291b7ec3ffd4da9b289578e496b54f1"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-getpagesize.c",
+      "sha256": "fb71c3b67e82885a152328f88b29a96705915f4cff3a2f5f9fafd2614ca1d20f"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-getpeereid.c",
+      "sha256": "cc01352cfc0e78ca41cc311180049812fad025dd49908783b999b4c977c901b8"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-malloc.c",
+      "sha256": "6ec9a15acfc8aa5894a7fa0229ffd8aa18126a234ab9229021523ccd8323ca05"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-misc.c",
+      "sha256": "355ff9f880563af7e7d34473e2e8f4e90ffb859dd94b23dcc3952deba38fc2a8"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-misc.h",
+      "sha256": "2b46eaf38d67fbc2a586d326a8b2bcb3d1193218582b0d2f96a1bd1272e9cca9"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-nextstep.c",
+      "sha256": "21f3e797732750958bb6c2d013300f756e30d87cc40b80ec2587b3afb2bd6bdf"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-nextstep.h",
+      "sha256": "dbef0f9da6d969881306000bf0d8f7108e369826e92825f8f77d33e399f4e752"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-openpty.c",
+      "sha256": "61e6be5e1bcc158590313945e549000c0c751bbe96f3f91e11f0f2872bdd6215"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-poll.c",
+      "sha256": "27097f92e38763f945ab3a1617b221fefd9e289c6bc55f71687680d6dcd36af8"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-poll.h",
+      "sha256": "936291f40ad14d16b9c56d84cec8a6bf47c0c87eee30b7c2bf2acf7c956ab356"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-pselect.c",
+      "sha256": "7cf6700e83cc157180aa467706eb2e3817afcbcef6386324caa4bf2ee7a59a10"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-setres_id.c",
+      "sha256": "11ec7095caf3c691f4178be2bd1e0d0618d49e538802649e4df0a11b445e4827"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-setres_id.h",
+      "sha256": "6d57ea3dba96bbcd6bc823c41e86413b5a01d545a939abccd3a3ee078a777074"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-sha2.h",
+      "sha256": "aaad971cb86b13ac9ddb725fc09c2c96a46392cea27574158bc219470078f086"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-signal.c",
+      "sha256": "9d1fcaecd8a3b1754b8d2e3d1e7c540372191e77631d5ac9da2b44f8bd7ad174"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-signal.h",
+      "sha256": "bf1ee71d79353ed79e5c2becbd49cee450ecdf52f416e3a2cf2f8ad991a94cd4"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-snprintf.c",
+      "sha256": "b03352f7fd93f441f148b65d60cd81a1872d8ebd3c72f9feadfbbbaa630d8c56"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-statvfs.c",
+      "sha256": "eeb054c40d7d7a4d4e8b573f831f3977894659ab56c00efdd05bc2c3a3e62449"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-statvfs.h",
+      "sha256": "b1ff36e07a25a278aec918785f8b2130e87d4606986bf3120b8c8cdb3d0e4930"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-timegm.c",
+      "sha256": "470c950c0dc8ecb58c6351b94bd968710de05d2950d07e37d12680154eefcd06"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-waitpid.c",
+      "sha256": "ad91d378138aedced06013b02b0ad2d5992762a9e5b329afc74c7ce13f2c5f7c"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/bsd-waitpid.h",
+      "sha256": "26b4a3b30f591b0397189133af20290936c17161243c133c91a2ccc0a721d86b"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/chacha_private.h",
+      "sha256": "5f88997ae88f43283ed09285df5b3bc6822941117b3c44ed5642d1560e98ea06"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/charclass.h",
+      "sha256": "2ce9a93be8eac789971fde16404e851d3fe836af0c1838530eb2db54c446baba"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/daemon.c",
+      "sha256": "6408b5e5370a22283831243d2c4d69d52ed858002ca2031207cd005a0bee7325"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/dirname.c",
+      "sha256": "8188a3327cc037899a201cc8ab218aad2584338b70793180817eaa8e52dbceaf"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/explicit_bzero.c",
+      "sha256": "2dc2c2a5c9f7fda3e69b3eb2c1b13ec18b6cc947d252f33d82c8cd691f947fec"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/fake-rfc2553.c",
+      "sha256": "47386e859a692fda31731d7802c955612c9fc310d96f1ff5ecbd61f6b6039afb"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/fake-rfc2553.h",
+      "sha256": "24213f8909561e4c77cd75efb79039ae22fe1e191a5dcb86d3903d280314f36f"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/fmt_scaled.c",
+      "sha256": "a0fe6902bbd6675e7861cc298f23ea68edc25acb898c63caf2331de32c14ff94"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/fnmatch.c",
+      "sha256": "b168a04341cdf7bcf01aa75e03176a6835da7ee65527243840d0ab07f5e3c6e7"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/fnmatch.h",
+      "sha256": "adcc3e74a06f35e855dc4a69c0df94c093f87c5bf0085199bd3ea4074f34426c"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/freezero.c",
+      "sha256": "98650eed3dfd7bebfa6baa9d5a90f6f342ec1b98f15f991432e69824714e0b4d"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/getcwd.c",
+      "sha256": "b1399ae5349e365124f38af306a4b02fc2d29f7e2b9e11dbb04afc766792e48a"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/getgrouplist.c",
+      "sha256": "c83b8b2e43e8cabb1ffe676758aa69535e64c6bec08191bf686ee815c049d99e"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/getopt.h",
+      "sha256": "bbb8bcfc74694bda1c343455d65c9d3faed5b5800d2edfbc3ec172a291795414"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/getopt_long.c",
+      "sha256": "b91d145cca88558096f5eb366d2d7546e1de22071bb71647ec8e12169131ea97"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/getrrsetbyname-ldns.c",
+      "sha256": "5ac25843df209c8fdef0fd4d7d5857c52426409bbb10d867b5a975c8ced323b7"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/getrrsetbyname.c",
+      "sha256": "eb8c71bc01082ea33a1c73c30ac9004aa6388547b873c8ec3e0c406e864c2294"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/getrrsetbyname.h",
+      "sha256": "1e973a7d8acd3c189e3b05e9e3bf8aeb3eec1026e8de557d33ffc93c415cbe90"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/glob.c",
+      "sha256": "988193e0301543185f4ebe01b14e2a89167a81e2bf37151c76413d00ae6c4d9e"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/glob.h",
+      "sha256": "27c7fef75b0c68e45673b79b2575a68bdadf00e4785a31ead72034cbda153efd"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/inet_aton.c",
+      "sha256": "2bc90a0fdcde0239100007653e0f3b13077b74bea0e55830c52051938137391f"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/inet_ntoa.c",
+      "sha256": "9ab48e27b3fa73662f7a04e1c7af6de3e11d036a5b03587a56cbeaab134e370d"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/inet_ntop.c",
+      "sha256": "428c89ab8e4e0f8b4af5c79a2e53b65d818043819b92b579fd5e777ad8115707"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/kludge-fd_set.c",
+      "sha256": "f84ee8b9903e84047edac3e04271983de8f5dd4d572f664b9c6a82d79c26affb"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/libressl-api-compat.c",
+      "sha256": "e8cf410949e296825347c3f3802b61fe0c131eddba860d0c9c25f44c411903fc"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/md5.c",
+      "sha256": "81f19dfe7f2be2242b138468ee105b828ded1fcf4f4ec9482104b0198452d657"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/md5.h",
+      "sha256": "1d86c6a9040003c1cc0d2c0711a08b9191a8b69c2415a83d6508a430ee28de11"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/memmem.c",
+      "sha256": "d51dbd5deb38dae8697a73f0e4f8006672b2bff723af27b31bc8dad60ce95dc7"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/mktemp.c",
+      "sha256": "19cafc189fce6ead9977af1ba4583c6d49881d6318e2108c371d6c2a7848edba"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/openbsd-compat.h",
+      "sha256": "e4c4585b0ef235110be17a0440acbaa43fc58f153faaa1ac3469f28ddfe76d89"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/openssl-compat.c",
+      "sha256": "c2b75bea8729ec7f7b26835a18397b71cf886978906a95f1bb52a5c4c49e5ca0"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/openssl-compat.h",
+      "sha256": "5e7ed5b3bd64944507c27d2d6375adeba873fab6ac1a634a34bba6f00af22f76"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-aix.c",
+      "sha256": "0d522497bdfedfab95ab3d4d96ca5c1c0c9c694b719e4c873bef2fbc6da4e75c"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-aix.h",
+      "sha256": "0cc70e9395779c2110eda72a483b35344225ece8e5067b8fb7ffd0ec759ff8a9"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-irix.c",
+      "sha256": "da8b3d6032be568576652a301209746498b61aa2bdb40fc981d95c689115a118"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-irix.h",
+      "sha256": "118838b3cb54211877a3bb4a5098a30a843c65256eefb92de2ede2f185460ae4"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-linux-selinux.c",
+      "sha256": "b2124022864cf611de945b0e3e5e269aeee1f945006735c5d266547d1f52d76d"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-linux.c",
+      "sha256": "11771aae568a6ec08c248b12b22a4710bfe31440f04c1e5f33ddfdf6fd8cf5c3"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-linux.h",
+      "sha256": "1a97ef4ec368f41daada7a35d9ed85b7266f790e4989abbd6ee49e9262fc342d"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-net.c",
+      "sha256": "38cc483b0e9cb2fc96b11cf3256e5dd8aa3ae79d5796485dc11244acd8764021"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-net.h",
+      "sha256": "4fa17069ca07facde16b28d1d360cd1ef8d30860e72041747fb887cc68dd695e"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-prngd.c",
+      "sha256": "e178ee2f5294b35ac2e71fc8ad95330d6f980a779f75309cb64a9d03ded31229"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-solaris.c",
+      "sha256": "a4330b164640a9c959de22c0bdf779dab155174b878143927025752f00c045b4"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-solaris.h",
+      "sha256": "ebbcdfe7ebeef90bc53932c3081d66bf673220dc3349e4cc53f5601236186ebd"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-uw.c",
+      "sha256": "9bcce8efdd43e9cabf6bf88133bad10b560f266b63596998733de850d9c5c810"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/port-uw.h",
+      "sha256": "d0a1ec23afb3ec5a6cb5a9960979add43a4dd544e812af0cfcb0f9c373e46161"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/pwcache.c",
+      "sha256": "6030e5f562dfb5cff58fe91d6c837207ee261b977fcd3cb91eabecdd5a23c17f"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/readpassphrase.c",
+      "sha256": "60da9eb17434efc94b1766ac7dafefc27b8aa7cc585f4146eeccabfd764b5363"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/readpassphrase.h",
+      "sha256": "00404943c96d6c40b84a982178b695a2bafedc32305ffbd3347e1a8ee15af226"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/reallocarray.c",
+      "sha256": "84ea157a4bd4eb88283845d78e65fbfc44a189a3fdb27705bdcc5453fb060524"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/recallocarray.c",
+      "sha256": "f0f1a2e98690a77a43cc87e0657cc55a212f0ee2932d0ab960260757b3af3130"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/rresvport.c",
+      "sha256": "5e40c1df0c536a46892df8b2383e5ddf3f3af504d36f8828dc23fd35728b2fce"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/setenv.c",
+      "sha256": "d9964673c05d96571d5b19df00199cd5e58fa733f08cac753b99943d165799b4"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/setproctitle.c",
+      "sha256": "c9d299b6c957009ac9efe0a9cdc8c07054404f7b765ae616471b9a25364a6d58"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/sha1.c",
+      "sha256": "45ad2b21cc2fcc63a61ac8ed22f35cb705d76c0f7876797de89a415b006afbaf"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/sha1.h",
+      "sha256": "5ffdeb01bcb51c3a55f4626ef6b78f6942354e0aaf3ab8175fafbba1c0e27751"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/sha2.c",
+      "sha256": "86d8f09808ecf26734e576b37799352ab0c176486de726247781e79f8de4ac96"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/sigact.c",
+      "sha256": "d36c726ca60501d1635a0d2edd33ad6797eed8aa281e93854ef2f2041ca01993"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/sigact.h",
+      "sha256": "8361dc17311cf4ced839b195583a50480e4053e81aa41885a5aa122fefc05489"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/strcasestr.c",
+      "sha256": "18407a276793a35d3fe89cc67633949c7bc3ec77ae8e2fbc2553d1ad7c569447"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/strlcat.c",
+      "sha256": "395bde9f9a950210c531f06aca55c6cfac689afe986b5b1edcd1522b5d727a16"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/strlcpy.c",
+      "sha256": "1473f77025b24101a7430beff0a4227be3da3c76b10b9013157e843166346e17"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/strmode.c",
+      "sha256": "df6423be3f5596b413f4f1e102a53ebde7e355cde3cfb6960e2b1b07fd4a6603"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/strndup.c",
+      "sha256": "8a8089a5ea76d993da5d6bed0c2322c1ea0136f33acd5a43ff4607c475ab29e6"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/strnlen.c",
+      "sha256": "52327f8733950b4cce3bdfde4536b36c6fb47adbce328cc273cc1a9ca023cf68"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/strptime.c",
+      "sha256": "7c45962479d6f6c2bacad254d07d41eb0e47011547328b403963ef44448b5f60"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/strsep.c",
+      "sha256": "e2668748cc91e8656e00a5c00cadf8690ac80c06d01fb03dd5679e7e1864cb25"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/strtoll.c",
+      "sha256": "a99740fe8391e174271571c8fd2331481e2cd6b8cda77d78dac0857fddfdecf1"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/strtonum.c",
+      "sha256": "0d455f50c3ba1352936d34b546698a706c44b07bbc64649068e07572acd782d5"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/strtoul.c",
+      "sha256": "e44aee793fb96ffc09bdf474927ac2fdc419bdea291e3fbb9c86b8f9980e8a18"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/strtoull.c",
+      "sha256": "bc938e0efca3aee50b1100928be15fbca0de8186284d3122a4557a8a07ed2016"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/sys-queue.h",
+      "sha256": "25f2062230754a3a275c398aaefdd3ce6eb322d3f9b06a822285c3ab66f89ed1"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/sys-tree.h",
+      "sha256": "495b29c285911ab2cd0d19fdce22ffde4dd98ae3aed2231399f1e6282d86456d"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/timingsafe_bcmp.c",
+      "sha256": "586b612d5c800fbc5b980d96bc178e6deebc3bdd89c776eeeaa3ea97fa78959c"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/vis.c",
+      "sha256": "7c5d4c51d657ad62ae880c3ba217e5896fe47343f3141eaed1572147d516ed26"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/vis.h",
+      "sha256": "109108151400544644a4d620985d9cf17b98d7df16902169414b5bdfc1aafdae"
+    },
+    {
+      "path": "openssh-portable/openbsd-compat/xcrypt.c",
+      "sha256": "c2a158a46d9e9468eccb5fde9a2a01cb16bdcd6382c4f6a05992b885cca1466a"
+    },
+    {
+      "path": "openssh-portable/openssh.xml.in",
+      "sha256": "4c423fa671349b9be9c7493a9ada02f91c0489e2b3ca01b6c0e3a59c9e6155f0"
+    },
+    {
+      "path": "openssh-portable/opensshd.init.in",
+      "sha256": "de95afed7e932b06aae3b31100fcf6966cfd91d8ac8682c7a09c0733453aaf27"
+    },
+    {
+      "path": "openssh-portable/packet.c",
+      "sha256": "b494a1cefb3e35f5346c9be0644bbafd4ed513be86c753547b7ccc7a164c2288"
+    },
+    {
+      "path": "openssh-portable/packet.h",
+      "sha256": "87adcd6bbd1b5e95dffe2d3050f91f610aca82c962ff2c9530b60cd1eec314c7"
+    },
+    {
+      "path": "openssh-portable/pathnames.h",
+      "sha256": "84159508bdfbee697b4f87e22c97c182b61a7b2a812b2163c57c86699eac7b49"
+    },
+    {
+      "path": "openssh-portable/pkcs11.h",
+      "sha256": "994adf236b13691344eb8db586807f17f5909f3a99b760161af21eab634eff7a"
+    },
+    {
+      "path": "openssh-portable/platform-listen.c",
+      "sha256": "ebbf0e2e867d3076f5724e19c0a28ba2a53f913ecd0c8154858d6315ac322e89"
+    },
+    {
+      "path": "openssh-portable/platform-misc.c",
+      "sha256": "42298e07377ce964fc58d5611e949228942c0f4e5e4dfc61c94a08871f805bd4"
+    },
+    {
+      "path": "openssh-portable/platform-pledge.c",
+      "sha256": "7b0905d6484e441537e8cd8fc959045342590ed017da43e69ec7ab935efa1520"
+    },
+    {
+      "path": "openssh-portable/platform-tracing.c",
+      "sha256": "c5be86fae8ee95ee99d4649d4a2688d6f3ff1633c7629df788608209b988361d"
+    },
+    {
+      "path": "openssh-portable/platform.c",
+      "sha256": "5929f4217456bc9cd98aaa551aba132bc35e175d6f4ad47423c29a36d6cd609d"
+    },
+    {
+      "path": "openssh-portable/platform.h",
+      "sha256": "761a75d7fb3afb034d9ea23b332636d86a49d1fc07e1b0706501d759d1bfa32d"
+    },
+    {
+      "path": "openssh-portable/poly1305.c",
+      "sha256": "7c565f1d3211c3b8a5da11e148914c3b90862603af3df361b84492fa574f5cc2"
+    },
+    {
+      "path": "openssh-portable/poly1305.h",
+      "sha256": "2e1a85eb64d0bcb3ba03ec530408c1cd93c40c2babad4312e3f06ef7bc439d54"
+    },
+    {
+      "path": "openssh-portable/progressmeter.c",
+      "sha256": "dca39a0635f59a5c44b291bfcaab9107db178412a7cf4ad4b7ab638c8150129c"
+    },
+    {
+      "path": "openssh-portable/progressmeter.h",
+      "sha256": "cb9e7b89af573ad728203131fa9a5461a1ff1b3d44e0c324757aec778a09e847"
+    },
+    {
+      "path": "openssh-portable/readconf.c",
+      "sha256": "437a1eadeb24e4f814265caa61f5266c1aa7fd62cfa04fc1cac9c64f860f9dff"
+    },
+    {
+      "path": "openssh-portable/readconf.h",
+      "sha256": "1de6680b8d7e7dd99d384ecef36470cf61b1782181b2556a5e26ef3e80426ed8"
+    },
+    {
+      "path": "openssh-portable/readpass.c",
+      "sha256": "657c8d5a0faffea365b678af8e8ef15ac4ac422ca6f44fd358196dc9ec64798f"
+    },
+    {
+      "path": "openssh-portable/rijndael.c",
+      "sha256": "516e24faa87d900641f51b5804bec0d0122248f0652d13a6f3e25621e6bfa3bb"
+    },
+    {
+      "path": "openssh-portable/rijndael.h",
+      "sha256": "bf51b88fa5e95d98802af836e68ccf3bf22640bb5c9f4d929053104dcf6e3eda"
+    },
+    {
+      "path": "openssh-portable/sandbox-capsicum.c",
+      "sha256": "ba59fdabc69a40dc8318978b4a56887427944f3bcdd9a2736a5b71d91d509ece"
+    },
+    {
+      "path": "openssh-portable/sandbox-darwin.c",
+      "sha256": "0af4fd49ca157868d914a6a3e7e0f495fb1871ff4ae5092ad892a29c4ef52f7d"
+    },
+    {
+      "path": "openssh-portable/sandbox-null.c",
+      "sha256": "ca6cc7bf6a08164057e08d63019b1935b554b200fcd0a5474b9ca6ca11675063"
+    },
+    {
+      "path": "openssh-portable/sandbox-rlimit.c",
+      "sha256": "04a0e701fe217cb8c63186c6804ebd9965ae3198a79b64f2796b6e4e41f0f3ba"
+    },
+    {
+      "path": "openssh-portable/sandbox-seccomp-filter.c",
+      "sha256": "489d2fe65133c95a2d01f2836eb45c2be27d69c0a4171ba92e19094f0237b905"
+    },
+    {
+      "path": "openssh-portable/sandbox-solaris.c",
+      "sha256": "92663891403fd3d2a61c65d946e490477f7d18ce78e8784ec0e16eca38e36594"
+    },
+    {
+      "path": "openssh-portable/scp.0",
+      "sha256": "44536f9955c4218bf7998aecaae18b3b211358fccaaba05f9e58b4b53fd219f6"
+    },
+    {
+      "path": "openssh-portable/scp.1",
+      "sha256": "94285cd82889fe2a8d26dfdd6f168664cf5ef345b66244a6a91e4ac9f73babcc"
+    },
+    {
+      "path": "openssh-portable/scp.c",
+      "sha256": "2bdd019495f36361345801a8ee61c2ea16db9e4d35e368b3d50557a8f875562b"
+    },
+    {
+      "path": "openssh-portable/servconf.c",
+      "sha256": "32ce2ae2aa3fb91ec6f447d24b62a925210f7b6ebce99572050b5993327ddfb2"
+    },
+    {
+      "path": "openssh-portable/servconf.h",
+      "sha256": "717b743a67f210d4a062b7cee073aeed49cf9a433b00440cbdf88580b5c195d5"
+    },
+    {
+      "path": "openssh-portable/serverloop.c",
+      "sha256": "62f3eab8cc668ac2ab227c232fe58de92da26d01118dca11be54428974466602"
+    },
+    {
+      "path": "openssh-portable/serverloop.h",
+      "sha256": "ac16a2b5af52242ef21a92f891f19f32c30ae2c1e853f97934506f17d92762e1"
+    },
+    {
+      "path": "openssh-portable/session.c",
+      "sha256": "6c913f89f5679d74c44d7a55166dd972a246cd5208a9d3416c197a7de48672e5"
+    },
+    {
+      "path": "openssh-portable/session.h",
+      "sha256": "d219a5c54ec8653451e444388cc08d004350534b275b4b40e665e2618a4915eb"
+    },
+    {
+      "path": "openssh-portable/sftp-client.c",
+      "sha256": "2f1f97a255f550dcfb2a2f056e0c060d6139d581b815526df432fd93f02b9455"
+    },
+    {
+      "path": "openssh-portable/sftp-client.h",
+      "sha256": "da70bed767c3802fc861b06599869e04167edd6342615ae9a41eff2b8f65f94e"
+    },
+    {
+      "path": "openssh-portable/sftp-common.c",
+      "sha256": "e5f404b20f951ecb1edbf3226051b1188a87354c0e5b5f9f9cdab69e61ebc485"
+    },
+    {
+      "path": "openssh-portable/sftp-common.h",
+      "sha256": "0ef05e979bd9128bf23039d6050578a7cd49c70832ae114054751f99edaef6ee"
+    },
+    {
+      "path": "openssh-portable/sftp-glob.c",
+      "sha256": "52a557f996e0d6af3f53518a188e6daaad6345f2178f32cade82e4cfacb7b60c"
+    },
+    {
+      "path": "openssh-portable/sftp-realpath.c",
+      "sha256": "48c2242e9a55af7f971cfffec2406df8cb8411e08ca483e9988437dcf7993590"
+    },
+    {
+      "path": "openssh-portable/sftp-server-main.c",
+      "sha256": "041561ed49bc3e47f3905cd26aba94eb7f2c17098d620820cb6c742c85e67e39"
+    },
+    {
+      "path": "openssh-portable/sftp-server.0",
+      "sha256": "d915d9cc3227edee132a8ed2dc0524fae50a550cb23cb83f3c840c2c32a1da07"
+    },
+    {
+      "path": "openssh-portable/sftp-server.8",
+      "sha256": "b95fd26f8ace1b4f91006d452ed9ca60eb61bc660abe341802945968839e9d13"
+    },
+    {
+      "path": "openssh-portable/sftp-server.c",
+      "sha256": "9d3f7562c6efbdad45f6e2e5767e62547d6e2663f8d4f2ce99a40f1c957f118a"
+    },
+    {
+      "path": "openssh-portable/sftp-usergroup.c",
+      "sha256": "7b016ecef9205302ed25288c6925e867e96bd188d6e46c8cb2d036b0aa0af79e"
+    },
+    {
+      "path": "openssh-portable/sftp-usergroup.h",
+      "sha256": "48178191794a5c0dd9a9d68814d29f4c115bd8a4d6e9a5c082780ecbd91ba38e"
+    },
+    {
+      "path": "openssh-portable/sftp.0",
+      "sha256": "f7470790ae22b358c3fba3f7288c8c7af6cb2d30e99562dfe1faf99acfe8ed72"
+    },
+    {
+      "path": "openssh-portable/sftp.1",
+      "sha256": "9099280c7a8a7d26099a3dc03984ce1a15a953a8ee7c0752b4e0a65587ba6995"
+    },
+    {
+      "path": "openssh-portable/sftp.c",
+      "sha256": "0a68e07a7aafe0ddb113e093f7619689eb25d7775394896663330c0101bfa321"
+    },
+    {
+      "path": "openssh-portable/sftp.h",
+      "sha256": "d3b25006d02278234014753160197d518114c05dc8c242b0af604f8f8a175f46"
+    },
+    {
+      "path": "openssh-portable/sk-api.h",
+      "sha256": "bd1e7426306801e9eadf2a8d0d75f8c02ade06cf0e0e5adc292faf62e23512e0"
+    },
+    {
+      "path": "openssh-portable/sk-usbhid.c",
+      "sha256": "966f534e57090a1b201253fa7a86390afac25e1b558deed5595e1fc74b8ad69e"
+    },
+    {
+      "path": "openssh-portable/smult_curve25519_ref.c",
+      "sha256": "a1cc9711185fcfcc07a7f68c401287aa0be51aaf6abf1cb056cbbe8e9d82e30c"
+    },
+    {
+      "path": "openssh-portable/sntrup761.c",
+      "sha256": "61560b7d7f0a6749090ebe807321baab5bfe7d69a861ff28e65b1b459b6549b0"
+    },
+    {
+      "path": "openssh-portable/sntrup761.sh",
+      "sha256": "d7ba5ef9297731e9c55667307d49a701a06e759a5e77784a3bb359c7834b3dee"
+    },
+    {
+      "path": "openssh-portable/srclimit.c",
+      "sha256": "5ed120e6508bc1619803cca4b90cc02e19ae205193e73ed457b4bc01fc960f43"
+    },
+    {
+      "path": "openssh-portable/srclimit.h",
+      "sha256": "270cbbbb563537d64041d95ddfca82b024ab3d04daa3ffdd392e88a9cbc59a1b"
+    },
+    {
+      "path": "openssh-portable/ssh-add.0",
+      "sha256": "41ebb2b5c50cf455dfc39b771313ef06270099a87eb26985c1bdf088e89f7c15"
+    },
+    {
+      "path": "openssh-portable/ssh-add.1",
+      "sha256": "cab8f2070608505265cfdaf6ac6f7b4476b4795a3dba6424b87567f4d2a1d930"
+    },
+    {
+      "path": "openssh-portable/ssh-add.c",
+      "sha256": "5de027aefe00120a719fa7ff075ba8f60b35958619798afc13377536058c7855"
+    },
+    {
+      "path": "openssh-portable/ssh-agent.0",
+      "sha256": "4093a14d5abb4c37e9000772386814d04f18552b6f2d6c6d9cb1a065acd1d6d0"
+    },
+    {
+      "path": "openssh-portable/ssh-agent.1",
+      "sha256": "93c7c569932fbab7ab6622333f43ee8312b68f6fd7dfbd115224d3fbd2212830"
+    },
+    {
+      "path": "openssh-portable/ssh-agent.c",
+      "sha256": "389c112b5419dae6cb7f0100a9a95a82f0978d4e463431bd0879e2d869c4b970"
+    },
+    {
+      "path": "openssh-portable/ssh-ecdsa-sk.c",
+      "sha256": "cabe4ec258712375c8aa16f553f33092fbeb0e61e9d1d95556a146afff3c7ea9"
+    },
+    {
+      "path": "openssh-portable/ssh-ecdsa.c",
+      "sha256": "3da547abb98d148834940a97921690f1130cd9f2b6cb2b8cc77451bef71e9641"
+    },
+    {
+      "path": "openssh-portable/ssh-ed25519-sk.c",
+      "sha256": "2743a150059979badc0d0f20751bc3071dee06a89b7886d3e272ed7412466a60"
+    },
+    {
+      "path": "openssh-portable/ssh-ed25519.c",
+      "sha256": "73bc8697f17d121b5acab8ac735ba1a3d1618d0acba5713184ce5d9d5e22b6ba"
+    },
+    {
+      "path": "openssh-portable/ssh-gss.h",
+      "sha256": "17fa760f0f00d3f37a8f4f24905fed642ef57a837ff399f90759fe8010116c82"
+    },
+    {
+      "path": "openssh-portable/ssh-keygen.0",
+      "sha256": "fca73698f9e2aa971aca0165fab2114865e1686f40d19a2dd6e9e09735daa502"
+    },
+    {
+      "path": "openssh-portable/ssh-keygen.1",
+      "sha256": "0ba827256cbbe895ea61d86e11a09d95494859f189d4cd87257f19f547b4bd79"
+    },
+    {
+      "path": "openssh-portable/ssh-keygen.c",
+      "sha256": "757e5d0b5a6affddefb37dd14b820bd436d733b87b9736a98431b1e8d2b1d535"
+    },
+    {
+      "path": "openssh-portable/ssh-keyscan.0",
+      "sha256": "79240679c6084ad93d39f7341dffc25bccf28643101739ee4d7db1743b944f4e"
+    },
+    {
+      "path": "openssh-portable/ssh-keyscan.1",
+      "sha256": "fdab4f7e0bab27ab1741cd60682b8c0d6382607f5eaacd8240541b310568ff71"
+    },
+    {
+      "path": "openssh-portable/ssh-keyscan.c",
+      "sha256": "89326116985c517edb4490df01aabf47b066b00ea2c1f4eb1db34540cdfb897f"
+    },
+    {
+      "path": "openssh-portable/ssh-keysign.0",
+      "sha256": "187599a3b2a0e924205aaa432c4955a9e7da5d2d3ecadef64677b75ca61118e9"
+    },
+    {
+      "path": "openssh-portable/ssh-keysign.8",
+      "sha256": "6d48586e207016632607681c4cbb8cd794a38a528cca1544c1a8b993534570ed"
+    },
+    {
+      "path": "openssh-portable/ssh-keysign.c",
+      "sha256": "547d7f90a6c0c389cb4ace30551ff7c9a24434231d4a3c86fcbb6ba3b6313ccc"
+    },
+    {
+      "path": "openssh-portable/ssh-mldsa-eddsa.c",
+      "sha256": "2a2957d53bbd19a952a621e64a585ab24acee3e21d390703483e2be9f8b73e24"
+    },
+    {
+      "path": "openssh-portable/ssh-pkcs11-client.c",
+      "sha256": "8970d9debf920596f58a5ff4ad22dd2c033594477bba3a84cbe194e224350b77"
+    },
+    {
+      "path": "openssh-portable/ssh-pkcs11-helper.0",
+      "sha256": "d25ab5218a731a87ea28f028a6da94872f1ae92774104511ff32b6d997157d5a"
+    },
+    {
+      "path": "openssh-portable/ssh-pkcs11-helper.8",
+      "sha256": "355551c6939d47851c14ab0be199115f1423e7ad8168f10937a7fc34847894d7"
+    },
+    {
+      "path": "openssh-portable/ssh-pkcs11-helper.c",
+      "sha256": "d400041a2614b1314c89edc6a985c8b873489149ccfbfeaca0111505c88a44d9"
+    },
+    {
+      "path": "openssh-portable/ssh-pkcs11.c",
+      "sha256": "e4e4e0e56cdf87038de196d5b76cd473d97f456682da63be942948d32e1ab703"
+    },
+    {
+      "path": "openssh-portable/ssh-pkcs11.h",
+      "sha256": "511a7a592de06dc5343e8e94062c9e022a06f3b4913c02db4c06b0b62dfdf396"
+    },
+    {
+      "path": "openssh-portable/ssh-rsa.c",
+      "sha256": "7e724da7a739cf0164f5344c7fb7ac63de82d9a030009e5c627c4005c8c7ee7d"
+    },
+    {
+      "path": "openssh-portable/ssh-sandbox.h",
+      "sha256": "425bf7d30307f2138c0b4db0d0a8cad29cd61b44ad70721a4f8c13dedabcc746"
+    },
+    {
+      "path": "openssh-portable/ssh-sk-client.c",
+      "sha256": "cef926755c9a54d6ba56cbe8a42c2f807dd8d1d44dc6fb8fc3ecd16f1cac4498"
+    },
+    {
+      "path": "openssh-portable/ssh-sk-helper.0",
+      "sha256": "2c3669f1464251fa1da38c243f36938ac8f0adb1505ccd492627aa3dfebdfbdf"
+    },
+    {
+      "path": "openssh-portable/ssh-sk-helper.8",
+      "sha256": "f36ca61e96cdb0ad62a436149b83b3477415f8f79412de06dd4b573db2c3d5e1"
+    },
+    {
+      "path": "openssh-portable/ssh-sk-helper.c",
+      "sha256": "dc08e1d004656579f086dfc96bc0c7510b8c22aae7527688cfaa032ce37785bb"
+    },
+    {
+      "path": "openssh-portable/ssh-sk.c",
+      "sha256": "175f96f259eec1826b0de6caa053dedb9d088339084211fbe930fc7656dc821a"
+    },
+    {
+      "path": "openssh-portable/ssh-sk.h",
+      "sha256": "43adcdb8be1716d4def25af3932a8a430855e29f34976bce46aabd268bab398d"
+    },
+    {
+      "path": "openssh-portable/ssh.0",
+      "sha256": "b00ef0df7eca9cc98f2e3a76ecfa0d827c8f3c6717e63b5372e41d965a2e94a8"
+    },
+    {
+      "path": "openssh-portable/ssh.1",
+      "sha256": "9888d7d55bb576620139d9ca598edf71e85ae34d9a246e4263f566ff81c03bec"
+    },
+    {
+      "path": "openssh-portable/ssh.c",
+      "sha256": "3ebc245466a9b4515eadf9b9eafbbf20a9a8c1a0a43a257dfe815ed01ca28f99"
+    },
+    {
+      "path": "openssh-portable/ssh.h",
+      "sha256": "bd6f8cb6a1e858ab02a41143e7b74a35e5c3ddd3803d5497016e7a0aca2237f8"
+    },
+    {
+      "path": "openssh-portable/ssh2.h",
+      "sha256": "dbdddade21a4fbf1ff2352d434862e79b6bf250d904b80a92d6f75c94c7073a8"
+    },
+    {
+      "path": "openssh-portable/ssh_api.c",
+      "sha256": "d2e68138a06606b1cbf198fdef650b95b444a88517bc9755d88fa5768a14a9a0"
+    },
+    {
+      "path": "openssh-portable/ssh_api.h",
+      "sha256": "2b91adcddfa0cbee0705ebd10ba2e8a544bcc098a9512203df32d9a2b323b742"
+    },
+    {
+      "path": "openssh-portable/ssh_config",
+      "sha256": "eb834b0f1eb5f7194e21f8411b23192dec37431e1c62e8b5533aef079f488882"
+    },
+    {
+      "path": "openssh-portable/ssh_config.0",
+      "sha256": "1ff0123bbc60dd542b0332d0e950157ad7c7e57e70dbc0b4e6150552af723fa6"
+    },
+    {
+      "path": "openssh-portable/ssh_config.5",
+      "sha256": "84d81b09b84ff6583b67e3d1cce8e6fe4ce453f07dc04d3bceff2a06df0fba16"
+    },
+    {
+      "path": "openssh-portable/sshbuf-getput-basic.c",
+      "sha256": "cb058d090bbd5907c2410e4d08615a984d8aaef0be6d1cd99125b1e363021439"
+    },
+    {
+      "path": "openssh-portable/sshbuf-getput-crypto.c",
+      "sha256": "1c0f9c71c92ecefa18d64547367bc14f15fd0c3110d4601f21c67291c766db8d"
+    },
+    {
+      "path": "openssh-portable/sshbuf-io.c",
+      "sha256": "ff5d8d8f9985aff8b9022b4e5271f9df6688cca05cdbe42431c648fc111baeba"
+    },
+    {
+      "path": "openssh-portable/sshbuf-misc.c",
+      "sha256": "b5e722ae286a6dbd37f732dd88d412ed21470603d1db86184b85b681eccb4184"
+    },
+    {
+      "path": "openssh-portable/sshbuf.c",
+      "sha256": "13125f4f6e3ae0e09ac82edb0d2ed85c293f8c6df291c1eb70bf0ba84159439b"
+    },
+    {
+      "path": "openssh-portable/sshbuf.h",
+      "sha256": "9daf0cdf535cafede176ff235882f13b10d0b59b53d02ab3101d0d385de66a50"
+    },
+    {
+      "path": "openssh-portable/sshconnect.c",
+      "sha256": "2b53991507bf39eed92f1be42fe2b0e2e9cb91c5f37c9de14ea47e07b0a3b6c7"
+    },
+    {
+      "path": "openssh-portable/sshconnect.h",
+      "sha256": "c2e4cfa2a042df506121f71a29b6c390cdbe1b74a1e029be85030c991a1a8990"
+    },
+    {
+      "path": "openssh-portable/sshconnect2.c",
+      "sha256": "f964fb728dbc29f202ad0211e4525a3fd6b04f2af78878ff451bbf8fb4b08df1"
+    },
+    {
+      "path": "openssh-portable/sshd-auth.c",
+      "sha256": "4228dd7c6eea5c41f87f8efdc0f6129883afe6c9aa2cfd2460ffd7518d39d77b"
+    },
+    {
+      "path": "openssh-portable/sshd-debug.sh",
+      "sha256": "d9edaa9f73407c815ce516c24ed85df7fdb4aeb518671bc547d6775e51b46c67"
+    },
+    {
+      "path": "openssh-portable/sshd-session.c",
+      "sha256": "2092d6943f8e40effae3860be266fc7228e74956445886beffc221989e56d7f8"
+    },
+    {
+      "path": "openssh-portable/sshd.0",
+      "sha256": "62fe2c99fed4fe1afd7e1cb879dce0dff1c923f8fa4775f3a71e0a534f6fe974"
+    },
+    {
+      "path": "openssh-portable/sshd.8",
+      "sha256": "0d9ca60c1a95dc58242a076dfa7c12864985285f4fe7145a687f0c3595f433c4"
+    },
+    {
+      "path": "openssh-portable/sshd.c",
+      "sha256": "0ede4c393fda188e276b01f3ed45523266c42c4da2a886e4bd0e159e6580636f"
+    },
+    {
+      "path": "openssh-portable/sshd_config",
+      "sha256": "733a9f825453a12e587b1199c14da60815aa52cd83416e84719f59d664c0cac5"
+    },
+    {
+      "path": "openssh-portable/sshd_config.0",
+      "sha256": "3a0a1a25b368d966a08cc1cf6f75c91a0714690aecfea3ea8fa74369362219d8"
+    },
+    {
+      "path": "openssh-portable/sshd_config.5",
+      "sha256": "4a218a54cc0ad7b0ea51966ccf55be1502df674894632567bdcc625f7a7d06d2"
+    },
+    {
+      "path": "openssh-portable/ssherr-libcrypto.c",
+      "sha256": "132180464f2c23a7bd5110775fb762922eeea434ade1337c9d0005cc9ad31c67"
+    },
+    {
+      "path": "openssh-portable/ssherr-nolibcrypto.c",
+      "sha256": "619ccad771d3ac4696840e470bca89dfbbb15d57f138b334495567851de38111"
+    },
+    {
+      "path": "openssh-portable/ssherr.c",
+      "sha256": "8b59d5d39c14f9cd7e4a8cea8ab92d4f3edd702acf0f471d34e0a274d422c329"
+    },
+    {
+      "path": "openssh-portable/ssherr.h",
+      "sha256": "7345b05ea4f344bd505c280fc8ffe7aa0312bf1adefc020c7178733d5a9bf42c"
+    },
+    {
+      "path": "openssh-portable/sshkey.c",
+      "sha256": "6b314fada01380e66b5f51ab3918f06adb207733fe3cc4c5b0829452a360c065"
+    },
+    {
+      "path": "openssh-portable/sshkey.h",
+      "sha256": "322ccb1f391dfd7aac960419f8e9af439544c86bafe2d8fbf074a96e707d839b"
+    },
+    {
+      "path": "openssh-portable/sshlogin.c",
+      "sha256": "12dcd2ed2609499ec4e9fefadf21977ffa8a9d16115bbe33ffed785fa93e7366"
+    },
+    {
+      "path": "openssh-portable/sshlogin.h",
+      "sha256": "3f364c25a59a3b9843c0f463e2add6e95a6fa9b77b851790b755b066bc9c4dbd"
+    },
+    {
+      "path": "openssh-portable/sshpty.c",
+      "sha256": "c99283503b494b53e9a61b10adc0190340590898a89b62ccf81b1cbbd88586f2"
+    },
+    {
+      "path": "openssh-portable/sshpty.h",
+      "sha256": "4a3c8920e79152ede594df6a45fccc6532a9ad4170848d4107ccd027938e4362"
+    },
+    {
+      "path": "openssh-portable/sshsig.c",
+      "sha256": "c709a7d208c15f7d77f30831ad7f130bd62b4253c85e2ac9dc88cc9c991ea747"
+    },
+    {
+      "path": "openssh-portable/sshsig.h",
+      "sha256": "32cc208e0c8986caec8ca7b834239b7fabdf9a3717507b41499b27c1103d547c"
+    },
+    {
+      "path": "openssh-portable/sshtty.c",
+      "sha256": "3eccaba45ed59a1581c645cf45e064ccc51bfcb0683127ec607bb1b270569683"
+    },
+    {
+      "path": "openssh-portable/survey.sh.in",
+      "sha256": "b705fd3c777c74cd570b53e9a1900912bd9d392ecd84177acf3a9a7dedf8812b"
+    },
+    {
+      "path": "openssh-portable/ttymodes.c",
+      "sha256": "e3ae690ca66bf52a65fc9e77286aa02f7cc90287550bf0f81f978b35952b7665"
+    },
+    {
+      "path": "openssh-portable/ttymodes.h",
+      "sha256": "2b053ac50d1d57230665223fb5dd1ffb75f50e166690d4272a3b560c1d645fc6"
+    },
+    {
+      "path": "openssh-portable/uidswap.c",
+      "sha256": "7b72b039a39cbe16d0bfcccd9767e9078e7c9f6b9446be3311acc54f79fc5c41"
+    },
+    {
+      "path": "openssh-portable/uidswap.h",
+      "sha256": "f324d004e2ceea56f7903eb7d4ad1e297c0833a1545ddeed73144c1e17df6779"
+    },
+    {
+      "path": "openssh-portable/umac.c",
+      "sha256": "cec9c16cb1f914a0d8ed6ecbf434b9551b68d52516ffd2d085634484bafb84fe"
+    },
+    {
+      "path": "openssh-portable/umac.h",
+      "sha256": "557dcf672b26bf753bbe7ca5614312912bee6b7d2dc36006be8426ba76cda0e5"
+    },
+    {
+      "path": "openssh-portable/umac128.c",
+      "sha256": "89b95246961c72eb1691697cb316f3157647a3246f6f354196e3eab7aedccf0c"
+    },
+    {
+      "path": "openssh-portable/utf8.c",
+      "sha256": "c65a1ee84d099c01522dd32ae64a8da2bba3fced7d56e7fbb67aa47a0857ff24"
+    },
+    {
+      "path": "openssh-portable/utf8.h",
+      "sha256": "c7626ee171923c04b87cc057630731ac880efda5f0e4a3059a1d699081e98992"
+    },
+    {
+      "path": "openssh-portable/version.h",
+      "sha256": "77a00bea909eab0190e68baaae661beb25f40f148c6b079834b79a0b7693f7fc"
+    },
+    {
+      "path": "openssh-portable/xmalloc.c",
+      "sha256": "489f0ce6bdc4e0bd11a6b864a499751590f788fc2d6b05bb693cafb35f195f9b"
+    },
+    {
+      "path": "openssh-portable/xmalloc.h",
+      "sha256": "1e598a816fc18f8c73cc006d5e0205f800892fe128e8fb5f4d298dacf8f33065"
+    },
+    {
+      "path": "package-template/COMPATIBILITY.txt",
+      "sha256": "e6ea1840aca0415357dd4c9774335ffa9d756f1b1e8c28b1bfa8f4b95b4d5d41"
+    },
+    {
+      "path": "package-template/README.md",
+      "sha256": "8ec6e49d231f948b1165b942b7e3ce4e394457adcb6872d7124ff84ae5d136aa"
+    },
+    {
+      "path": "package-template/SHA256SUMS",
+      "sha256": "fc1288a0f341421c20d1acd769250b6bbf17d3ad6a2c8bdcaa49602b6a4471ac"
+    },
+    {
+      "path": "package-template/VERSION.txt",
+      "sha256": "5a6414d3df1217d77dcf4d09a69f6fe377dd3b7fa0f6b9bbdd3bef0c16516176"
+    },
+    {
+      "path": "package-template/disable-autostart.sh",
+      "sha256": "8585427c2a926890c273293c5c82b1720afe478a2a238e6f68ae37e12e946b3c"
+    },
+    {
+      "path": "package-template/install.sh",
+      "sha256": "05268902916a8ddd321b5701f3a7b14cf4f4c3469b6ea24bc3550b7ec6db1d11"
+    },
+    {
+      "path": "package-template/licenses/GCC-COPYING3.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "package-template/licenses/GCC-runtime-copyright.txt",
+      "sha256": "d7815dd2364180835891947d96d808878204dea45b8597602a7952332195fbea"
+    },
+    {
+      "path": "package-template/licenses/OpenSSH-LICENCE.txt",
+      "sha256": "5bb5b160726ef5756e4f32fe95b35249c294962419650f48d05134b486d27ccb"
+    },
+    {
+      "path": "package-template/licenses/OpenSSL-LICENSE.txt",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "package-template/licenses/musl-COPYRIGHT.txt",
+      "sha256": "b870108ec5e7790e9f9919064f1b9421d62d5f9b0e6c230c6adf7ea2da62e97b"
+    },
+    {
+      "path": "package-template/payload/etc/sshd_config",
+      "sha256": "6275c5a55a1050faa0f124d5f3b844d24c24ee5afa47549ced7643e35f3c8f94"
+    },
+    {
+      "path": "package-template/scripts/post_init.sh",
+      "sha256": "d82e9099a4699800c048ea98d002a01ec7b085387439179298041773f69b2e77"
+    },
+    {
+      "path": "package-template/scripts/start-ssh.sh",
+      "sha256": "fd45e22c8dfeb759fc2aad397568014a47cfb85133041d61031399ad190ae41c"
+    },
+    {
+      "path": "package.py",
+      "sha256": "9b5ebd2b23cfe4ae3379b027e05b793ce9beb5233bc20dd66f4dc6e6a5e5c195"
+    }
+  ],
+  "2-tun-driver": [
+    {
+      "path": "build.sh",
+      "sha256": "cf751bfed60d3296e0f25cf1f3c228b9c1b53397970ba52feb0d73f5d85e0a22"
+    },
+    {
+      "path": "origin_ko/bridge.ko",
+      "sha256": "0b6d246bfcb1321449acc0645baf647c9ae95beafd7226c0941d37a50fc8095f"
+    },
+    {
+      "path": "origin_ko/ccm.ko",
+      "sha256": "98b3b650a6102392039406fb2da765d3535f15b6d2fba04718fdf33fa22dd441"
+    },
+    {
+      "path": "package-template/README.md",
+      "sha256": "2d0ab62756ec6a9d3ffda0812f091d31566ff8eda84224e904fcf77f5f9c16be"
+    },
+    {
+      "path": "package-template/SHA256SUMS",
+      "sha256": "2cad6217f402bc3b6aba74bf8e4c5f0c226073af8c8387ce3608f1b067f1119c"
+    },
+    {
+      "path": "package-template/install.sh",
+      "sha256": "c6ccc3f16e79d7211e2003be921a0b05e3f98f936106336e5d6da74fc2696080"
+    },
+    {
+      "path": "package-template/licenses/GCC-COPYING3.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "package-template/licenses/GCC-runtime-copyright.txt",
+      "sha256": "d7815dd2364180835891947d96d808878204dea45b8597602a7952332195fbea"
+    },
+    {
+      "path": "package-template/licenses/Linux-COPYING.txt",
+      "sha256": "af8067302947c01fd9eee72befa54c7e3ef8a48fecde7fd71277f2290b2bf0f7"
+    },
+    {
+      "path": "package-template/licenses/musl-COPYRIGHT.txt",
+      "sha256": "b870108ec5e7790e9f9919064f1b9421d62d5f9b0e6c230c6adf7ea2da62e97b"
+    },
+    {
+      "path": "package-template/payload/expected-proc-version.txt",
+      "sha256": "fdfd61b4e0a92e019f9f7b3ec8102130a07dbeb229aed2a432a0ece3994bc1f1"
+    },
+    {
+      "path": "package-template/provenance/README.md",
+      "sha256": "21a68b4470b9334b9123f0462b1f411ecb7e94552e4c169d67f4bfdf8e2ec5c3"
+    },
+    {
+      "path": "package-template/provenance/kernel.config",
+      "sha256": "987d6345208675a60de5002fef45310ff20f47b8a0522de85c7b056a646ff71e"
+    },
+    {
+      "path": "package-template/scripts/post_init.sh",
+      "sha256": "60b5fec81761c048d7a70303d2253e98d18675f374746e95dc733c92ba267200"
+    },
+    {
+      "path": "package-template/scripts/start-tun.sh",
+      "sha256": "499f964c24dfe332c2236e4779f46168582c582d820efa97edeeba48142fba05"
+    },
+    {
+      "path": "package-template/scripts/uninstall-autostart.sh",
+      "sha256": "abf41d7d11daa53e6bd8ebcc5c66595c1a342fad4d9043a45c3c61df567bbb46"
+    },
+    {
+      "path": "package-template/source/Makefile",
+      "sha256": "7dcd92600e9795d8475d1f1c062a3299e031295d87ca8be1b8eff4bfb21c2d0b"
+    },
+    {
+      "path": "package-template/source/tun-smoke.c",
+      "sha256": "eed8246fcfd43c2c56d6d3305650e49d3b27a651b42779eb9d604a4f12a9ac9d"
+    },
+    {
+      "path": "package-template/source/tun.c",
+      "sha256": "dcc848849ac1011915e973175713befdeaa1e04a22497beaa2ade9192472af74"
+    },
+    {
+      "path": "package-template/validation/network-layout-report.txt",
+      "sha256": "55aac6e008afc8fc60a7480a85ca5be505e6142e9278b8a6b3a7eb4d1ddc6399"
+    },
+    {
+      "path": "package-template/validation/probe-report.txt",
+      "sha256": "13997a1326956ef57b8e14c74ff582b1282867229021b297f86266d0463825f9"
+    },
+    {
+      "path": "package-template/validation/runtime-results.md",
+      "sha256": "7e0ce8c0a2353c789b3c3ad2909c50ce566ac7710b008a769791b7283d0a6d1c"
+    },
+    {
+      "path": "package-template/validation/tun-static-report.txt",
+      "sha256": "1a06b29d8cdfc78604000ff0501a00297b9e826c63ed44ccbbcdd5780b99a751"
+    },
+    {
+      "path": "package.py",
+      "sha256": "d344e669a805a22bdc90b57ce6b5191d949093c936905ba2e743caea11163340"
+    },
+    {
+      "path": "tun_lab/README.md",
+      "sha256": "7b41681c5c30f265b64013d6394d61d2150253d8704c3fbf8809d05cdbe26cb3"
+    },
+    {
+      "path": "tun_lab/bridge-0015-disassembly.txt",
+      "sha256": "e0491171cef0e078e5a5a096c7aea47849d9f1e5c5e87c0f05f9e7392fb02bfd"
+    },
+    {
+      "path": "tun_lab/build-network-probe.sh",
+      "sha256": "fd07a4b8eae1de5b7cfa4fe47e4e916feb310dbf47fe2350cd7f97c0c56ad949"
+    },
+    {
+      "path": "tun_lab/build-probe.sh",
+      "sha256": "fce6a1b26d8647884d3bf764d8a317a75a84e85fac91c43331751e3386d19aee"
+    },
+    {
+      "path": "tun_lab/build-tun-smoke.sh",
+      "sha256": "c6d1d29d352fc9cc6a8ae9c484465821bb74b90a4c7b6161bad62e428292283d"
+    },
+    {
+      "path": "tun_lab/build-tun.sh",
+      "sha256": "12401dd0aa7cb7c95d9c5fd46933bad04601cde684dc1e2a02d5d089e29ca044"
+    },
+    {
+      "path": "tun_lab/check-network-layout.py",
+      "sha256": "4cfaea4c65522b62e8a683354da8b86b52d955b27c794488c70bfa9bdb3c264c"
+    },
+    {
+      "path": "tun_lab/check-probe.py",
+      "sha256": "e056f15293ceb3a8675f9b183eb23dfb30f777b4ae8baf6d776c0ded11a87fbd"
+    },
+    {
+      "path": "tun_lab/check-tun.py",
+      "sha256": "68c88bd78477bcc99e735921ea45dfddd1b87502107ac3acbaef5a71831912ea"
+    },
+    {
+      "path": "tun_lab/fetch-toolchain.sh",
+      "sha256": "8354517c3c9205b48c2c10ed1a6695c41382ca7b2c2ff091a2e7f6427749d737"
+    },
+    {
+      "path": "tun_lab/gateway-network-symbols.txt",
+      "sha256": "2d9630f42a020195e580de3fa6e348c0deffe6da3fa6c0b2cd87350eece3a7fc"
+    },
+    {
+      "path": "tun_lab/network-layout-anchors.json",
+      "sha256": "075919a27bef7278ff5ee73c3f25f18c594241b083fb54c196709eb4835918c3"
+    },
+    {
+      "path": "tun_lab/network-layout-report.before-pm.txt",
+      "sha256": "ea002ed0f0c7ddc394e93f748b7d8d916308ec9ebb80c15e71c7af5aa64258fa"
+    },
+    {
+      "path": "tun_lab/network-layout-report.txt",
+      "sha256": "55aac6e008afc8fc60a7480a85ca5be505e6142e9278b8a6b3a7eb4d1ddc6399"
+    },
+    {
+      "path": "tun_lab/network-profile-notes.md",
+      "sha256": "de4eb0200df4b46cff008e4078fc4b78890b893c5bc5ea433dc5f53bd61c1c0e"
+    },
+    {
+      "path": "tun_lab/prepare-bsp-host.py",
+      "sha256": "bb527c40530f99563e62ff5a71305c2d0390fae2141bdc6a00c1ff432f07f668"
+    },
+    {
+      "path": "tun_lab/prepare-tree.py",
+      "sha256": "21910b802125ca1e96a5497282a666fdd5842e94673e44a40440a7a0a220d7a3"
+    },
+    {
+      "path": "tun_lab/probe-report.baseline.txt",
+      "sha256": "d416c5fd45bfe94f75d89d8803cc8bd73c9358d1760fa73f3e4058eeb032c638"
+    },
+    {
+      "path": "tun_lab/probe-report.txt",
+      "sha256": "13997a1326956ef57b8e14c74ff582b1282867229021b297f86266d0463825f9"
+    },
+    {
+      "path": "tun_lab/probe/Makefile",
+      "sha256": "858235df998d2d0215fae28cd6f067c9ad12bbba98ec6ed357b2ca0525b2194a"
+    },
+    {
+      "path": "tun_lab/probe/mg_abi_probe.c",
+      "sha256": "732199c5fbb615d3a14548e2bc146608d85b99a4e97cf8fe4d124233cebca6af"
+    },
+    {
+      "path": "tun_lab/tested-kernel.config",
+      "sha256": "987d6345208675a60de5002fef45310ff20f47b8a0522de85c7b056a646ff71e"
+    },
+    {
+      "path": "tun_lab/tun-imports.txt",
+      "sha256": "5e5bc26789aea5532cc5c5e4cde29fbe82a5004aa5451fb0452176923d79243e"
+    },
+    {
+      "path": "tun_lab/tun-next-step.md",
+      "sha256": "8a56737e4838911dee979b911bf576d53ecad96abe9f32251fd4ce2900209e60"
+    },
+    {
+      "path": "tun_lab/tun-runtime-test.md",
+      "sha256": "4619ea6aeaf5513234e7f7f124924cf4ad91067be0d6e646b0a5e3b478e9760d"
+    },
+    {
+      "path": "tun_lab/tun-smoke.c",
+      "sha256": "eed8246fcfd43c2c56d6d3305650e49d3b27a651b42779eb9d604a4f12a9ac9d"
+    },
+    {
+      "path": "tun_lab/tun-static-report.txt",
+      "sha256": "1a06b29d8cdfc78604000ff0501a00297b9e826c63ed44ccbbcdd5780b99a751"
+    },
+    {
+      "path": "tun_lab/tun/Makefile",
+      "sha256": "7dcd92600e9795d8475d1f1c062a3299e031295d87ca8be1b8eff4bfb21c2d0b"
+    },
+    {
+      "path": "tun_lab/tun/tun.c",
+      "sha256": "dcc848849ac1011915e973175713befdeaa1e04a22497beaa2ade9192472af74"
+    },
+    {
+      "path": "tun_lab/version-generator-test.h",
+      "sha256": "3c1dfe4b19e8eebfe104a63defe0e098936d1ca0794761483a8b292aa4d22b63"
+    }
+  ],
+  "3-rcp-mode": [
+    {
+      "path": "RCP-FIRMWARE-INSPECTION.json",
+      "sha256": "41de3a3c3315d8e458cb55cc2669f7b2d7585edf3eba9ae7838b13de754f9056"
+    },
+    {
+      "path": "build.sh",
+      "sha256": "c6b0d464d1e94a9dd4f42b54a473141f22494a049097bf72375fec17ce235d52"
+    },
+    {
+      "path": "generate-isolation.py",
+      "sha256": "ee2514bf572215b5598842c88425631a2ff4a81e8f946712f1198eb941521d32"
+    },
+    {
+      "path": "package.py",
+      "sha256": "af93288774d80af977dfc0351003faf75de13ab577be75b28f27aec1c836c67f"
+    },
+    {
+      "path": "prepare-firmware.py",
+      "sha256": "f413ca22d61e97033ded91a5c0245cb268613a9f6bbc4b7feaa69c2519cd9b59"
+    },
+    {
+      "path": "rcp-mode-package/README.md",
+      "sha256": "8043422f0cf8a8cce4226db2d03fef23bb487ba85bdbf673d1cab1394fe4d740"
+    },
+    {
+      "path": "rcp-mode-package/SHA256SUMS",
+      "sha256": "ccc12f3f2234716f8a7394ba2e251ec83cced18613c2a1f8c939f2b12d7f71b9"
+    },
+    {
+      "path": "rcp-mode-package/install.sh",
+      "sha256": "8846ce28ea8c101ab9924c82aaac930e542b5723579d82b4e26bbfc9a68727c9"
+    },
+    {
+      "path": "rcp-mode-package/payload/app_monitor.sh",
+      "sha256": "030e9f0a1e4900c8806170b937420024b452b80d3e4d991dd1f8ea9c87d99b3a"
+    },
+    {
+      "path": "rcp-mode-package/payload/apply-mode.sh",
+      "sha256": "38fb5257664fef8d6868aff759f9cd1dd85dd99abbbbe16673cb0114273158f2"
+    },
+    {
+      "path": "rcp-mode-package/payload/fw_manager.sh",
+      "sha256": "a4510a08b8b10b4663d3e590300663897ec3209430c2a6db144b285200c32426"
+    },
+    {
+      "path": "rcp-mode-package/payload/payload.sha256",
+      "sha256": "b791f91a7ee94cb4b73722d6eb9834d5019aabe1e9274da1db471d5b586b3ab1"
+    },
+    {
+      "path": "rcp-mode-package/payload/post_init.sh",
+      "sha256": "c08353c47b2f5cd1d35a12dea0a85b505e4f6c03d87a579a9e233fcda4102697"
+    },
+    {
+      "path": "rcp-mode-package/payload/stock.sha256",
+      "sha256": "a1d98719ebcf0cf7d02d5668a85e583a3e56ac68fd67fbbbd3a37048ced8ba23"
+    },
+    {
+      "path": "rcp-mode-package/payload/uninstall.sh",
+      "sha256": "2c5ac31977fc2825cb3eba942d932926487e5798072a651e79cb6a34aa426e90"
+    },
+    {
+      "path": "rcp_lab/native-tools/README.md",
+      "sha256": "7481090bcbad47669acdeb6ebebc153b0654dc3b23a88e51fc10f5c203649c91"
+    },
+    {
+      "path": "rcp_lab/native-tools/build-native-tools.sh",
+      "sha256": "3cff3b22a4b46b07df6fcf0398d49257ac9ff7b7a3c534c52dc62cf59d013d6d"
+    },
+    {
+      "path": "rcp_lab/native-tools/build-spinel-probe.sh",
+      "sha256": "71e2e52532765cf7b0bed1e7e1e29cb66a4c6a77c865027be76a7d0824f336e2"
+    },
+    {
+      "path": "rcp_lab/native-tools/radio-flasher.c",
+      "sha256": "423677f59541190639a5013bba297c57ad36e2575c64ce0c08fccc890a7b44e9"
+    },
+    {
+      "path": "rcp_lab/native-tools/rcp-native/README.md",
+      "sha256": "fa9b563adfdaf1bf84e9530c64fadd802725f0b8873b994e19b9fb24acf97b5a"
+    },
+    {
+      "path": "rcp_lab/native-tools/rcp-native/SHA256SUMS",
+      "sha256": "82b48f968ec655e23770cc67130a6060b019996c3902f6d60ae4381d56cd5d7d"
+    },
+    {
+      "path": "rcp_lab/native-tools/rcp-native/enter-bootloader.sh",
+      "sha256": "0d9b1c05671c2cb009225ba12c7f95aaf5af38a91a8e85c1c43b0d899ae43a0d"
+    },
+    {
+      "path": "rcp_lab/native-tools/rcp-native/flash-rcp.sh",
+      "sha256": "a4beb94357ff6653364d7e8a1c9015bc6797382f8c358b432c0bbeeb31356de4"
+    },
+    {
+      "path": "rcp_lab/native-tools/rcp-native/flash-zigbee.sh",
+      "sha256": "53f8357d9e1a510212e375238464a3814ab3dbfab042ec294301913183fe4f1f"
+    },
+    {
+      "path": "rcp_lab/native-tools/rcp-native/prepare-local.sh",
+      "sha256": "a0543010e3a46cba567ec5b0d8428aebe13547500b8c0b8b4d7a659f895a01d6"
+    },
+    {
+      "path": "rcp_lab/native-tools/rcp-native/probe-bootloader.sh",
+      "sha256": "f28c1f7919c1041e6006d6b10bf7cb2d908ebb32ec48eb28fe80c9e9bb899d65"
+    },
+    {
+      "path": "rcp_lab/native-tools/rcp-native/restore-services.sh",
+      "sha256": "3188b235dd69ad563c793e26622eb6904b1c529aec5d9af8d9ac466fad5b579e"
+    },
+    {
+      "path": "rcp_lab/native-tools/spinel-probe.c",
+      "sha256": "9e24f746f1237047e4f075b9e5a4ca57d0bc8a47e8ec70f0a040e547d578ef3f"
+    },
+    {
+      "path": "rcp_lab/native-tools/test-native-flasher.py",
+      "sha256": "c3953a6d7571a0db383a00772df79fccf3eb04ddae29f8ec35ee7bef44128d62"
+    },
+    {
+      "path": "rcp_lab/native-tools/test-spinel-probe.py",
+      "sha256": "55070f17c16093d7520515ccbca4757ae1a442e83c3d1fc9bdfc3cdce1ef5e42"
+    },
+    {
+      "path": "references/rcp-manifest.example",
+      "sha256": "2f66cf576aecf84e32664b1b5c00f8453451df3351349a12ae8a854f3dc70ea6"
+    },
+    {
+      "path": "references/rcp-project.slcp",
+      "sha256": "7ce35b7fa6f635da8a87714f94946285e824528a659ac979cfdd31634dec3d5c"
+    },
+    {
+      "path": "references/stock-1.0.8_0015/app_monitor.sh",
+      "sha256": "6a344dd2e54d7314039249de9dd901482d9e3351f8a65b7bfcfe983ebffb91b2"
+    },
+    {
+      "path": "references/stock-1.0.8_0015/fw_manager.sh",
+      "sha256": "29e515f12127e6d3efd6ce41e848aa6534cef7b1fef8400299d65db38c9ae641"
+    }
+  ],
+  "4-rcp-openmiio": [
+    {
+      "path": "build.sh",
+      "sha256": "0d954acbee69abdba48a6eff69d74688e493286a04d0a3128dc7b143dc78b1eb"
+    },
+    {
+      "path": "package.py",
+      "sha256": "6604f568e6e51341acf1f14b8f4cd238c9229232b29c5ddf6a6d53e0a43426c4"
+    },
+    {
+      "path": "rcp-openmiio-package/README.md",
+      "sha256": "9ea5b9db8cb4016e269ac32c4c88f727832eef6a087c0aa82c64d19ff7dfb685"
+    },
+    {
+      "path": "rcp-openmiio-package/SHA256SUMS",
+      "sha256": "7168c9372d2662e5fc0d9cfea20a7f6aeac26603af000e7292091918d8398504"
+    },
+    {
+      "path": "rcp-openmiio-package/install.sh",
+      "sha256": "d9f03992902d349f04fd55773da38879be70499c997f3eef851bf5787cf418e5"
+    },
+    {
+      "path": "rcp-openmiio-package/payload/openmiio.sha256",
+      "sha256": "5f80e2645d1620b5c3beb587cff810def43efb7678eb4b758f485b94ba0b2ccf"
+    },
+    {
+      "path": "rcp-openmiio-package/payload/openmiio_agent.guard.sh",
+      "sha256": "dd658c7cbfd424dce15b4bf0c7100565ae4fb5ec78298fe22a2f56efb42923d7"
+    },
+    {
+      "path": "rcp-openmiio-package/payload/post_init.sh",
+      "sha256": "b0dfd26acca73ba97ac3e11b34e8977025716a0c973fc44e0cc3f2b0bfcaf1be"
+    },
+    {
+      "path": "rcp-openmiio-package/payload/scripts.sha256",
+      "sha256": "27b075e98a3224e45c73ea3d955eb18b5e1ac2c361c90cb4a36fc05b7a7471bf"
+    },
+    {
+      "path": "rcp-openmiio-package/payload/start.sh",
+      "sha256": "a23f08bf04e32039717bb6d12fae1ba13a2667c5400321a5b240e9a907d0a27e"
+    },
+    {
+      "path": "rcp-openmiio-package/payload/uninstall.sh",
+      "sha256": "fbf973a9a4babd5b01a37185243db1775d4add6c6cfccd71c2bd68e87fd0a31d"
+    },
+    {
+      "path": "tests/test_led_sync.py",
+      "sha256": "a6cd3dc72df616d1bf41867d509e7ae11b3efc7acb44cd6c9aa9b907cc9cd3e4"
+    }
+  ],
+  "5-otbr": [
+    {
+      "path": "build.sh",
+      "sha256": "a204deda624fe0e3f8ec6e1331f11531a9c81d3c2e4059d55381a5e92f7d3163"
+    },
+    {
+      "path": "otbr_host/.gitignore",
+      "sha256": "0496eb9bb5b5970a016e868d6ae5e588d887b7cbfc69c91f76c45164492121da"
+    },
+    {
+      "path": "otbr_host/CHANGELOG-0.2.0.md",
+      "sha256": "b3825390b42a5913768112be6d9f89dc575d3c82f824ad532f09234a7ebb297a"
+    },
+    {
+      "path": "otbr_host/CMakeLists.txt",
+      "sha256": "54701650d28e58e29ba43814829fe722c0b6dd078f544e16dbc94a00cc010aef"
+    },
+    {
+      "path": "otbr_host/CONFIGURATION.md",
+      "sha256": "88137cbb7f4d51006aa64040a11fac931f08b009e342efb24d38ea190151a2c6"
+    },
+    {
+      "path": "otbr_host/GATEWAY-ENTITIES.md",
+      "sha256": "3152c7af38a12f04fe8e3794e49d92a90d1e0d391022bcabdcb585027f7da166"
+    },
+    {
+      "path": "otbr_host/README.md",
+      "sha256": "2bf2026c483e7adeed2c262f4d986d474db9db45591f86449fcf83e841c25cdb"
+    },
+    {
+      "path": "otbr_host/THREAD-PROXY.md",
+      "sha256": "245f6eedce5354da00be4d0494251e5e5b137e25a873a07176032062eede1c3f"
+    },
+    {
+      "path": "otbr_host/bbr/ACCEPTANCE.md",
+      "sha256": "da18cc128c351b5a974fcc7b49c689747559eff63b985714eb852c6b43eda888"
+    },
+    {
+      "path": "otbr_host/bbr/ESP32-C6-TEST.md",
+      "sha256": "2fa8330494b7a043dc828e7378ab55d02da1654ed53162e87492239d496fe580"
+    },
+    {
+      "path": "otbr_host/bbr/README.md",
+      "sha256": "4d9564bb36dd84168b41f114e26e87c5a35669e0f13efc0d269bdd819a0175dd"
+    },
+    {
+      "path": "otbr_host/bbr/kernel_probe.c",
+      "sha256": "0c90d00313fef9cb36edccee30ff90563f9b1bc0c1e3bb16c0e7dc818e447253"
+    },
+    {
+      "path": "otbr_host/bbr/lan-multicast.ps1",
+      "sha256": "56a8c39459768817a3673b7af341efc234dfae5e1c6276a1a0beb441c795fca6"
+    },
+    {
+      "path": "otbr_host/bbr/probe.sh",
+      "sha256": "3ffc26877f0164bb03717db867c089827b15a56a85c9276d108fcafe51f51fbe"
+    },
+    {
+      "path": "otbr_host/build-api.sh",
+      "sha256": "248dddaa45186809955ed94869955fd7a5e157b5e07c0b1af279918d1cb557fe"
+    },
+    {
+      "path": "otbr_host/build-bbr-probe.sh",
+      "sha256": "28bde7946972cdb6ed8fa65137d6e1cb45b151d387eda5592cb2f38a6acbd627"
+    },
+    {
+      "path": "otbr_host/build-checks.sh",
+      "sha256": "4ca8b4929f4ffd0594f9ab92f1c5eeb2193838b38d4edaeaf8956606c935b7bd"
+    },
+    {
+      "path": "otbr_host/build-core.sh",
+      "sha256": "caf52c8795d211c96873135488169934e7bfc00d78888170271892de3788214e"
+    },
+    {
+      "path": "otbr_host/build-host.sh",
+      "sha256": "582d35d0cd00395903603875fc4cd9049f38d7aeb68504b3b9585d70c51bbaf8"
+    },
+    {
+      "path": "otbr_host/build-proxy.sh",
+      "sha256": "5c5639ba2fc683f18d50b7d69a9f04bf4f450bd36b869904436313d728fe72ac"
+    },
+    {
+      "path": "otbr_host/build-release-bbr.sh",
+      "sha256": "e168bfc14c46ae507902a6cfbb175fa908b45286a7cf42d6fa55f08c3f6d0ecf"
+    },
+    {
+      "path": "otbr_host/build-release.sh",
+      "sha256": "35236f1fb3dd91047bbb3336ec7ebca43b2682dfd6ba3dd1890e3eaa337b1496"
+    },
+    {
+      "path": "otbr_host/build-web.sh",
+      "sha256": "d10e427cc445dbfb34b3f22555f55dfb1732fe97ac288e25673e4453b6baa49e"
+    },
+    {
+      "path": "otbr_host/check-config.sh",
+      "sha256": "c58bc8bbba83ac13f65cfe2438e984d21ce4ceee0ca885a524a52bbac8266b84"
+    },
+    {
+      "path": "otbr_host/cmake/armv7-musl.cmake",
+      "sha256": "61862f757773e431ea982fcfb020dcad015c6fbb5de54003119030430194c57f"
+    },
+    {
+      "path": "otbr_host/core/CMakeLists.txt",
+      "sha256": "6f3a9ffc0eda447a5fe1c96ec53aef8f9514bb94e2a3986bdb026eb3c5fa4e3b"
+    },
+    {
+      "path": "otbr_host/core/README.md",
+      "sha256": "60ee5cd0316a70354e861e9933922005b2da27093e76e62842795225eff526af"
+    },
+    {
+      "path": "otbr_host/core/RUNTIME.md",
+      "sha256": "826d7ce27c11247865d22e58480837cd00a1d997784f4d33937bc32d2b238ccd"
+    },
+    {
+      "path": "otbr_host/core/bbr_userspace.cmake",
+      "sha256": "a2b2a76671c140c5f39fcf91d8aa4dc45166841a6cf40ed23c60dc255b735402"
+    },
+    {
+      "path": "otbr_host/core/commissioner_discovery.cmake",
+      "sha256": "f9be3356a7147663b75c6c1c3a7db7305c9ea7c9d47fdf467da6e521979cea48"
+    },
+    {
+      "path": "otbr_host/deploy/README.md",
+      "sha256": "ef8c460ad388e66a9a1789a2e0fdddcbf7ae9e17bc17237e5ec620aadb5625f2"
+    },
+    {
+      "path": "otbr_host/deploy/examples/config.example",
+      "sha256": "6e6b41b636c75bdc39d500fde577882b9348756c15e812183c323f82824dd7ff"
+    },
+    {
+      "path": "otbr_host/deploy/examples/secrets.example",
+      "sha256": "ce0c4a264e76789f9e3a0c7e9d4d3be69c0c39294f2b2e5f884b0767d5e400c4"
+    },
+    {
+      "path": "otbr_host/deploy/install.sh",
+      "sha256": "666496fd5097c70f96a2a0409aa2f983ca34b9f002acdb3211f5335c20921ae3"
+    },
+    {
+      "path": "otbr_host/deploy/payload/check.sh",
+      "sha256": "b82f8465da48bacd723012800567170f1597a32577a757ef4f58dcde270b006b"
+    },
+    {
+      "path": "otbr_host/deploy/payload/common.sh",
+      "sha256": "bb12988f34dd7bceadc37b56c34bb143bb82c3032bfb95bd6050b8d52d3fa1ae"
+    },
+    {
+      "path": "otbr_host/deploy/payload/init-config.sh",
+      "sha256": "f53f3250a9fd30a4fb45f0ce83d5b2976b05ba8cc58e82c1c3f58a62bb7bbc98"
+    },
+    {
+      "path": "otbr_host/deploy/payload/post_init.sh",
+      "sha256": "b7114284c8887d9581ab92550e3dd44ff54a522ccd384524131ea277de4e506d"
+    },
+    {
+      "path": "otbr_host/deploy/payload/rcp-recovery.sh",
+      "sha256": "1ef60e31192fcda9901fb28fdfda6af28b3162e017c102dcaaa28b7748f27856"
+    },
+    {
+      "path": "otbr_host/deploy/payload/restart.sh",
+      "sha256": "6bc1263965f14bd2007e2ed985e65078f92b23e80cacae4258aacf72b31b49a3"
+    },
+    {
+      "path": "otbr_host/deploy/payload/rollback.sh",
+      "sha256": "e3f409d35b5b6fbd8a9ae8fa30da55331e16aa26b07c2dc4047b0ce390d6ecf4"
+    },
+    {
+      "path": "otbr_host/deploy/payload/routing.sh",
+      "sha256": "897439d617de15a496b58d015a6a03c1940f5825f39e7bab3b632dc24fd056e3"
+    },
+    {
+      "path": "otbr_host/deploy/payload/start.sh",
+      "sha256": "720690f53fba5f225436330fffe15d95535af167d43ede9234e65ce7c91984e1"
+    },
+    {
+      "path": "otbr_host/deploy/payload/status.sh",
+      "sha256": "fed19578ee768740a6a0b41d71060ff6e5a81fd24e4303e0da4beada2a64298b"
+    },
+    {
+      "path": "otbr_host/deploy/payload/stop.sh",
+      "sha256": "dd4a0f5dfb5729e2a993919ac830a1fb474269a0ac81c69d85705be344b109b6"
+    },
+    {
+      "path": "otbr_host/deploy/payload/supervisor.sh",
+      "sha256": "7257b4955054d2f2d2299c8fb7165e3c45fa72ee8c13ee04bb883b672a143375"
+    },
+    {
+      "path": "otbr_host/deploy/payload/uninstall.sh",
+      "sha256": "46ebb23a483c00589e5d3a7bef15d1ab23da32b2bef1bf3736915f8cd43bdf01"
+    },
+    {
+      "path": "otbr_host/deps.lock.json",
+      "sha256": "e2b54e247dec2c2b128a5b5ef9cae686bb7adccdad13ec4fcef9c5e4c857ab6b"
+    },
+    {
+      "path": "otbr_host/esp_components/thread_multicast_test/__init__.py",
+      "sha256": "7a6d2173a48b95d4567df6f31032f63942b71d9413cae1a737016c9d2fc60c83"
+    },
+    {
+      "path": "otbr_host/esp_components/thread_multicast_test/thread_multicast_test.cpp",
+      "sha256": "03ed80774b888d1d8064b35c6dcd76a09e845431f6f3e02b850430df5f2da5cd"
+    },
+    {
+      "path": "otbr_host/esp_components/thread_multicast_test/thread_multicast_test.h",
+      "sha256": "0df6b6827be7306c5f906c424db5ef690d5cce18812c94dc00baaa0ecf6e6808"
+    },
+    {
+      "path": "otbr_host/esp_components/thread_srp_test/__init__.py",
+      "sha256": "e4360427c1823187c7a7d46ffd82496b871f9a4b64c2d0f62124e4b4bd04f213"
+    },
+    {
+      "path": "otbr_host/esp_components/thread_srp_test/thread_srp_test.cpp",
+      "sha256": "f7f9df7e4f6e4c585493a3230d8ca11b4c75784fcbf2b8c0ce047677cdc82549"
+    },
+    {
+      "path": "otbr_host/esp_components/thread_srp_test/thread_srp_test.h",
+      "sha256": "129ea824c3099a63b2915d06842ceff58e31dfd397666ba8fe1826b0e3439515"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/backbone.hpp",
+      "sha256": "4775fa44c735f813f8a629fb18d07be1a5e7d8bfd41cecc6a7a8dac10e18c5c1"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/bbr_packet_api.hpp",
+      "sha256": "76f4f08dc608854615a2e3dcea69254ea7586fe610a76f4fd817c966a77cd2a9"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/bbr_packet_checksum.hpp",
+      "sha256": "b0ea7879c753f6e1967b411fdf6b90208a64fe1c4b8e7289d4698ad4ed271cc5"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/bbr_transport.hpp",
+      "sha256": "53a8306974d94641f7fe3eda6371514b70ee7adead4199147939cb77959a06ab"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/commissioner.hpp",
+      "sha256": "17faa91d0154c8f86622eef44286afa061a0dc4e7869f4dd0fd05c4ba7c578b2"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/commissioner_discovery.h",
+      "sha256": "f034e1e1115672c1423476b6997360d047e689d875d0c79ac99225e2ba0db70f"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/config.hpp",
+      "sha256": "8f91981ba78d6172d4d25203b21ae2cdf89fb743d126fe4d11e245adccbf6a78"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/discovery.hpp",
+      "sha256": "251ba8e490468010da3203e9e7d6758fb0edd064f9e86f24e65617b8254c3f4a"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/gateway_system.hpp",
+      "sha256": "890de027d53642fb91be1e37460705dfea0480c80a309a960003ffdeb0b1ee65"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/ha.hpp",
+      "sha256": "9ce4d84c6e618ba1d499af55420960e261b8a4ab41d237e41b3649f8d023ee79"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/infra_adapter.hpp",
+      "sha256": "89e64615ca284dbf1aaf9daababfc7aa13aeaf17104b5c3e7d7a3b68d652b5c4"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/linux_packet_tap.hpp",
+      "sha256": "c245bb1f9a1e36420467a23d87ac7bf8edaf2b7a34ed624ea1243fe2b81a8486"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/native_api.hpp",
+      "sha256": "4ef95601658f1c0a3e15e400cc96116913615fe42e24702d2dabacc3dfbc3e7d"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/node_restart.hpp",
+      "sha256": "572ab8cc3e393fc7e6784d3a7b560d57bb540e0cd14391e2974476dc2e97c16c"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/optimistic_switch.hpp",
+      "sha256": "fc2efb084e7e079377c11d26dba13eafc50e47d04baab69692a073b6afffa4f0"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/ping.hpp",
+      "sha256": "bef446b98bd0c310e5d882901a50e0363f71bc51691d73af03d57737948ca28e"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/proxy_core.hpp",
+      "sha256": "65213e4d7bd2e7c6207acb867a2249b7c7417d98ca7c88687b3a521dfec26104"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/restart_protocol.hpp",
+      "sha256": "882f8004623bbd98b6cd737ca500bbab621e3e7b0bdadaf752f328a8ec776aa4"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/system_metrics.hpp",
+      "sha256": "ad68537f327731b487de3516be0acf6dcc4f2eb8078c114221f21b6bd828f562"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/thread_proxy.hpp",
+      "sha256": "28de451067c9dd4bdfa02dc12395fd552ea8db248b8a5777bc23863dc5241d70"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/topology.hpp",
+      "sha256": "2151d61f2cbc7999cc10ba56e04dc7f74a700aba4c0350f6f797bc76624b8732"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/web.hpp",
+      "sha256": "5a7a39534866cdba25dc0573e735e641f679f24467b442d2cdf8b6b1eff3521b"
+    },
+    {
+      "path": "otbr_host/include/otbr_host/web_ot.hpp",
+      "sha256": "f5bb13fbfdd4dfceb73a8fb91c9ea3a1c92dcb98fac90c4d97214d1ebe1adb61"
+    },
+    {
+      "path": "otbr_host/init-config.sh",
+      "sha256": "911d5867593ea88862455922156f4524426ae413dbef80b7ae1930daeeb42316"
+    },
+    {
+      "path": "otbr_host/licenses/LICENSE.esphome-protocol-reference",
+      "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+    },
+    {
+      "path": "otbr_host/licenses/LICENSE.espressif",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "otbr_host/licenses/LICENSE.openssl",
+      "sha256": "7d5450cb2d142651b8afa315b5f238efc805dad827d91ba367d8516bc9d49e7a"
+    },
+    {
+      "path": "otbr_host/ot-cli.sh",
+      "sha256": "41065504ac638dcaccc653292bb63ec0f50d85ecccaf8a2f50cc93e8730dd2b6"
+    },
+    {
+      "path": "otbr_host/package-config.sh",
+      "sha256": "aad062a64af3c3688db658882535cc2a26ba737afcbb86efd8066f2b14739883"
+    },
+    {
+      "path": "otbr_host/package-noattach.sh",
+      "sha256": "f719a52c292010e41f3ebae1b848960ad2b34711d1dc916f015bc07085f1c25a"
+    },
+    {
+      "path": "otbr_host/prepare-api.sh",
+      "sha256": "1b9f78602f555a715af5b2b732e4ff331d97a741e9cc0e6900b9c89b5fa0ca4d"
+    },
+    {
+      "path": "otbr_host/prepare-core.sh",
+      "sha256": "63eac0b439e3fb1bc7bbcf926891cdcc34dbd77cba92df123b6307b8ce5d84e4"
+    },
+    {
+      "path": "otbr_host/prepare-deps.sh",
+      "sha256": "4260ad2c78aa9fd517e0355b0c90eda86a34ca635f8f22f017a28839dd55ad6e"
+    },
+    {
+      "path": "otbr_host/prepare-web.sh",
+      "sha256": "eb3ba75b966f37d6b3efdf8c094746bb16cac33438ae58c4ed7fdacba25ded92"
+    },
+    {
+      "path": "otbr_host/protocol/README.md",
+      "sha256": "d130cc6901d110192f32e09369a1ef176c6be98112b95413da86eb4cedc00f6f"
+    },
+    {
+      "path": "otbr_host/protocol/native-api-scope.json",
+      "sha256": "ec5dbd964ecf8010d4a245cc3935fbf0f303ba1398754a986684194d5c57281d"
+    },
+    {
+      "path": "otbr_host/protocol/reference/api.proto",
+      "sha256": "52d1831f8621c436dd15d8d19b6eaf6a632fe13e4bb00966f8b31dba39680917"
+    },
+    {
+      "path": "otbr_host/protocol/reference/api_options.proto",
+      "sha256": "1206b5d2bf815a2ad68c180a4dd5a0b42579e6b3f4fa55d389d80699d95ed20f"
+    },
+    {
+      "path": "otbr_host/recovery/README.md",
+      "sha256": "3f4776708096734d332edb5573579dc0fde2e12168ad8f1e500a7835bc8714be"
+    },
+    {
+      "path": "otbr_host/recovery/compatibility.json",
+      "sha256": "901670198dac9b7bd7708654ea9e80670feca3b71a4efee0e99aadd5ffa8e40e"
+    },
+    {
+      "path": "otbr_host/recovery/install.sh",
+      "sha256": "e6142dd70d00df77f333d53d4b46f21eaa56db93c167ab97af56fec1647f2fc1"
+    },
+    {
+      "path": "otbr_host/recovery/rollback.sh",
+      "sha256": "efaef6a2b5b749cde043089ca1f6373a7f1973089a856df04204d0796de78c8c"
+    },
+    {
+      "path": "otbr_host/runtime-tests/config-only/README.md",
+      "sha256": "30c5fec8b908b20db0fa0ff86bcb83ed1b83e6e795f40be41a8d4e357ac87985"
+    },
+    {
+      "path": "otbr_host/runtime-tests/config-only/check.sh",
+      "sha256": "7b4c7e96d22dc08edcc24e35ff0c3536ee9f6a7e12f29f71fa773c8e4234c012"
+    },
+    {
+      "path": "otbr_host/runtime-tests/noattach/README.md",
+      "sha256": "76df1bfa9c73fd6b80b119c1507bdda83edc01be35ac35dd96a55751929f7d36"
+    },
+    {
+      "path": "otbr_host/runtime-tests/noattach/config.example",
+      "sha256": "1ddf1b31cf3529a46d8da75e04e4cb134a318597991df69c88bad9f154a1b9df"
+    },
+    {
+      "path": "otbr_host/runtime-tests/noattach/start.sh",
+      "sha256": "5eaa987f472b95d17b9bc3274cce2682ceba84db8f962f93d8af82acccbaa164"
+    },
+    {
+      "path": "otbr_host/runtime-tests/noattach/stop.sh",
+      "sha256": "f8d7e6ea822f10822c0eebc3ebe772859e344b97595e842758e000bc9d7189f7"
+    },
+    {
+      "path": "otbr_host/source-manifest.json",
+      "sha256": "a1ad4272a5c96d52b31ead8c4b86a883f0c04cb0b9bec70bdaaa14bef9cae6a2"
+    },
+    {
+      "path": "otbr_host/src/api_check_main.cpp",
+      "sha256": "c323363f7ce66e2e788e9c54abd8c104ad2b4d3ac5e46ca6505896bc4b63b46e"
+    },
+    {
+      "path": "otbr_host/src/backbone.cpp",
+      "sha256": "f0a38e28f39749867a7f4aecc50ef7e03285b041eec5f57432c617cdbecfe6e1"
+    },
+    {
+      "path": "otbr_host/src/bbr_transport.cpp",
+      "sha256": "c03c0b5e598381e8cee2608df684726adc270a27183cea2cd9770525ee500896"
+    },
+    {
+      "path": "otbr_host/src/check_config.cpp",
+      "sha256": "5567132b455878e7dfd132c211d923e8af9111c489130dfd36eccc40562aa53e"
+    },
+    {
+      "path": "otbr_host/src/commissioner.cpp",
+      "sha256": "9dfefe70276aa70ec68d5b9124b6c3eba337c047021d9f0e10d6870b63f509d8"
+    },
+    {
+      "path": "otbr_host/src/commissioner_discovery.cpp",
+      "sha256": "7c9fe091bedc065ddb4996ab74311926b3fb6dcf5417d6c274034196eccd9524"
+    },
+    {
+      "path": "otbr_host/src/config.cpp",
+      "sha256": "696e4807534d800bf51b4a7410a16583ed5202d59b8dc4e93247b0ff5456d87e"
+    },
+    {
+      "path": "otbr_host/src/config_report.cpp",
+      "sha256": "cfd78f03ddfbc8cb235c0720ba7b974d9c0277e9ce7d573d3889c761c4e7afc4"
+    },
+    {
+      "path": "otbr_host/src/discovery.cpp",
+      "sha256": "656a9f1e3f2cf1d75d86d30fac10e8c59de45b2ee0a9ade8015eb7731ee78ffd"
+    },
+    {
+      "path": "otbr_host/src/gateway_system.cpp",
+      "sha256": "5f74699146a7215b95349784b6b59f05d526abd69739d071e5da0a7a387a117b"
+    },
+    {
+      "path": "otbr_host/src/ha.cpp",
+      "sha256": "8f12c36588712c0bf8e84626037b1866cd71cd4a6df24febd0be5c13776f953c"
+    },
+    {
+      "path": "otbr_host/src/ha_check_main.cpp",
+      "sha256": "b3f0e8e1e43afa7610585863248dfa3c351b0836af2d36fcdc9d68791f434546"
+    },
+    {
+      "path": "otbr_host/src/host_main.cpp",
+      "sha256": "2d93d509fa632375584fea74a2e3430bdfc95f9d94bdd12df73276e6cf9ff131"
+    },
+    {
+      "path": "otbr_host/src/infra_adapter.cpp",
+      "sha256": "ba48c12f963fa0af91f732900c54553c1006ece54bae5a1b6dbff46e81d17d07"
+    },
+    {
+      "path": "otbr_host/src/inspect_links.cpp",
+      "sha256": "73f340e1d4e712a659179efe2459a009f7340486702a0386b118ccc723dcd529"
+    },
+    {
+      "path": "otbr_host/src/linux_packet_tap.cpp",
+      "sha256": "f436271a8a9af6e7a42fa262e3adbf1aeae35030a4ee5c592df1a2e6842cf811"
+    },
+    {
+      "path": "otbr_host/src/native_api.cpp",
+      "sha256": "4603857c363bfcb2823dabeba1bf559eb7e4fbfa9419665da06d02e0fc0b14ed"
+    },
+    {
+      "path": "otbr_host/src/node_restart.cpp",
+      "sha256": "7c7fa60242efd8ea45431ffc5c0b957da15268bcfcb0003aabadf43597d25851"
+    },
+    {
+      "path": "otbr_host/src/noise_random.cpp",
+      "sha256": "9e5191cd02f567588e5e6d5420f775eeef048db7975ecc46114c6dd2e12d3f55"
+    },
+    {
+      "path": "otbr_host/src/ping.cpp",
+      "sha256": "f9c55d62b4b1dfc16a6257aefd076fbf895fd387faf80a810ac5920ffba9cf2a"
+    },
+    {
+      "path": "otbr_host/src/proxy_check_main.cpp",
+      "sha256": "e85302851315e36b9f1291feb333b23315be95460d25c4101d64a02b6d1e87f1"
+    },
+    {
+      "path": "otbr_host/src/proxy_core.cpp",
+      "sha256": "6231c3b12b612ebe2c57a921d42eaf3990513ad7eafbed29bf5a711afa3b13fb"
+    },
+    {
+      "path": "otbr_host/src/proxy_tcp.cpp",
+      "sha256": "8355cd32bce961ef33cc037293d16c796ff82eef4b3634fa5faafb07aa5f4be4"
+    },
+    {
+      "path": "otbr_host/src/thread_proxy.cpp",
+      "sha256": "583b35d469396072bb28516d768f7ecbb2d8686f1c03ccfb59568a5566ea7d13"
+    },
+    {
+      "path": "otbr_host/src/topology.cpp",
+      "sha256": "12ec0be6daecaa8b2453279000ec05f401616456e1677dfa75c75a07776bfc91"
+    },
+    {
+      "path": "otbr_host/src/web.cpp",
+      "sha256": "21ae499c896ab950873e76e748ab21a86e9e47bde2462036af178f2e4ad1dbb0"
+    },
+    {
+      "path": "otbr_host/src/web_check_main.cpp",
+      "sha256": "951ee8dbfd71703334d275cda69716f82a648c71f5e8eaebcad726d15f39057d"
+    },
+    {
+      "path": "otbr_host/src/web_ot.cpp",
+      "sha256": "e8e849a7c8b9a7e046bdc527dc8629fe69ce19627e6f73525973cdcf2e1b6128"
+    },
+    {
+      "path": "otbr_host/test-api.sh",
+      "sha256": "f9f86de0193db380e1de80e50bed1d75996b167cd33ea0777fac4e2f550910b1"
+    },
+    {
+      "path": "otbr_host/test-bbr.sh",
+      "sha256": "ec942eb5028f09db61e511c547d6f46f78db5392512143c1947ff2361434eb64"
+    },
+    {
+      "path": "otbr_host/test-deployed.sh",
+      "sha256": "dc2305c8cdfc6ba64e7afe5407f91832f7937eee353394379424215e19dcafac"
+    },
+    {
+      "path": "otbr_host/test-gateway-entities.sh",
+      "sha256": "0fd54b4e5e47d7169acd021bf8e9a047c8c51a6445caaf578357f862da5853c4"
+    },
+    {
+      "path": "otbr_host/test-host-commissioner.sh",
+      "sha256": "d56301faea8546410374307d9b47d35a1c89c8a51ed473aef58db36afe291643"
+    },
+    {
+      "path": "otbr_host/test-host-noattach.sh",
+      "sha256": "001fcf9d60a43b62eea356a89b7c303e8b5db4c1e6138418afbe7cc2d38cca73"
+    },
+    {
+      "path": "otbr_host/test-host-tools.sh",
+      "sha256": "5ed972f1c1d8ed85e812522fe9bb54230766c04a689fa33ab54cc87f0356a632"
+    },
+    {
+      "path": "otbr_host/test-host-topology.sh",
+      "sha256": "5a9d2a73f5a4544829e67f7b07796b131a8053412615b5dcdb63160539a351c4"
+    },
+    {
+      "path": "otbr_host/test-host-web.sh",
+      "sha256": "a550b9c533b585d382f27719272bb1b2dd37c7ee562388f3e243dede2f06d58d"
+    },
+    {
+      "path": "otbr_host/test-mdns.sh",
+      "sha256": "6ae3909c8840b98f52b8e9dfada3829c264a3dadd3d5b223992ae4fc42102255"
+    },
+    {
+      "path": "otbr_host/test-proxy.sh",
+      "sha256": "ed99a5e67901f1f99cf9e68b7f5b05ec9b6a0c02b1afe68249b92b5ad8584921"
+    },
+    {
+      "path": "otbr_host/test-srp-mdns.sh",
+      "sha256": "37db8b0433d85a49e6cc3cb58b7442768e5f39419a28221b451d1fd1570dd5f6"
+    },
+    {
+      "path": "otbr_host/test-srp.sh",
+      "sha256": "393d08fabb541d92254c2ea1e88bf42208e98ea2f4424644d60b2f67ea1733cd"
+    },
+    {
+      "path": "otbr_host/test-thread-proxy.sh",
+      "sha256": "26ae10b65c833ee204a8a19e4a9de686eb87c1526295379b47954a2e0b7815d3"
+    },
+    {
+      "path": "otbr_host/test-web.sh",
+      "sha256": "011222ad927bbd3b884bfa7b72b7f297de7e624c195cc1cbdf9460b42e61b7e4"
+    },
+    {
+      "path": "otbr_host/tests/api_interop.py",
+      "sha256": "4ea663e32ee4796f57b5768fb35e17ce64503d5922122e26c5ec63f4da9d7e6e"
+    },
+    {
+      "path": "otbr_host/tests/backbone_test.cpp",
+      "sha256": "adf15c899a6132c53ced1cc00605acda71bf492a868bc32906ebd20438c56408"
+    },
+    {
+      "path": "otbr_host/tests/bbr_adapter.py",
+      "sha256": "00ec4a56f582334a61bbc956869c0edef87b82e153e77835acb9e2406ab7996c"
+    },
+    {
+      "path": "otbr_host/tests/bbr_checksum_test.cpp",
+      "sha256": "a6d860e5253300a4e65e7ce2e7091bc9057f5be8dee415afd2e16a1e0f6de0e5"
+    },
+    {
+      "path": "otbr_host/tests/bbr_runtime.py",
+      "sha256": "e2c30090f01a9109c8c7dc78af6aadf9467c4ca626e602fed419ef7d6d846e10"
+    },
+    {
+      "path": "otbr_host/tests/config_entry.py",
+      "sha256": "6366ed7b0a10c9f19c24894a1ae2bda42004c7e971a62928a3869b7a4b4d0c4c"
+    },
+    {
+      "path": "otbr_host/tests/config_test.cpp",
+      "sha256": "08965e9c6251be6ea75efd9a835c7772956b98e10b0095b9fcbbf7bae5d7a748"
+    },
+    {
+      "path": "otbr_host/tests/deploy_scripts.py",
+      "sha256": "2b57f24ae05228db3ee512a45a2f1e29c34d737e727adc6506a820a521ee9969"
+    },
+    {
+      "path": "otbr_host/tests/deployed.py",
+      "sha256": "9294117d8cf2d16c9b9a16cb5f7fdd230ebc5000d1a79b6dd04d57653bc539b3"
+    },
+    {
+      "path": "otbr_host/tests/fixtures/parser-config.example",
+      "sha256": "961299fa3b8ee58c0d05f9926baec1375f5bed1e3d5177e6f37a6a3d31d2e3d9"
+    },
+    {
+      "path": "otbr_host/tests/fixtures/parser-secrets.example",
+      "sha256": "1955dba3c045015807918c325585fcbfc8ec6c5ab770cefc4a3ed13162b4193c"
+    },
+    {
+      "path": "otbr_host/tests/gateway_commissioner.py",
+      "sha256": "1b02447b063220c175260d112d65abe55a546d49510205909f153d8ab4551026"
+    },
+    {
+      "path": "otbr_host/tests/gateway_entities.py",
+      "sha256": "4008832f0548c75bce0da106789ab7dbfea705d9b40dc5b6d405d39e6cd9e6bc"
+    },
+    {
+      "path": "otbr_host/tests/gateway_noattach.py",
+      "sha256": "7b56e1d067c9b78bc718e142b59fa985a33a01f284deb4fc0c603be7c7379826"
+    },
+    {
+      "path": "otbr_host/tests/gateway_system_test.cpp",
+      "sha256": "bc95f687d303ebc6f934d593e59732fb4be68ea30311c784d1cece2910e75029"
+    },
+    {
+      "path": "otbr_host/tests/gateway_test_data.py",
+      "sha256": "1167373510ead21b5dd653c219768354e758c68391e378ad2c326940c07bf57c"
+    },
+    {
+      "path": "otbr_host/tests/gateway_tools.py",
+      "sha256": "b576aa69cf7fcd7e900ded5dbd0a0a468ec5b1b54899e0006400f172c6723daf"
+    },
+    {
+      "path": "otbr_host/tests/gateway_topology.py",
+      "sha256": "fc800851b01258de0cdbfd737436dc7dc1cf1cedac913c3a69e700a63b01c031"
+    },
+    {
+      "path": "otbr_host/tests/gateway_web.py",
+      "sha256": "c8a59e0e4f9584a6991da32d24f121aedfd4b2e08228346c4d94bcf31f0cf0ae"
+    },
+    {
+      "path": "otbr_host/tests/ha_http.py",
+      "sha256": "1ddfe67c184cdb7cb52ad210c92c75b53d36936d4494af4698aee0d38c46e485"
+    },
+    {
+      "path": "otbr_host/tests/mdns_discovery.py",
+      "sha256": "586ab8caac29f4be9787c8ab2821c1e072a7bf0acc888f0b5207ea6dac876e4e"
+    },
+    {
+      "path": "otbr_host/tests/proxy_deployed.py",
+      "sha256": "b7a6331ba14cd87d33696b6c00bd052380897c1cedd93baae4285b888913f655"
+    },
+    {
+      "path": "otbr_host/tests/proxy_interop.py",
+      "sha256": "a7dc9a7e89cac699a449cc15ec53f08f39459c26a8ebb391bb51b73c92f5889f"
+    },
+    {
+      "path": "otbr_host/tests/rcp_recovery.py",
+      "sha256": "1eebd36598a469d93240d668d17b4bfd40216a776c1f45f316f1bad2bfd895ae"
+    },
+    {
+      "path": "otbr_host/tests/rcp_recovery_update.py",
+      "sha256": "2dc0f261046612f5d6e2298ed096679c69e4cda984b729ecc201ef9bdd5268b5"
+    },
+    {
+      "path": "otbr_host/tests/restart_protocol_test.cpp",
+      "sha256": "a540b1a5d7ce91347e13e4ec932d6f2daa986ce757e5606005a3c4c7fe8f0b9e"
+    },
+    {
+      "path": "otbr_host/tests/srp_mdns.py",
+      "sha256": "26868ec3f432292527775d71de49f6b5bf93bd5ad57a15f50b512e932e217a36"
+    },
+    {
+      "path": "otbr_host/tests/srp_runtime.py",
+      "sha256": "96af49479866b141d204163333360e0c4d3d309af568e940824acc77c9adc314"
+    },
+    {
+      "path": "otbr_host/tests/system_metrics_test.cpp",
+      "sha256": "c4e82d1224b9d346731bc2fd8262829c0b961133c05ed126d8802d52dbfcfa01"
+    },
+    {
+      "path": "otbr_host/tests/thread_proxy_test.cpp",
+      "sha256": "717feb59c7d9705d00fcfc9ad64ea4dd70758f97858f169f30de32d6fff65fdc"
+    },
+    {
+      "path": "otbr_host/tests/web_http.py",
+      "sha256": "3d9172a943806b1b1875779c611ba84ce30fa221a08123fb050a38c9ac2823c2"
+    },
+    {
+      "path": "otbr_host/tests/web_queue_test.cpp",
+      "sha256": "aeca429f92747ebdcf104d31a90ee31420a8177deacdaef1861ee6b41988ee44"
+    },
+    {
+      "path": "otbr_host/tools/check-api-python.sh",
+      "sha256": "cacb45ec143aec54c5daa24a3c3a8c23efd93e5ab0dcfa942de03d937bb1f016"
+    },
+    {
+      "path": "otbr_host/tools/check_core_build.py",
+      "sha256": "640f932904fd8cbf8e6b114e94013a12ddae21c99f9ba6bf75c50a5e98895c01"
+    },
+    {
+      "path": "otbr_host/tools/check_noise_symbols.py",
+      "sha256": "3462932ea760ccaee8c5ae244b0171729fdc1e5b852fd5d131dd272c9749280b"
+    },
+    {
+      "path": "otbr_host/tools/check_project_privacy.py",
+      "sha256": "2e5119090d5092025c84d4785f9add457b394daacd9fe756c0a0c1fefb56a44d"
+    },
+    {
+      "path": "otbr_host/tools/init_config.py",
+      "sha256": "6ad05adc25366e1a28138762227c9f1488ad3a4686c1a5d56580efc8594364a1"
+    },
+    {
+      "path": "otbr_host/tools/ot_cli.py",
+      "sha256": "570c6f22a449e86c30b195789439dfee79c6f29e0d17de77b756a357c8ac0579"
+    },
+    {
+      "path": "otbr_host/tools/package_bbr_probe.py",
+      "sha256": "fd292c8cd31f569cc434b16eff80cabe865ada9d143dd5a6ec204f7e85419ec0"
+    },
+    {
+      "path": "otbr_host/tools/package_config.py",
+      "sha256": "0f7abd7c2f9199e5d607ffee859342bcd7d95ae890d42377cf16d17c22833649"
+    },
+    {
+      "path": "otbr_host/tools/package_deploy.py",
+      "sha256": "954c4797453aa67efcb4a223fff19684f7c2fb96ad867423c196a8b9099b6bae"
+    },
+    {
+      "path": "otbr_host/tools/package_noattach.py",
+      "sha256": "5052ae5716f8f98940d418722b6c6bc74625ced380c26d3fcca656b69f162bc7"
+    },
+    {
+      "path": "otbr_host/tools/package_rcp_recovery.py",
+      "sha256": "79e232d59310179168282dcf2e81d1692b40edba580eaffd3e2f9fa76af7e1a9"
+    },
+    {
+      "path": "otbr_host/tools/prepare_api.py",
+      "sha256": "926c97cb556aea565dcd61afd3fc6b966dd485d03375ee3d5a94e3493e547527"
+    },
+    {
+      "path": "otbr_host/tools/prepare_bbr_userspace.py",
+      "sha256": "f9be7d261ba9c5c62543cca7de18e52764d4f82633996c7e2b59915f7c4b664b"
+    },
+    {
+      "path": "otbr_host/tools/prepare_core.py",
+      "sha256": "0a3a400e08f0b6c4af053f3b8405aba70bb11393e4de2c4045c72568bdc7256c"
+    },
+    {
+      "path": "otbr_host/tools/prepare_deps.py",
+      "sha256": "83e880019a6378e1842c1d3106e3cfdd89141eab48cb2540ce64cb949520ed91"
+    },
+    {
+      "path": "otbr_host/tools/prepare_web.py",
+      "sha256": "b716def235717ece5929842997da208ffbd5937a78f92d1b27433f486e79f903"
+    },
+    {
+      "path": "otbr_host/tools/verify_release_deps.py",
+      "sha256": "65e37cc6c59cd2fc1b30612788aaacc3946254b34b0a3f4923049a064d17bd14"
+    },
+    {
+      "path": "otbr_host/web/COMMISSIONER.md",
+      "sha256": "9d5b2f692269df6e549dc31e4b4ca7e4503f80611f7fcdbc3eebc430891031b4"
+    },
+    {
+      "path": "otbr_host/web/SOURCE.md",
+      "sha256": "cdaa0f8d16a042f410681bd1a3ddcde62ed89b11fed9ac1011f0bec053ba1e30"
+    },
+    {
+      "path": "otbr_host/web/SRP-TEST.md",
+      "sha256": "5d4c4feba396673a6a7e9f0c064458ab841d35ff1d0c353db76a5e8c34a97092"
+    },
+    {
+      "path": "otbr_host/web/TOOLS.md",
+      "sha256": "d52e86c9f196caf95d079e1769de59a0919f1955f37a84614bbf12d4ef6b6234"
+    },
+    {
+      "path": "otbr_host/web/TOPOLOGY.md",
+      "sha256": "776aaef5fa918b2db181a1b141073e72b2e94e274e304a354f48b456b3f83726"
+    },
+    {
+      "path": "otbr_host/web/frontend/about.html",
+      "sha256": "45d2fb5f6c69c9f16d037e118106a56cdc7d254da499492dc732a0366c3a215f"
+    },
+    {
+      "path": "otbr_host/web/frontend/commissioner.html",
+      "sha256": "f87fc04b7e54f563410908f20f266203b43c8a4a4f386e012c2bde3667dce58d"
+    },
+    {
+      "path": "otbr_host/web/frontend/icon.png",
+      "sha256": "31988f11f860a49aeb36c2a016105aafba1049ccf07ea3bfc0a56f3955e04dad"
+    },
+    {
+      "path": "otbr_host/web/frontend/index.html",
+      "sha256": "7cc323e46d3f0740d53523be11d7d1cf320bd793d2d4f597fae9a9795b20d321"
+    },
+    {
+      "path": "otbr_host/web/frontend/static/api.js",
+      "sha256": "3bee4012622d836f4002ddbcd63cde3ce4609cb928660e44e12c52a77db9db52"
+    },
+    {
+      "path": "otbr_host/web/frontend/static/commissioner.js",
+      "sha256": "baec49b5eb6158e2e478c49ef462c6e4c674e2ac0541a01b711b6bd3f632c08f"
+    },
+    {
+      "path": "otbr_host/web/frontend/static/style.css",
+      "sha256": "761ca74e990a4ebef62f6d78f5810c5405f1fdc053e322d23e4f2f988d1155cb"
+    },
+    {
+      "path": "otbr_host/web/frontend/tools.html",
+      "sha256": "4355ad8fbfc2e045a272911f1f260e168765c788bbedebca7cc1a724b45f95ea"
+    },
+    {
+      "path": "otbr_host/web/frontend/topology.html",
+      "sha256": "5a31c9660000b2113e241332fafcc0636a329bb2713644fccc617eda962ab2b8"
+    },
+    {
+      "path": "otbr_host/web/generated/web_assets.hpp",
+      "sha256": "94d12adefd99991894cd75b13e5875f901227814dc6b91a31d31f122fd7a0b49"
+    },
+    {
+      "path": "otbr_host/web/rest-contract.json",
+      "sha256": "96ad41c165b13551f830f6dd7d8c06f528eec5aea606c941b88270a2641322f7"
+    }
+  ]
+}

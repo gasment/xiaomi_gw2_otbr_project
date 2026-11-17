@@ -1,0 +1,63 @@
+# Gateway runtime configuration. Edit /data/otbr/config.yaml, then restart.sh.
+device:
+  name: mi-gateway2-thread
+  friendly_name: Xiaomi Thread Border Router
+api:
+  port: 6053
+substitutions:
+  web_user: admin
+  web_passwd: !secret web_password
+thread_br:
+  # Optional requested RCP power in integer dBm (-26..20); omitted keeps its default.
+  # output_power: 20
+  # Omit this mapping to follow the default route with a 3s switch delay.
+  backbone:
+    policy: follow_default_route
+  rcp_connectivity:
+    id: rcp_connectivity
+    name: RCP Connectivity
+  ha_url: ""
+  ha_token: !secret ha_token
+  commissioner:
+    enabled: true
+    commissioner_id: mi-gateway2
+  web:
+    port: 80
+    user: ${web_user}
+    passwd: ${web_passwd}
+  thread_network_config:
+    channel: 20
+    network_name: YOUR-THREAD
+    network_key: !secret thread_network_key
+    pan_id: 0x1234
+    ext_pan_id: "0011223344556677"
+    pskc: !secret thread_pskc
+    mesh_local_prefix: fd11:2233:4455:6677::/64
+    force_dataset: true
+  thread_identity:
+    id: thread_identity
+    name: Thread ID
+    icon: mdi:identifier
+    entity_category: diagnostic
+  ipv4:
+    name: IPv4
+  uptime:
+    name: Gateway Uptime
+    icon: mdi:timer-outline
+  reset:
+    name: Restart Gateway
+    icon: mdi:restart
+  fw_ver:
+    name: Gateway Firmware
+  sys_led:
+    name: System LED
+    icon: mdi:led-on
+
+# Optional TOP-LEVEL feature. Remove comments to enable after restarting Host.
+# thread_proxy_api:
+#   port: 6065
+#   max_connections: 2
+#   status_interval: 30s
+#   udp:
+#     queue_groups: 16
+#     queue_bytes: 131072

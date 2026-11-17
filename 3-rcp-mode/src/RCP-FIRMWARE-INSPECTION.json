@@ -1,0 +1,75 @@
+[
+  {
+    "file": "xiaomi_stock_ncp_6.6.6.0_build218.gbl",
+    "bytes": 185828,
+    "tags": [
+      [
+        "0x3a617eb",
+        8
+      ],
+      [
+        "0xf40a0af4",
+        28
+      ],
+      [
+        "0xfd0303fd",
+        176
+      ],
+      [
+        "0xfd0303fd",
+        185572
+      ],
+      [
+        "0xfc0404fc",
+        4
+      ]
+    ],
+    "json_metadata": [],
+    "crc32_to_end_tag": "0x2144df1c",
+    "padding_hex": "",
+    "contains_bootloader_tag_f50909f5": false
+  },
+  {
+    "file": "lumi-gateway-mgl001_opentread_rcp_2.5.3.0_GitHub-1fceb225b_gsdk_2024.6.3_460800.gbl",
+    "bytes": 110536,
+    "tags": [
+      [
+        "0x3a617eb",
+        8
+      ],
+      [
+        "0xf40a0af4",
+        28
+      ],
+      [
+        "0xfd0303fd",
+        728
+      ],
+      [
+        "0xfd0303fd",
+        109552
+      ],
+      [
+        "0xf60808f6",
+        165
+      ],
+      [
+        "0xfc0404fc",
+        4
+      ]
+    ],
+    "json_metadata": [
+      {
+        "baudrate": 460800,
+        "fw_type": "openthread_rcp",
+        "fw_variant": null,
+        "metadata_version": 2,
+        "ot_rcp_version": "2.5.3.0_GitHub-1fceb225b",
+        "sdk_version": "2024.6.3"
+      }
+    ],
+    "crc32_to_end_tag": "0x2144df1c",
+    "padding_hex": "ffffff",
+    "contains_bootloader_tag_f50909f5": false
+  }
+]

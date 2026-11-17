@@ -1,0 +1,68 @@
+# Isolated no-attach test only; no real Dataset credentials.
+device:
+  name: mi-gateway2-otbr-test
+  friendly_name: Xiaomi OTBR Runtime Check
+api:
+  port: 6053
+  encryption:
+    key: !secret api_key
+thread_br:
+  id: thread_br_main
+  backbone: auto
+  backbone_config:
+    interfaces: []
+    policy: follow_default_route
+    switch_delay: 3s
+  radio: uart_rcp
+  rcp:
+    device: /dev/ttyS1
+    baud_rate: 460800
+    flow_control: hardware
+    rcp_connectivity:
+      id: rcp_connectivity
+      name: RCP Connectivity
+  commissioner:
+    enabled: true
+    commissioner_id: mi-gateway2-noattach-test
+  web:
+    port: 18080
+    user: test
+    passwd: !secret web_password
+  thread_network_config:
+    channel: 20
+    network_name: NoAttachTest
+    network_key: "00112233445566778899aabbccddeeff"
+    pan_id: 0x1234
+    ext_pan_id: "0011223344556677"
+    pskc: "102132435465768798a9bacbdcedfe0f"
+    mesh_local_prefix: fd11:2233:4455:6677::/64
+    force_dataset: false
+  thread_identity:
+    id: thread_identity
+    name: Thread ID
+    icon: mdi:identifier
+    entity_category: diagnostic
+  thread_attached:
+    id: thread_attached
+    name: Thread Attached
+  thread_role:
+    id: thread_role
+    name: Thread Role
+  rcp_version:
+    id: rcp_version
+    name: RCP Version
+  radio_version:
+    id: radio_version
+    name: Radio Version
+  rloc16:
+    id: rloc16
+    name: RLOC16
+  neighbor_count:
+    id: neighbor_count
+    name: Neighbors
+  child_count:
+    id: child_count
+    name: Children
+  thread_interface: mgotbr0
+  state_directory: /tmp/mi-otbr-noattach/state
+  update_interval: 2s

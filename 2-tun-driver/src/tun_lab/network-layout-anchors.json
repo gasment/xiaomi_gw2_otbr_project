@@ -1,0 +1,15 @@
+{
+  "stock_firmware": "1.0.8_0015",
+  "stock_bridge_sha256": "0b6d246bfcb1321449acc0645baf647c9ae95beafd7226c0941d37a50fc8095f",
+  "anchors": {
+    "br_dev_init.netdev_priv": 1344,
+    "br_dev_open.net_device._tx": 640,
+    "br_dev_xmit.skb.data": 168,
+    "br_dev_xmit.skb.head": 164,
+    "br_dev_xmit.skb.len": 92,
+    "br_dev_xmit.skb.mac_header": 154,
+    "br_handle_frame_finish.skb.dev": 20
+  },
+  "evidence": "bridge-0015-disassembly.txt",
+  "scope": "Static anchors, supplemented by runtime IPv6 roundtrip; not full ABI proof"
+}

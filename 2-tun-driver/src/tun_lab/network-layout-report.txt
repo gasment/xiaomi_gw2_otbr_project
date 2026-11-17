@@ -1,0 +1,12 @@
+Original bridge.ko netdev_priv offset: 0x540
+Candidate sizeof(net_device): 0x540
+Candidate netdev_priv offset (ALIGN32): 0x540
+mg_netdev_tx_offset: original=0x280 candidate=0x280 MATCH
+mg_skb_data_offset: original=0xa8 candidate=0xa8 MATCH
+mg_skb_head_offset: original=0xa4 candidate=0xa4 MATCH
+mg_skb_len_offset: original=0x5c candidate=0x5c MATCH
+mg_skb_dev_offset: original=0x14 candidate=0x14 MATCH
+mg_skb_mac_header_offset: original=0x9a candidate=0x9a MATCH
+NETWORK_LAYOUT_ANCHOR_MATCH
+These anchors are inferred from stock bridge.ko. They do not prove every field or runtime safety.
+No module has been loaded. Review results before TUN runtime tests.

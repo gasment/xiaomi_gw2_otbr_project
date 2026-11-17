@@ -1,0 +1,111 @@
+[
+  {
+    "name": "armv7-musl",
+    "path": "0-build-src/toolchains/armv7-musl",
+    "marker_sha256": {
+      "bin/arm-buildroot-linux-musleabihf-gcc": "2c86f43263d87b7339e28f09cf36dc0e51c973e5ffda7cd19c7bdb515a65b964"
+    },
+    "components": [
+      "1",
+      "2",
+      "3",
+      "5"
+    ],
+    "source": "Bootlin armv7-eabihf musl stable-2024.05-1; https://toolchains.bootlin.com/"
+  },
+  {
+    "name": "arm-gcc-9.2",
+    "path": "0-build-src/toolchains/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf",
+    "marker_sha256": {
+      "bin/arm-none-linux-gnueabihf-gcc": "321a8b642182e240f7e5c67ccb7357e4590088b513cd5c8e1e3fb28b2e1c2323"
+    },
+    "components": [
+      "2"
+    ],
+    "source": "Arm GNU A-profile 9.2-2019.12; see the retained fetch-toolchain.sh"
+  },
+  {
+    "name": "openssl-arm",
+    "path": "0-build-src/openssl/arm",
+    "marker_sha256": {
+      "lib/libssl.a": "c09ae8a226bdb78711458e937c10c4a64b19325da7ae1b63ba81330f18fa7cd6",
+      "lib/libcrypto.a": "8b7616d8e587e79ec8c91406c2eb14830e6752abc92f6c2640024b77a874219d",
+      "include/openssl/opensslv.h": "0d479ab0ebea6b06a581be64dd8eaa04809faee516c8ad5a514bb5072277fe53"
+    },
+    "components": [
+      "1",
+      "5"
+    ],
+    "source": "ARMv7 musl static OpenSSL build; pinned headers and library hashes required"
+  },
+  {
+    "name": "openssl-source",
+    "path": "0-build-src/openssl/source",
+    "marker_sha256": {
+      "Configure": "3d3ed5a3e4c69a917cee593643c4614a0d6ccc074c0e2b4ecad3293de47aa452"
+    },
+    "git_commit": "84dda7853c130429210b37bee9e5b62366ca8bce",
+    "components": [],
+    "source": "https://github.com/openssl/openssl.git"
+  },
+  {
+    "name": "kernel-source",
+    "path": "0-build-src/linux/linux-chenxing-vendor-slop-ikayaki_dlm00v014",
+    "marker_sha256": {
+      "Makefile": "4c0620fad8cdcc85e81c80d1d383da2ec239bba42bb70368a02803159f70e50f",
+      "drivers/net/tun.c": "dcc848849ac1011915e973175713befdeaa1e04a22497beaa2ade9192472af74",
+      ".config": "d9831ab9e56ccf8ffe8c6615cb0310dac2d0297bf27553ce16cd1e1089d7e768"
+    },
+    "components": [
+      "2"
+    ],
+    "source": "https://github.com/linux-chenxing/linux-chenxing-vendor-slop/tree/ikayaki_dlm00v014"
+  },
+  {
+    "name": "ot-br-posix",
+    "path": "0-build-src/vendor/ot-br-posix",
+    "marker_sha256": {
+      "CMakeLists.txt": "a18aac18dafce7989dec6bcd1d280fa771c720b598df83dfd7284d7396e431e9",
+      "third_party/openthread/repo/src/lib/spinel/spinel.h": "e6757436ed3881ab8467eb713d3050d936dc92fcaaff4ae31be8c05e76aff080"
+    },
+    "git_commit": "285bcb549edcfe6823269b4df2f0982298bc1e56",
+    "components": [
+      "5"
+    ],
+    "source": "https://github.com/openthread/ot-br-posix.git"
+  },
+  {
+    "name": "noise-c",
+    "path": "0-build-src/vendor/noise-c",
+    "marker_sha256": {
+      "CMakeLists.txt": "5a8e2a0056c2ba21384e2526637566b0206863d86991c3a41f648cbdd7bff443"
+    },
+    "components": [
+      "5"
+    ],
+    "source": "See 5-otbr/src/otbr_host/deps.lock.json (pinned esphome-libs archive)"
+  },
+  {
+    "name": "yaml-cpp",
+    "path": "0-build-src/vendor/yaml-cpp",
+    "marker_sha256": {
+      "CMakeLists.txt": "1b1b0b9d346f68976873e8e4f3fdd71dd6ae0ff62d47b7fd83a18a69410f8a29"
+    },
+    "components": [
+      "5"
+    ],
+    "source": "See 5-otbr/src/otbr_host/deps.lock.json (yaml-cpp-0.9.0 archive)"
+  },
+  {
+    "name": "rcp-firmware",
+    "path": "0-build-src/firmware",
+    "marker_sha256": {
+      "lumi-gateway-mgl001_opentread_rcp_2.5.3.0_GitHub-1fceb225b_gsdk_2024.6.3_460800.gbl": "faeedf5976e832342c4139e84968a7a32a1a6badb328f30a4346e5c735202d59",
+      "xiaomi_stock_ncp_6.6.6.0_build218.gbl": "389c55ea876a0dc7dbcde2cbb1bc1aefc9cf884bb2850663077629dc51c9fed0"
+    },
+    "components": [
+      "3"
+    ],
+    "source": "darkxst/silabs-firmware-builder 20250627 RCP; verified stock GBL from release assets"
+  }
+]

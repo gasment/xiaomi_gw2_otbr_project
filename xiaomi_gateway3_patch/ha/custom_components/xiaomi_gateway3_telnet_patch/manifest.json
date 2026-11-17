@@ -1,0 +1,12 @@
+{
+  "domain": "xiaomi_gateway3_telnet_patch",
+  "name": "Xiaomi Gateway 3 Telnet Password Patch",
+  "version": "0.2.5",
+  "config_flow": true,
+  "codeowners": [],
+  "documentation": "https://github.com/AlexxIT/XiaomiGateway3",
+  "integration_type": "hub",
+  "iot_class": "local_push",
+  "dependencies": [],
+  "requirements": []
+}

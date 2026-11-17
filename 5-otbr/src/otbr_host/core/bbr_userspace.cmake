@@ -1,0 +1,45 @@
+# Build-local private POSIX source tree. No global forced headers and no edits
+# to the locked checkout. All quoted sibling includes see one class layout.
+find_package(Python3 COMPONENTS Interpreter REQUIRED)
+set(mi_bbr_platform "${OTBR_HOST_ROOT}/vendor/ot-br-posix/third_party/openthread/repo/src/posix/platform")
+set(mi_bbr_overlay "${CMAKE_CURRENT_BINARY_DIR}/bbr-userspace")
+file(GLOB_RECURSE mi_bbr_private_inputs CONFIGURE_DEPENDS
+  "${mi_bbr_platform}/*.cpp" "${mi_bbr_platform}/*.c"
+  "${mi_bbr_platform}/*.hpp" "${mi_bbr_platform}/*.h")
+set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS
+  "${OTBR_HOST_ROOT}/tools/prepare_bbr_userspace.py" ${mi_bbr_private_inputs})
+execute_process(COMMAND "${Python3_EXECUTABLE}" "${OTBR_HOST_ROOT}/tools/prepare_bbr_userspace.py"
+  --output "${mi_bbr_overlay}" RESULT_VARIABLE mi_bbr_result)
+if(NOT mi_bbr_result EQUAL 0)
+  message(FATAL_ERROR "BBR userspace source adaptation failed")
+endif()
+get_target_property(mi_bbr_original_sources openthread-posix SOURCES)
+get_target_property(mi_bbr_source_dir openthread-posix SOURCE_DIR)
+set(mi_bbr_sources)
+set(mi_bbr_replaced 0)
+foreach(mi_source IN LISTS mi_bbr_original_sources)
+  if(mi_source MATCHES "^\\$<")
+    list(APPEND mi_bbr_sources "${mi_source}")
+    continue()
+  endif()
+  get_filename_component(mi_absolute "${mi_source}" ABSOLUTE BASE_DIR "${mi_bbr_source_dir}")
+  file(RELATIVE_PATH mi_relative "${mi_bbr_platform}" "${mi_absolute}")
+  if(NOT mi_relative MATCHES "^[.][.]/" AND EXISTS "${mi_bbr_overlay}/posix/platform/${mi_relative}")
+    list(APPEND mi_bbr_sources "${mi_bbr_overlay}/posix/platform/${mi_relative}")
+    if(mi_relative MATCHES "(^|/)multicast_routing(_bpf)?[.]cpp$")
+      math(EXPR mi_bbr_replaced "${mi_bbr_replaced} + 1")
+    endif()
+  else()
+    list(APPEND mi_bbr_sources "${mi_absolute}")
+  endif()
+endforeach()
+if(NOT mi_bbr_replaced EQUAL 2)
+  message(FATAL_ERROR "Expected exactly two adapted multicast routing implementation files")
+endif()
+set_property(TARGET openthread-posix PROPERTY SOURCES "${mi_bbr_sources}")
+target_sources(openthread-posix PRIVATE "${OTBR_HOST_ROOT}/src/linux_packet_tap.cpp")
+target_include_directories(openthread-posix BEFORE PRIVATE
+  "${mi_bbr_overlay}" "${mi_bbr_overlay}/posix/platform"
+  "${mi_bbr_overlay}/posix/platform/include" "${OTBR_HOST_ROOT}/include")
+target_include_directories(ot-posix-config INTERFACE "${OTBR_HOST_ROOT}/include")
+target_compile_definitions(ot-posix-config INTERFACE MI_BBR_USERSPACE=1 OTBR_ENABLE_BACKBONE_ROUTER_ON_INIT=0)

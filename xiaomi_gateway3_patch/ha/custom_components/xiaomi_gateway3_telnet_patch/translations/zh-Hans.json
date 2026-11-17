@@ -1,0 +1,59 @@
+{
+  "title": "小米网关 Telnet 密码补丁",
+  "config": {
+    "step": {
+      "user": {
+        "title": "添加受保护网关",
+        "description": "填写网关 IP 和准备使用的 root 密码。这里不会修改网关密码。安装启动引导后，先重启 Home Assistant，再运行网关密码脚本。",
+        "data": {
+          "host": "网关 IP 地址",
+          "password": "root 密码",
+          "install_bootstrap": "自动安装早期启动引导"
+        },
+        "data_description": {
+          "password": "稍后在网关脚本中设置相同密码。由 HA 配置条目保存，不写入 YAML。",
+          "install_bootstrap": "向 custom_components/__init__.py 添加带标记的引导代码，保留原内容，不修改 XiaomiGateway3 文件。"
+        }
+      }
+    },
+    "error": {
+      "invalid_host": "请输入有效的 IPv4 或 IPv6 地址。",
+      "invalid_password": "密码须为非空单行字符串，最多 256 个 UTF-8 字节。",
+      "bootstrap_required": "需要安装启动引导，以保证在 XiaomiGateway3 启动前拦截删密码操作。",
+      "bootstrap_failed": "无法安全写入启动引导，请检查 custom_components 的写权限和原初始化文件语法。",
+      "already_configured": "该网关已有补丁条目。"
+    },
+    "abort": {
+      "already_configured": "该网关已配置，请在已有条目的配置页面修改。"
+    },
+    "create_entry": {
+      "default": "请先重启 Home Assistant 激活早期拦截，再设置网关 root 密码。初次出现待重启或重试状态属于预期。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "网关密码设置",
+        "description": "这些设置不会自动修改网关密码。密码留空保留原值。",
+        "data": {
+          "host": "网关 IP 地址",
+          "password": "新的 root 密码"
+        },
+        "data_description": {
+          "password": "留空保留原密码，不会回显已保存的密码。"
+        }
+      }
+    },
+    "error": {
+      "invalid_host": "请输入有效的 IP 地址。",
+      "invalid_password": "请输入有效的单行密码，最多 256 个 UTF-8 字节。",
+      "already_configured": "另一条补丁配置已使用该 IP。"
+    }
+  },
+  "issues": {
+    "restart_required": {
+      "title": "请重启 Home Assistant 激活网关密码补丁",
+      "description": "启动引导已安装。请先重启 Home Assistant，再修改网关 root 密码。没有修改 XiaomiGateway3 源文件或网关密码。"
+    }
+  }
+}

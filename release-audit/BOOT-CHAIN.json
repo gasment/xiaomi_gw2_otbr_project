@@ -1,0 +1,32 @@
+[
+  {
+    "device_path": "/data/tun/original-post_init.sh",
+    "expected_component_hook_sha256": "d82e9099a4699800c048ea98d002a01ec7b085387439179298041773f69b2e77",
+    "device_sha256": "d82e9099a4699800c048ea98d002a01ec7b085387439179298041773f69b2e77",
+    "status": "MATCH"
+  },
+  {
+    "device_path": "/data/rcp-mode/original-post_init.sh",
+    "expected_component_hook_sha256": "60b5fec81761c048d7a70303d2253e98d18675f374746e95dc733c92ba267200",
+    "device_sha256": "60b5fec81761c048d7a70303d2253e98d18675f374746e95dc733c92ba267200",
+    "status": "MATCH"
+  },
+  {
+    "device_path": "/data/rcp-openmiio/original-post_init.sh",
+    "expected_component_hook_sha256": "c08353c47b2f5cd1d35a12dea0a85b505e4f6c03d87a579a9e233fcda4102697",
+    "device_sha256": "c08353c47b2f5cd1d35a12dea0a85b505e4f6c03d87a579a9e233fcda4102697",
+    "status": "MATCH"
+  },
+  {
+    "device_path": "/data/otbr/original-post_init.sh",
+    "expected_component_hook_sha256": "b0dfd26acca73ba97ac3e11b34e8977025716a0c973fc44e0cc3f2b0bfcaf1be",
+    "device_sha256": "b0dfd26acca73ba97ac3e11b34e8977025716a0c973fc44e0cc3f2b0bfcaf1be",
+    "status": "MATCH"
+  },
+  {
+    "device_path": "/data/scripts/post_init.sh",
+    "expected_component_hook_sha256": "b7114284c8887d9581ab92550e3dd44ff54a522ccd384524131ea277de4e506d",
+    "device_sha256": "b7114284c8887d9581ab92550e3dd44ff54a522ccd384524131ea277de4e506d",
+    "status": "MATCH"
+  }
+]

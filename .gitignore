@@ -1,0 +1,40 @@
+# Local build/cache data. Component deploy artifacts are retained.
+**/__pycache__/
+**/.pytest_cache/
+**/*.pyc
+**/src/build-output/
+/5-otbr/src/otbr_host/build/
+/5-otbr/src/otbr_host/downloads/
+/5-otbr/src/otbr_host/otbr-deploy*/
+/5-otbr/src/otbr_host/otbr-deploy*.tar.gz
+/2-tun-driver/src/tun_lab/kernel-work/
+# Keep gateway-owned credentials and runtime configuration out of Git.
+config.yaml
+secrets.yaml
+*.yaml.local
+*.yml.local
+ssh_host_*_key
+
+# Shared SDK/toolchain inputs remain local; component deploy artifacts are included.
+/0-build-src/*
+!/0-build-src/README.md
+/1-openssh/src/external/toolchains/armv7-musl
+/1-openssh/src/external/openssl-arm
+/1-openssh/src/external/openssl-source
+/2-tun-driver/src/toolchains/armv7-musl
+/2-tun-driver/src/toolchains/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf
+/2-tun-driver/src/source/linux-chenxing-vendor-slop-ikayaki_dlm00v014
+/3-rcp-mode/src/toolchains/armv7-musl
+/3-rcp-mode/src/rcp_lab/firmware
+/3-rcp-mode/src/rcp_lab/native-tools/rcp-native/firmware
+/3-rcp-mode/src/external/silabs-firmware-builder
+/3-rcp-mode/src/external/simplicity-sdk
+/4-rcp-openmiio/src/external/openmiio_agent
+/5-otbr/src/toolchains/armv7-musl
+/5-otbr/src/deps/openssl-arm
+/5-otbr/src/otbr_host/vendor/ot-br-posix
+/5-otbr/src/otbr_host/vendor/noise-c
+/5-otbr/src/otbr_host/vendor/yaml-cpp
+
+# Local build-test Python environment.
+/.venv-build/

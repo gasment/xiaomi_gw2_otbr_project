@@ -1,0 +1,19 @@
+{
+  "1-openssh/src/external/toolchains/armv7-musl": "../../../../0-build-src/toolchains/armv7-musl",
+  "1-openssh/src/external/openssl-arm": "../../../0-build-src/openssl/arm",
+  "1-openssh/src/external/openssl-source": "../../../0-build-src/openssl/source",
+  "2-tun-driver/src/toolchains/armv7-musl": "../../../0-build-src/toolchains/armv7-musl",
+  "2-tun-driver/src/toolchains/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf": "../../../0-build-src/toolchains/gcc-arm-9.2-2019.12-x86_64-arm-none-linux-gnueabihf",
+  "2-tun-driver/src/source/linux-chenxing-vendor-slop-ikayaki_dlm00v014": "../../../0-build-src/linux/linux-chenxing-vendor-slop-ikayaki_dlm00v014",
+  "3-rcp-mode/src/toolchains/armv7-musl": "../../../0-build-src/toolchains/armv7-musl",
+  "3-rcp-mode/src/rcp_lab/firmware": "../../../0-build-src/firmware",
+  "3-rcp-mode/src/rcp_lab/native-tools/rcp-native/firmware": "../../../../../0-build-src/firmware",
+  "3-rcp-mode/src/external/silabs-firmware-builder": "../../../0-build-src/optional/silabs-firmware-builder",
+  "3-rcp-mode/src/external/simplicity-sdk": "../../../0-build-src/optional/simplicity-sdk",
+  "4-rcp-openmiio/src/external/openmiio_agent": "../../../0-build-src/optional/openmiio_agent",
+  "5-otbr/src/toolchains/armv7-musl": "../../../0-build-src/toolchains/armv7-musl",
+  "5-otbr/src/deps/openssl-arm": "../../../0-build-src/openssl/arm",
+  "5-otbr/src/otbr_host/vendor/ot-br-posix": "../../../../0-build-src/vendor/ot-br-posix",
+  "5-otbr/src/otbr_host/vendor/noise-c": "../../../../0-build-src/vendor/noise-c",
+  "5-otbr/src/otbr_host/vendor/yaml-cpp": "../../../../0-build-src/vendor/yaml-cpp"
+}

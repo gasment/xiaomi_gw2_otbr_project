@@ -1,0 +1,121 @@
+{
+  "version": "0.2.5",
+  "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+  "archive_sha256": "7a2ea050d82a718ab78f1339d7a460c9752fe9440acfcf4cc52eb3b0981275c2",
+  "host_sha256": "b059a2d9f3fb20544d17659f7680dbfd5cfd272b9edca975be0b6724078f48e8",
+  "payload_matches": 14,
+  "payload": [
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/check.sh",
+      "device_path": "/data/otbr/check.sh",
+      "sha256": "b82f8465da48bacd723012800567170f1597a32577a757ef4f58dcde270b006b",
+      "status": "MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/common.sh",
+      "device_path": "/data/otbr/common.sh",
+      "sha256": "bb12988f34dd7bceadc37b56c34bb143bb82c3032bfb95bd6050b8d52d3fa1ae",
+      "status": "MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/init-config.sh",
+      "device_path": "/data/otbr/init-config.sh",
+      "sha256": "f53f3250a9fd30a4fb45f0ce83d5b2976b05ba8cc58e82c1c3f58a62bb7bbc98",
+      "status": "MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/mi-otbr-host",
+      "device_path": "/data/otbr/mi-otbr-host",
+      "sha256": "b059a2d9f3fb20544d17659f7680dbfd5cfd272b9edca975be0b6724078f48e8",
+      "status": "MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/post_init.sh",
+      "device_path": "/data/otbr/post_init.sh",
+      "sha256": "b7114284c8887d9581ab92550e3dd44ff54a522ccd384524131ea277de4e506d",
+      "status": "MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/rcp-recovery.sh",
+      "device_path": "/data/otbr/rcp-recovery.sh",
+      "sha256": "1ef60e31192fcda9901fb28fdfda6af28b3162e017c102dcaaa28b7748f27856",
+      "status": "MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/restart.sh",
+      "device_path": "/data/otbr/restart.sh",
+      "sha256": "6bc1263965f14bd2007e2ed985e65078f92b23e80cacae4258aacf72b31b49a3",
+      "status": "MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/rollback.sh",
+      "device_path": "/data/otbr/rollback.sh",
+      "sha256": "e3f409d35b5b6fbd8a9ae8fa30da55331e16aa26b07c2dc4047b0ce390d6ecf4",
+      "status": "MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/routing.sh",
+      "device_path": "/data/otbr/routing.sh",
+      "sha256": "897439d617de15a496b58d015a6a03c1940f5825f39e7bab3b632dc24fd056e3",
+      "status": "MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/start.sh",
+      "device_path": "/data/otbr/start.sh",
+      "sha256": "720690f53fba5f225436330fffe15d95535af167d43ede9234e65ce7c91984e1",
+      "status": "MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/status.sh",
+      "device_path": "/data/otbr/status.sh",
+      "sha256": "fed19578ee768740a6a0b41d71060ff6e5a81fd24e4303e0da4beada2a64298b",
+      "status": "MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/stop.sh",
+      "device_path": "/data/otbr/stop.sh",
+      "sha256": "dd4a0f5dfb5729e2a993919ac830a1fb474269a0ac81c69d85705be344b109b6",
+      "status": "MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/supervisor.sh",
+      "device_path": "/data/otbr/supervisor.sh",
+      "sha256": "7257b4955054d2f2d2299c8fb7165e3c45fa72ee8c13ee04bb883b672a143375",
+      "status": "MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "member": "otbr-deploy/payload/uninstall.sh",
+      "device_path": "/data/otbr/uninstall.sh",
+      "sha256": "46ebb23a483c00589e5d3a7bef15d1ab23da32b2bef1bf3736915f8cd43bdf01",
+      "status": "MATCH"
+    }
+  ],
+  "archive_copied_without_repacking": false,
+  "user_compiled": true,
+  "assistant_compiled": false,
+  "gateway_mutated_by_promotion": false,
+  "acceptance": "User confirmed Thread Proxy node-to-Linux-BR-to-HA communication; screenshot shows Linux BR as a node reporting source.",
+  "remaining_platform_checks": "Encrypted operation and platform-specific reconnect/failure scenarios not newly claimed.",
+  "business_rules": "ESP acceptance retained for shared business semantics; no claim of a complete repeated suite.",
+  "public_example_key_sha256": [
+    "0e3c259f808654002714f6e364eb983c7eb03066b3a96e2f330c1ec2457bee87"
+  ],
+  "installed_file_audit_matches": 45,
+  "metadata_only_repack": true,
+  "all_component_project_versions": "0.2.5",
+  "old_release_packages_retained": false
+}

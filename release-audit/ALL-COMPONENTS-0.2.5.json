@@ -1,0 +1,59 @@
+{
+  "version": "0.2.5",
+  "archives": [
+    {
+      "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.2.5.tar.gz",
+      "sha256": "ca1635617cb96ea8ec1903ade79e6baaa3133d7fd54fd472fd1da4fb3e4cd85c",
+      "resident_payload_changed": false,
+      "metadata_and_readme_refreshed": false
+    },
+    {
+      "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.2.5.tar.gz",
+      "sha256": "bc6e9d1a9f36fd126dac7f43bd3b2975201089c228ad06ff8c16e7ca1c5d82d6",
+      "resident_payload_changed": true,
+      "metadata_and_readme_refreshed": false
+    },
+    {
+      "artifact": "3-rcp-mode/deploy/rcp-mode-0.2.5.tar.gz",
+      "sha256": "c1cd72bdc0d5a59996449c65b960b1404ea6658f0f7b73e437250bf9d4fed151",
+      "resident_payload_changed": true,
+      "metadata_and_readme_refreshed": false
+    },
+    {
+      "artifact": "3-rcp-mode/deploy/rcp-native-0.2.5.tar.gz",
+      "sha256": "57aa822e6690ff58cd94e86d7e892a6ac6260eb4db3ef2d767c8f03d2398de83",
+      "resident_payload_changed": false,
+      "metadata_and_readme_refreshed": false
+    },
+    {
+      "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.2.5.tar.gz",
+      "sha256": "7e450168189ef2a7ccc78af80b0a7d834cc0997277c35e10521623f623ba24fb",
+      "resident_payload_changed": false,
+      "metadata_and_readme_refreshed": false
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+      "sha256": "7a2ea050d82a718ab78f1339d7a460c9752fe9440acfcf4cc52eb3b0981275c2",
+      "resident_payload_changed": true,
+      "metadata_and_readme_refreshed": false
+    },
+    {
+      "artifact": "5-otbr/deploy/rcp-recovery-update-0.2.5.tar.gz",
+      "sha256": "31427ae4f5b0cbda0999d952aee7d89c21613615926645a06018ac27a6f94261",
+      "resident_payload_changed": true,
+      "metadata_and_readme_refreshed": false
+    }
+  ],
+  "program_script_firmware_bytes_changed": true,
+  "project_version_is_not_upstream_software_version": true,
+  "installed_file_verification": "verify-installed.py; 45 resident files",
+  "transient_rcp_tools": "retained verified build; no resident counterpart required",
+  "rcp_flash": "GBL integrity and known runtime version; not a Flash byte dump",
+  "compiled": false,
+  "gateway_modified": false,
+  "installed_file_audit_matches": 45,
+  "old_010_deployment_archives_remaining": 0,
+  "old_release_packages_removed": true,
+  "all_component_readmes_current": true,
+  "internal_supervisor_update": "fresh cloud-status gated, bounded LED startup synchronization; version unchanged; README unchanged"
+}

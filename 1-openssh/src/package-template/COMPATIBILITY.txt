@@ -1,0 +1,7 @@
+Target verification: 2026-11-15, Xiaomi Gateway 2 stock BusyBox 1.20.2
+All required command names were found.
+Verified on target: df -Pk, grep -Eq/-q, sha256sum -c, cp -p, chmod, chown, mv -f, awk expressions, date format, readlink, dirname, POSIX shell set -eu, arithmetic, CDPATH and script syntax.
+Verified GNU-format tar.gz extraction in an isolated /tmp directory.
+Isolated copy/hash/permission/rename/account-selection fixtures: GATEWAY_TOOL_AUDIT_PASS, exit 0.
+No live account, SSH configuration, startup hook, or running service was modified.
+Full installer was not executed on the device.

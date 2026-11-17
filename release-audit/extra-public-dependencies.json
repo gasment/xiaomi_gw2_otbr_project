@@ -1,0 +1,8 @@
+[
+  {
+    "file": "4-rcp-openmiio/deploy/dependencies/openmiio_agent",
+    "device_path": "/data/openmiio_agent",
+    "sha256": "98c2c62611e4bd97e4d2a49ea6e70835fd3c05d6e66007d65bcc95c126462574",
+    "status": "MATCH_PUBLIC_EXECUTABLE_SNAPSHOT"
+  }
+]

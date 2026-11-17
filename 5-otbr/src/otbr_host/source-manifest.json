@@ -1,0 +1,54 @@
+{
+  "web/frontend/about.html": {
+    "origin": "upstream/esphome_openthread_enhance_project/components/esp32/thread_br/thread_br_web/frontend/about.html",
+    "sha256": "4c53462275f16ab6f37b03076e113c954c3968e4dc92a59887aed0d980aac731"
+  },
+  "web/frontend/commissioner.html": {
+    "origin": "upstream/esphome_openthread_enhance_project/components/esp32/thread_br/thread_br_web/frontend/commissioner.html",
+    "sha256": "95e4835da8497bb3f7cc3f9c8061ce369d881fc99cb89391e0c2f6280223c25e"
+  },
+  "web/frontend/favicon.ico": {
+    "origin": "upstream/esphome_openthread_enhance_project/components/esp32/thread_br/thread_br_web/frontend/favicon.ico",
+    "sha256": "bafbac6c25a20b664285c2b4c8ea40789acbe2e9c850eb43421791682ad4ae85"
+  },
+  "web/frontend/index.html": {
+    "origin": "upstream/esphome_openthread_enhance_project/components/esp32/thread_br/thread_br_web/frontend/index.html",
+    "sha256": "3f0ff6c35807b7558063d641f066ff916206b0bdf3fcd509b53e38934ec400ac"
+  },
+  "web/frontend/tools.html": {
+    "origin": "upstream/esphome_openthread_enhance_project/components/esp32/thread_br/thread_br_web/frontend/tools.html",
+    "sha256": "afebf7f7611ecf8595126792db9f1f65a4e6b3ba1d6e6ee9cf6526c61b72385e"
+  },
+  "web/frontend/topology.html": {
+    "origin": "upstream/esphome_openthread_enhance_project/components/esp32/thread_br/thread_br_web/frontend/topology.html",
+    "sha256": "8721b50b92336521b530df38f53656716e4e51c09fa0358d0c8339b735b75536"
+  },
+  "web/frontend/static/api.js": {
+    "origin": "upstream/esphome_openthread_enhance_project/components/esp32/thread_br/thread_br_web/frontend/static/api.js",
+    "sha256": "924ed440626545d93f03d8c670e15994c90e3f0b61594c226f75157734f1f920"
+  },
+  "web/frontend/static/commissioner.js": {
+    "origin": "upstream/esphome_openthread_enhance_project/components/esp32/thread_br/thread_br_web/frontend/static/commissioner.js",
+    "sha256": "baec49b5eb6158e2e478c49ef462c6e4c674e2ac0541a01b711b6bd3f632c08f"
+  },
+  "web/frontend/static/style.css": {
+    "origin": "upstream/esphome_openthread_enhance_project/components/esp32/thread_br/thread_br_web/frontend/static/style.css",
+    "sha256": "8402ddb3ae38849bc617824c258635d4866b0cef3c865ca8c3c6f8ff92226652"
+  },
+  "licenses/LICENSE.espressif": {
+    "origin": "User existing thread_br Web",
+    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "protocol/reference/api.proto": {
+    "origin": "https://raw.githubusercontent.com/esphome/esphome/2026.10.2/esphome/components/api/api.proto",
+    "sha256": "52d1831f8621c436dd15d8d19b6eaf6a632fe13e4bb00966f8b31dba39680917"
+  },
+  "protocol/reference/api_options.proto": {
+    "origin": "https://raw.githubusercontent.com/esphome/esphome/2026.10.2/esphome/components/api/api_options.proto",
+    "sha256": "1206b5d2bf815a2ad68c180a4dd5a0b42579e6b3f4fa55d389d80699d95ed20f"
+  },
+  "licenses/LICENSE.esphome-protocol-reference": {
+    "origin": "https://raw.githubusercontent.com/esphome/esphome/2026.10.2/LICENSE",
+    "sha256": "1f312390122725ee382f85af00e3df84f2490cd8fa61b9ea172bc6591cc0ac63"
+  }
+}

@@ -1,0 +1,23 @@
+Reference: origin_ko/ccm.ko
+Candidate: tun_lab/probe/mg_abi_probe.ko
+vermagic=4.9.84 SMP preempt mod_unload ARMv7 thumb2 p2v8 
+vermagic=4.9.84 SMP preempt mod_unload ARMv7 thumb2 p2v8 
+Reference module size/init/exit: ('0x200', '0xe8', '0x1cc')
+Candidate module size/init/exit: ('0x200', '0xe8', '0x1cc')
+mg_module_exit_offset = 0x1cc (460)
+mg_module_init_offset = 0xe8 (232)
+mg_netdev_dev_offset = 0x2f0 (752)
+mg_netdev_tx_offset = 0x280 (640)
+mg_sizeof_dev_pm_info = 0xc4 (196)
+mg_sizeof_device = 0x1b0 (432)
+mg_sizeof_module = 0x200 (512)
+mg_sizeof_net_device = 0x540 (1344)
+mg_sizeof_sk_buff = 0xb8 (184)
+mg_sizeof_sock = 0x228 (552)
+mg_skb_data_offset = 0xa8 (168)
+mg_skb_dev_offset = 0x14 (20)
+mg_skb_head_offset = 0xa4 (164)
+mg_skb_len_offset = 0x5c (92)
+mg_skb_mac_header_offset = 0x9a (154)
+MODULE_ABI_BASELINE_MATCH
+This only checks basic module ABI, not all network structure layouts or runtime safety.

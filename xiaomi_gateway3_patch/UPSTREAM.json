@@ -1,0 +1,27 @@
+{
+  "reviewed_date": "2026-11-18",
+  "xiaomi_gateway3_version": "4.3.0",
+  "files": [
+    {
+      "url": "https://github.com/AlexxIT/XiaomiGateway3/blob/master/custom_components/xiaomi_gateway3/core/mini_miio.py",
+      "sha256": "49696c8d602d0cbce5462e862eb643086b079a903b13ea6f9f80274bdae40210"
+    },
+    {
+      "url": "https://github.com/AlexxIT/XiaomiGateway3/blob/master/custom_components/xiaomi_gateway3/core/shell/session.py",
+      "sha256": "c4dd74e25e1f6d104f77db7755f114e34138ebbc0fdbceea58e85726b5907f73"
+    },
+    {
+      "url": "https://github.com/AlexxIT/XiaomiGateway3/blob/master/custom_components/xiaomi_gateway3/core/shell/shell_e1.py",
+      "sha256": "295301361a8e76e5127ca2c4b768f7fc5e7fb08724898a530236f7d03d62eb47"
+    },
+    {
+      "url": "https://github.com/AlexxIT/XiaomiGateway3/blob/master/custom_components/xiaomi_gateway3/core/shell/shell_mgw2.py",
+      "sha256": "4aa62a79478508e517be9afc9d167a02f15eca21a082ff5f6645d1b8d3511a65"
+    },
+    {
+      "url": "https://github.com/AlexxIT/XiaomiGateway3/blob/master/custom_components/xiaomi_gateway3/core/core_utils.py",
+      "sha256": "49f65a1861cdc83272d59f8e9860b01cc19465f004b92a633e29156900e0718c"
+    }
+  ],
+  "validation": "36 isolated tests including reviewed-version pre-execution rejection, real voluptuous schemas, mocked HA UI/lifecycle, safe bootstrap writing, and existing upstream Session loopback interop; no live HA or real password change."
+}

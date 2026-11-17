@@ -1,0 +1,42 @@
+{
+  "yaml-cpp": {
+    "version": "0.9.0",
+    "url": "https://codeload.github.com/jbeder/yaml-cpp/tar.gz/refs/tags/yaml-cpp-0.9.0",
+    "sha256": "25cb043240f828a8c51beb830569634bc7ac603978e0f69d6b63558dadefd49a"
+  },
+  "ot-br-posix": {
+    "url": "https://github.com/openthread/ot-br-posix.git",
+    "commit": "285bcb549edcfe6823269b4df2f0982298bc1e56",
+    "commit_time": "2026-11-13T17:26:20Z",
+    "submodules": [
+      "-cf97c6f066d81fdbba4ef722cfd327bbbba2365c third_party/cJSON/repo",
+      "-03cf43ebaa55f27a2778bed870ea3549f7e84e2c third_party/cpp-httplib/repo",
+      " 3de409682fa2a28452d91ec00c2614b70f986b75 third_party/openthread/repo (3de4096)",
+      " e185d7fd85499c8ce5ca2a54f5cf8fe7dbe3f8df third_party/openthread/repo/third_party/mbedtls/repo (e185d7f)",
+      " 457996474728cb8e968ed21953b72f74d2f536b2 third_party/openthread/repo/third_party/mbedtls/repo/framework (4579964)"
+    ]
+  },
+  "noise-c": {
+    "version": "0.1.31",
+    "url": "https://codeload.github.com/esphome-libs/noise-c/tar.gz/62c2fdca7a874ea898761147bb062ca1cde9f36d",
+    "sha256": "01c417887a7461d3f02aaf86626605b592dbaced89461d785d1a8a2795d19aac"
+  },
+  "web": {
+    "cJSON": {
+      "commit": "cf97c6f066d81fdbba4ef722cfd327bbbba2365c",
+      "path": "vendor/ot-br-posix/third_party/cJSON/repo"
+    },
+    "cpp-httplib": {
+      "commit": "03cf43ebaa55f27a2778bed870ea3549f7e84e2c",
+      "path": "vendor/ot-br-posix/third_party/cpp-httplib/repo"
+    }
+  },
+  "openssl-arm": {
+    "path": "../deps/openssl-arm",
+    "files": {
+      "lib/libssl.a": "c09ae8a226bdb78711458e937c10c4a64b19325da7ae1b63ba81330f18fa7cd6",
+      "lib/libcrypto.a": "8b7616d8e587e79ec8c91406c2eb14830e6752abc92f6c2640024b77a874219d",
+      "include/openssl/opensslv.h": "0d479ab0ebea6b06a581be64dd8eaa04809faee516c8ad5a514bb5072277fe53"
+    }
+  }
+}

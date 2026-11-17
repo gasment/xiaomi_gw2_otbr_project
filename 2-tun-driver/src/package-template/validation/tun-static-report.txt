@@ -1,0 +1,11 @@
+Module: tun_lab/tun/tun.ko
+SHA256: 99cb2d19c5d70b178d569f68e2f570a69d043ad7c85ef4e9e8e155ff73db5de1
+vermagic=4.9.84 SMP preempt mod_unload ARMv7 thumb2 p2v8 
+Reference layout: (512, 232, 460)
+TUN layout: (512, 232, 460)
+Kernel export snapshot entries: 6436
+Required imports: 125
+Missing exports: 0
+STATIC_SYMBOL_CHECK_PASS
+Static checks do not prove full network/socket structure compatibility or runtime safety.
+No upload, insmod, mknod or network interface operation was performed.

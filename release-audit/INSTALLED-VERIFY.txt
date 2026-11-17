@@ -1,0 +1,3 @@
+INSTALLED_FILE_AUDIT_PASS: 45 files exactly match the frozen release.
+Only SHA256 of whitelisted public component files was read; no config/key read, restart, reset or flash.
+RCP firmware is version-verified separately; no Flash byte comparison is claimed.

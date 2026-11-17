@@ -1,0 +1,60 @@
+# Developer configuration fixture, not the gateway's authoritative configuration.
+# Production YAML lives only at /data/otbr/config.yaml and is edited on the gateway.
+device:
+  name: mi-gateway2-thread
+  friendly_name: Xiaomi Thread Border Router
+
+api:
+  port: 6053
+  encryption:
+    key: !secret api_key
+
+substitutions:
+  web_user: admin
+  web_passwd: !secret web_password
+
+thread_br:
+  backbone: auto
+  backbone_config:
+    # Empty means discover eligible infrastructure interfaces, not a fixed eth0/wlan0.
+    interfaces: []
+    policy: follow_default_route
+    switch_delay: 3s
+  radio: uart_rcp
+  id: thread_br_main
+  ha_url: http://127.0.0.1:8123
+  ha_token: !secret ha_token
+  commissioner:
+    enabled: true
+    commissioner_id: parser-test
+  rcp:
+    device: /dev/ttyS1
+    baud_rate: 460800
+    flow_control: hardware
+    rcp_connectivity:
+      id: rcp_connectivity
+      name: RCP Connectivity
+  web:
+    port: 80
+    user: ${web_user}
+    passwd: ${web_passwd}
+  # Compatibility only: warns; no ESP32 PSRAM allocator exists on Linux.
+  used_psram: true
+  thread_network_config:
+    channel: 20
+    network_name: ParserTest
+    network_key: !secret thread_network_key
+    pan_id: 0x1234
+    ext_pan_id: "0011223344556677"
+    pskc: !secret thread_pskc
+    mesh_local_prefix: fd11:2233:4455:6677::/64
+    omr_prefix: fd22:3344:5566:7788::/64
+    force_dataset: true
+  thread_identity:
+    id: thread_identity
+    name: Thread ID
+    icon: mdi:identifier
+    entity_category: diagnostic
+  thread_interface: wpan0
+  state_directory: /data/otbr/state
+  update_interval: 15s

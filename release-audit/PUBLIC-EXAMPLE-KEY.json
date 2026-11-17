@@ -1,0 +1,8 @@
+{
+  "classification": "PUBLIC_UPSTREAM_CLI_EXAMPLE_KEY",
+  "sha256": "0e3c259f808654002714f6e364eb983c7eb03066b3a96e2f330c1ec2457bee87",
+  "source": "https://github.com/openthread/openthread/blob/3de409682fa2a28452d91ec00c2614b70f986b75/src/cli/x509_cert_key.hpp",
+  "source_equality_verified": true,
+  "user_or_device_private_key": false,
+  "purpose": "Public OpenThread CLI Application CoAP Secure X.509 example; not gateway SSH/HA/Thread credentials."
+}

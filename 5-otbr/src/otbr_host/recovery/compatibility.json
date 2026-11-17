@@ -1,0 +1,8 @@
+{
+  "/data/otbr/common.sh": "bb12988f34dd7bceadc37b56c34bb143bb82c3032bfb95bd6050b8d52d3fa1ae",
+  "/data/otbr/start.sh": "720690f53fba5f225436330fffe15d95535af167d43ede9234e65ce7c91984e1",
+  "/data/otbr/stop.sh": "dd4a0f5dfb5729e2a993919ac830a1fb474269a0ac81c69d85705be344b109b6",
+  "/data/otbr/supervisor.sh": "5d83b80302774e3d0fb4fdf8a6b341d3d3a0d1b0da636e84c77ed13c12f5eea1",
+  "/bin/zigbee_reset.sh": "15fe333af17bcd79ada5684ec969127beeab63ecb83db91969d0377454b5065b",
+  "/bin/zigbee_isp.sh": "269a08fe555772e4f32bc4ae22d5ac5b98419f92ff9a861b850fcce62d17cf4a"
+}

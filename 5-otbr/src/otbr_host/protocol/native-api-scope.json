@@ -1,0 +1,90 @@
+{
+  "status": "standalone C++ server source added; user build and interoperability test pending",
+  "messages": [
+    {
+      "name": "HelloRequest",
+      "id": 1
+    },
+    {
+      "name": "HelloResponse",
+      "id": 2
+    },
+    {
+      "name": "DisconnectRequest",
+      "id": 5
+    },
+    {
+      "name": "DisconnectResponse",
+      "id": 6
+    },
+    {
+      "name": "PingRequest",
+      "id": 7
+    },
+    {
+      "name": "PingResponse",
+      "id": 8
+    },
+    {
+      "name": "DeviceInfoRequest",
+      "id": 9
+    },
+    {
+      "name": "DeviceInfoResponse",
+      "id": 10
+    },
+    {
+      "name": "DeviceCapabilitiesRequest",
+      "id": 149
+    },
+    {
+      "name": "DeviceCapabilitiesResponse",
+      "id": 150
+    },
+    {
+      "name": "ListEntitiesRequest",
+      "id": 11
+    },
+    {
+      "name": "ListEntitiesDoneResponse",
+      "id": 19
+    },
+    {
+      "name": "SubscribeStatesRequest",
+      "id": 20
+    },
+    {
+      "name": "ListEntitiesBinarySensorResponse",
+      "id": 12
+    },
+    {
+      "name": "BinarySensorStateResponse",
+      "id": 21
+    },
+    {
+      "name": "ListEntitiesSensorResponse",
+      "id": 16
+    },
+    {
+      "name": "SensorStateResponse",
+      "id": 25
+    },
+    {
+      "name": "ListEntitiesTextSensorResponse",
+      "id": 18
+    },
+    {
+      "name": "TextSensorStateResponse",
+      "id": 27
+    },
+    {
+      "name": "SubscribeLogsRequest",
+      "id": 28
+    },
+    {
+      "name": "SubscribeLogsResponse",
+      "id": 29
+    }
+  ],
+  "transport": "Plaintext when encryption is omitted; otherwise Noise-only NNpsk0/25519/ChaChaPoly/SHA256; API 1.14; no ESPHome runtime"
+}
