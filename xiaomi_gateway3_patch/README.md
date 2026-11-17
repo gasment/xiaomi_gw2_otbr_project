@@ -2,6 +2,7 @@
 
 这是独立工具补充，不属于 OTBR 自动部署流程。目录名为 `xiaomi_gateway3_patch`。包含 HA 运行时补丁和网关交互密码脚本；不修改 XiaomiGateway3 的源文件。用于解决`xiaomi_gateway3`集成的无密码telent登录和阻止其root密码删除行为
 
+适配的`xiaomi_gateway3`集成版本为`4.3.0`，不保证后续更新可用
 ## HA：全部通过 UI 配置
 
 1. 把 `ha/custom_components/xiaomi_gateway3_telnet_patch` 整个目录复制到 HA 的 `/config/custom_components/`。
