@@ -1,4 +1,4 @@
-"""Password-aware MGW2 login and per-host deletion blocking, without upstream edits."""
+"""Password-aware MGW2 login and configuration-independent deletion guard."""
 import asyncio
 from functools import wraps
 import inspect
@@ -63,6 +63,16 @@ class Manager:
 
 
 MANAGER = Manager()
+
+
+def patch_telnet_command(module):
+    """Protect the audited enable command before any HA entry is set up."""
+    command = getattr(module, "TELNET_CMD", None)
+    if command not in (ORIGINAL_TELNET_COMMAND, SAFE_TELNET_COMMAND):
+        raise ImportError("Unsupported XiaomiGateway3 Telnet command; password guard refused")
+    module.TELNET_CMD = SAFE_TELNET_COMMAND
+    MANAGER.hooks.add("telnet_command")
+    LOGGER.warning("GW2_PASSWORD_PATCH_COMMAND_GUARD_ACTIVE: password deletion removed from upstream Telnet enable command")
 
 
 def sanitize_command(command):
@@ -132,6 +142,49 @@ def patch_login(module):
     MANAGER.hooks.add("mgw2_login")
 
 
+def patch_packet_transport(module):
+    """Guard the shared serializer used by both SyncMiIO and AsyncMiIO."""
+    base = module.BasemiIO
+    original = base._pack_raw
+    if getattr(original, "_gw2_password_patch", False):
+        return
+    if inspect.iscoroutinefunction(original) or tuple(inspect.signature(original).parameters) != ("self", "msg_id", "method", "params"):
+        raise ImportError("Unsupported XiaomiGateway3 miIO packet API; password guard refused")
+
+    @wraps(original)
+    def pack(self, msg_id, method, params=None):
+        if method == "enable_telnet_service":
+            raise PasswordPatchError("Built-in Telnet reset blocked at packet boundary")
+        if method in ("system_command", "set_ip_info"):
+            if not isinstance(params, dict):
+                raise PasswordPatchError("Unknown privileged packet parameters blocked")
+            params = dict(params)
+            if method == "system_command":
+                params["command"] = sanitize_command(params.get("command"))
+            else:
+                command = params.get("pswd")
+                if command not in ("1; " + ORIGINAL_TELNET_COMMAND, "1; " + SAFE_TELNET_COMMAND):
+                    raise PasswordPatchError("Unrecognized privileged packet blocked")
+                params["pswd"] = "1; " + SAFE_TELNET_COMMAND
+            try:
+                host = str(ipaddress.ip_address(self.addr[0]))
+            except (ValueError, AttributeError, TypeError, IndexError):
+                host = "unresolved"
+            LOGGER.warning("GW2_PASSWORD_PATCH_TELNET_ENABLE_PACKED: gateway=%s method=%s transport=%s command=safe",
+                           host, method, "async" if inspect.iscoroutinefunction(getattr(self, "send", None)) else "sync")
+        return original(self, msg_id, method, params)
+
+    pack._gw2_password_patch = True
+    base._pack_raw = pack
+    MANAGER.hooks.add("miio_packet")
+    LOGGER.warning("GW2_PASSWORD_PATCH_PACKET_GUARD_ACTIVE: shared SyncMiIO/AsyncMiIO serializer protected")
+
+
+def patch_miio_module(module):
+    patch_packet_transport(module)
+    patch_miio(module)
+
+
 def patch_miio(module):
     original = module.AsyncMiIO.send
     if getattr(original, "_gw2_password_patch", False):
@@ -141,6 +194,27 @@ def patch_miio(module):
 
     @wraps(original)
     async def send(self, method, params=None, tries=3):
+        # This guard is intentionally independent of credentials and entry
+        # setup order. Never release the audited deletion command, even when
+        # configuration is empty, incomplete, or the host is not matched.
+        if method == "enable_telnet_service":
+            raise PasswordPatchError("Built-in Telnet enable can clear passwords; operation blocked")
+        if method == "system_command" and isinstance(params, dict):
+            command = params.get("command")
+            if command in (ORIGINAL_TELNET_COMMAND, SAFE_TELNET_COMMAND):
+                safe = dict(params)
+                safe["command"] = SAFE_TELNET_COMMAND
+                if command == ORIGINAL_TELNET_COMMAND:
+                    LOGGER.warning("GW2_PASSWORD_PATCH_DELETE_STRIPPED: system_command")
+                return await original(self, method, safe, tries)
+        if method == "set_ip_info" and isinstance(params, dict):
+            command = params.get("pswd")
+            if command in ("1; " + ORIGINAL_TELNET_COMMAND, "1; " + SAFE_TELNET_COMMAND):
+                safe = dict(params)
+                safe["pswd"] = "1; " + SAFE_TELNET_COMMAND
+                if command == "1; " + ORIGINAL_TELNET_COMMAND:
+                    LOGGER.warning("GW2_PASSWORD_PATCH_DELETE_STRIPPED: set_ip_info")
+                return await original(self, method, safe, tries)
         if method in ("system_command", "set_ip_info", "enable_telnet_service"):
             password = await MANAGER.password_for(self.addr[0])
             if password is not None:

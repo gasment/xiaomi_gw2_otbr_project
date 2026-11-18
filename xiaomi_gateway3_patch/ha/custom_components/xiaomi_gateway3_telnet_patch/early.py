@@ -1,14 +1,16 @@
 """Install import hooks before XiaomiGateway3 imports; no HA setup/network I/O here."""
 from importlib import abc, machinery
 import json
+import logging
 from pathlib import Path
 import sys
 
-from .runtime import MANAGER, patch_login, patch_miio
+from .runtime import MANAGER, patch_login, patch_miio_module, patch_telnet_command
 
 TARGETS = {
     "custom_components.xiaomi_gateway3.core.shell.shell_mgw2": patch_login,
-    "custom_components.xiaomi_gateway3.core.mini_miio": patch_miio,
+    "custom_components.xiaomi_gateway3.core.mini_miio": patch_miio_module,
+    "custom_components.xiaomi_gateway3.core.core_utils": patch_telnet_command,
 }
 UPSTREAM = "custom_components.xiaomi_gateway3"
 
@@ -19,7 +21,7 @@ def validate_upstream(spec):
         root = Path(spec.origin).parent
         version = json.loads((root / "manifest.json").read_text())["version"]
         if version != "4.3.0" or not all((root / name).is_file() for name in (
-            "core/mini_miio.py", "core/shell/shell_mgw2.py")):
+            "core/mini_miio.py", "core/core_utils.py", "core/shell/shell_mgw2.py")):
             raise ValueError
     except (OSError, ValueError, KeyError, TypeError):
         raise ImportError("Gateway password patch supports reviewed XiaomiGateway3 4.3.0 only; review compatibility before upgrading") from None
@@ -65,3 +67,5 @@ def install_early_hooks():
         raise RuntimeError("Password hook loaded too late; install bootstrap and restart HA")
     sys.meta_path.insert(0, _Finder())
     MANAGER.early_installed = True
+    logging.getLogger("custom_components.xiaomi_gateway3_telnet_patch").warning(
+        "GW2_PASSWORD_PATCH_EARLY_GUARD_ACTIVE: cold-start guard revision 3 installed before Gateway3 imports")

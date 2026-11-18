@@ -37,7 +37,7 @@ async def async_setup(hass, config):
         LOGGER.error("GW2_PASSWORD_PATCH_CONFIG_ERROR: check gateway addresses and passwords")
         return False
     if MANAGER.early_installed:
-        LOGGER.info("GW2_PASSWORD_PATCH_READY: early hooks active; %d protected gateway(s)", data["protected_gateways"])
+        LOGGER.warning("GW2_PASSWORD_PATCH_CONFIG_READY: early hooks active; %d password-configured gateway(s)", data["protected_gateways"])
     elif data["yaml_gateways"]:
         LOGGER.error("GW2_PASSWORD_PATCH_NOT_READY: install startup hook and restart HA")
         return False

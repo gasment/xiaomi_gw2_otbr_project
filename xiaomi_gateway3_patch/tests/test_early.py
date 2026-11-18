@@ -16,7 +16,8 @@ class EarlyTests(unittest.TestCase):
                 p = root / name
                 p.mkdir(parents=True, exist_ok=True)
                 (p / "__init__.py").write_text("")
-            (root / "custom_components/xiaomi_gateway3/core/mini_miio.py").write_text("class AsyncMiIO:\n async def send(self, method, params=None, tries=3):\n  return params\n")
+            (root / "custom_components/xiaomi_gateway3/core/mini_miio.py").write_text("class BasemiIO:\n def _pack_raw(self, msg_id, method, params=None):\n  return params\nclass AsyncMiIO(BasemiIO):\n async def send(self, method, params=None, tries=3):\n  return params\n")
+            (root / "custom_components/xiaomi_gateway3/core/core_utils.py").write_text("TELNET_CMD = 'passwd -d $USER; riu_w 101e 53 3012 || echo enable > /sys/class/tty/tty/enable; telnetd'\n")
             (root / "custom_components/xiaomi_gateway3/manifest.json").write_text('{"version":' + repr(version).replace("'", '"') + '}')
             marker = root / "upstream-executed"
             if version != "4.3.0":
@@ -45,9 +46,11 @@ else:
  install_early_hooks();install_early_hooks()
  from custom_components.xiaomi_gateway3.core.mini_miio import AsyncMiIO
  from custom_components.xiaomi_gateway3.core.shell.shell_mgw2 import ShellMGW2
+ from custom_components.xiaomi_gateway3.core import core_utils
  assert getattr(AsyncMiIO.send,'_gw2_password_patch',False)
  assert getattr(ShellMGW2.login,'_gw2_password_patch',False)
- assert MANAGER.hooks=={{'miio_send','mgw2_login'}}
+ assert MANAGER.hooks=={{'miio_send','mgw2_login','telnet_command','miio_packet'}}
+ assert 'passwd' not in core_utils.TELNET_CMD
  assert MANAGER.early_installed
 """
             subprocess.run([sys.executable, "-c", code], check=True)

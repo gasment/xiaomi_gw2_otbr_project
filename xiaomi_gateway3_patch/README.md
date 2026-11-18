@@ -21,7 +21,27 @@
 
 引导保证在 XiaomiGateway3 模块导入结束前挂钩，防止普通集成加载顺序造成删密码窗口。新安装的引导必须重启 HA 后才生效，UI 会给出修复提示；不自动重启 HA。已有引导块被手工改动、初始化文件语法错误、符号链接或目录不可写时会拒绝自动写入。
 
-引导存在而补丁配置未就绪时，相关 MGW2 登录和特权开启命令等待或拒绝，不回退到空密码/删密码行为。禁用条目不会从运行中的 Python 进程移除全局导入钩子。
+当前 HA 密码保护修订为 3（不是 BLE 缓存补丁修订号）：引导在 Gateway3 模块导入时，直接去掉其官方 Telnet 开启命令中的 `passwd -d`；AsyncMiIO 发送层和 SyncMiIO/AsyncMiIO 共用的报文打包层还会再次处理该命令。共享打包层可覆盖绕过异步发送包装、或提前保存原发送方法的调用。这条保护不依赖 UI 配置、IP 匹配或条目加载先后。无法安全拆分的 `enable_telnet_service` 一律阻止，未审查的特权报文也会拒绝。
+
+配置未就绪时，受保护网关的密码登录继续等待或拒绝，不回退空密码。禁用条目不会从运行中的 Python 进程移除全局导入钩子。
+
+### 已安装用户：修复 Docker 冷启动后密码被清空
+
+1. 覆盖 HA `/config/custom_components/xiaomi_gateway3_telnet_patch/` 整个组件目录，保留现有 UI 条目及 `/config/custom_components/__init__.py` 启动引导。
+2. 在 HA 容器终端运行下面的只读检查。它只输出是否存在引导、两边网关地址是否匹配，不输出密码或 Token：
+
+    ```sh
+    python /config/custom_components/xiaomi_gateway3_telnet_patch/check_config.py
+    ```
+
+   两台网关都应为 `password_login_config=matched`，且 `BOOTSTRAP_ON_DISK=present`。该检查只验证磁盘配置，不能替代运行中钩子的确认。
+3. 用你原来的 `docker restart` 方式冷启动 HA。启动日志应有 `GW2_PASSWORD_PATCH_EARLY_GUARD_ACTIVE`（revision 3）、`GW2_PASSWORD_PATCH_PACKET_GUARD_ACTIVE`、`GW2_PASSWORD_PATCH_COMMAND_GUARD_ACTIVE` 和 `GW2_PASSWORD_PATCH_CONFIG_READY`。各模块按需加载，日志先后不作为判定依据。缺少早期保护标记时，先检查启动引导及 HA 实际挂载的 `/config`，不要声称密码已受保护。
+4. 对已被清空密码的网关，通过现有空密码 Telnet 登录，运行下面的密码脚本，设置与该网关 HA 补丁条目相同的密码。SSH 无需重装，也无需允许空密码。
+5. 使用实际故障触发方式验收：如果原自动化同时重启网关和 HA 容器，应运行这套并发流程；仅单独重启 HA 不足以覆盖它。确认密码仍为 `ROOT_AUTH=sha512`、新密码 SSH 可登录，以及 BLE 有新的状态更新。
+
+Gateway3 command 实体的 reboot 动作本身只发送 `reboot`。网关启动期间端口不可达，可能触发额外的 Telnet 开启流程；两者必须区分。新打包层会记录 `GW2_PASSWORD_PATCH_TELNET_ENABLE_PACKED`，只含目标 IP、方法、同步/异步路径及 `command=safe`，不记录口令或 miIO 认证参数。该日志代表安全命令已打包，不代表网关已经收到。若网关仍记录收到含 `passwd -d` 的原始 `system_command`，应按时间关联发送路径，不能仅凭已有启动标记认定本次发送已经受保护。
+
+早期保护仍依赖 `/config/custom_components/__init__.py` 引导实际执行。其他 HA 实例或其他客户端发出的删密码命令不在本补丁控制范围内。单凭一台网关丢失密码，无法直接认定具体执行者或启动时序；应结合上述检查和启动日志确认。
 
 ## 网关：设置 root 密码
 
@@ -64,7 +84,7 @@ ssh -p 2223 -o PubkeyAuthentication=no -o PreferredAuthentications=password root
    ```
    仍应为 ROOT_AUTH=sha512。再打开一个新 SSH 窗口，强制使用密码登录：
     ```cmd
-   ssh -p 2223 -o PubkeyAuthentication=no -o PreferredAuthentications=password root@192.168.32.128
+   ssh -p 2223 -o PubkeyAuthentication=no -o PreferredAuthentications=password root@192.0.2.10
    ```
    输入新密码，应能登录。
   重启 HA 后新蓝牙状态正常、root 密码仍保留、新密码 SSH 登录成功，就完成了正常重连测试
@@ -74,7 +94,7 @@ ssh -p 2223 -o PubkeyAuthentication=no -o PreferredAuthentications=password root
 ## 作用范围
 
 - 受保护 MGW2 的 Telnet 登录使用所配密码，不接受空密码回退。
-- 配置加载完成后，未列入保护的网关保持原行为。
+- 未列入密码配置的网关仍用原登录方式；但 Gateway3 官方 Telnet 开启命令中的删密码部分同样会被剔除，内置 `enable_telnet_service` 会被阻止。依赖这两个清密码行为的旧网关需要另行确认兼容性。
 - 修改地址或删除条目时，旧地址在当前 HA 进程中不会立即恢复为可删密码的旧逻辑。
 - 本补丁只约束安装它的 HA 实例。其他未打补丁的实例或掌握 miIO 凭据的客户端，仍可能执行原厂接口。
 - Telnet 仍是明文传输。
