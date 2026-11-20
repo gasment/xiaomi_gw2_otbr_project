@@ -1,4 +1,4 @@
-# Xiaomi Multimode Gateway 2 OpenThread Border Router
+·# Xiaomi Multimode Gateway 2 OpenThread Border Router
 
 # 小米多模网关 2 OTBR 项目 
 * 当前版本 **0.3.0**（以根目录 [VERSION](VERSION) 为准）
@@ -26,7 +26,7 @@
 ## 使用前提
 - **网关型号**：必须为`lumi.gateway.mcn001`，SSD222D 主处理器、MHCZ01P 无线模块和原厂 Linux 4.9.84内核
 - **网关接入**：必须提供Telnet访问权限，使用Xiaomi Gateway3集成接入HA即可开启（固件版本低于1.0.7），并保存好设备KEY，参阅 [Xiaomi Gateway3](https://github.com/AlexxIT/XiaomiGateway3)
-- **网关固件**：必须不低于 `1.0.8_0015`。该版本及以上允许安装；高于该版本的长期兼容性尚未逐版验收。低于此版本时，先接入 XiaomiGateway3 并保存设备 KEY，再进行 OTA 更新。
+- **网关固件**：必须不低于 `1.0.8_0015`。该版本及以上允许安装；高于该版本的长期兼容性尚未逐版验收。低于此版本时，先接入 XiaomiGateway3 并保存设备 KEY，再进行 OTA 更新。如你无法使用米家更新，或需要降级到`1.0.8_0015`，参考[手动OTA](official_ota_packages/README.md)
 ## 使用说明
 
 - **原厂访问前提**：部署前需自行取得 root Telnet / FTP 访问权限，本项目不提供解锁流程。SSH 是部署链的第一个部件。
@@ -41,26 +41,23 @@
 ## 自动部署
 自动部署仅适用于首次安装，如果网关存在已安装的组件，请不要使用自动部署，应参照手动部署独立更新。
 
-自动部署使用 Windows 单文件程序，不需要安装 Python，也不需要解压组件 ZIP。
+自动部署使用 Windows GUI程序管理。
 
-0. 确保网关固件**不低于 1.0.8_0015**；TUN 通过 `/etc/os-release` 的 `LUMI_VERSION` 判断。
-1. 从 Release 下载 `MiGateway2AutoDeploy-0.3.0.exe` 及对应 `.sha256` 文件。
-2. 先暂时停用 HA Xiaomi Gateway 3 中对应的网关条目，避免原 Zigbee 串口被重新占用。
-3. 运行 EXE，输入网关 IP、端口和 root 密码，点击“连接并刷新”，选择组件后执行一键部署。
-4. 使用界面中的 YAML 上传功能创建或更新 `/data/otbr/config.yaml`，详细字段参照项目文档内的 `5-otbr/README.md`。
-5. 修改完成后在网关执行如下命令来启动OTBR
+![alt text](image.png)
 
-    ```sh
-    sh /data/otbr/check.sh
-    sh /data/otbr/restart.sh
-    ```
-6. 进入网关的Web后台查看Thread状态，进入HA检查是否自动发现设备
+0. 确保网关固件**不低于 1.0.8_0015**
+1. 从 Release 下载 `MiGateway2AutoDeploy-x.x.x.exe` , `.sha256` 文件用于校验文件一致性。
+2. 运行 EXE，输入网关 IP、端口和 root 密码（默认密码为空），点击连接，选择组件后执行一键部署。
+3. 使用界面中的 "更新OTBR配置" 功能上传 OTBR yaml 文件，详细字段参照项目文档内的 [5-otbr/README.md](5-otbr/README.md) `。
+4. 进入网关的Web后台查看Thread状态，进入HA检查是否自动发现设备
 
+⚠️恢复出厂中的**刷回Zigbee**仅将无线固件刷回厂家版本，没有实际功能测试，无法验证其可行性
 
 
 ## 手动部署
+**V0.3.0版本开始已不再推荐手动部署组件，应交由GUI统一管理组件安装注册与卸载，防止配置错误导致网关无法启动**
 
-首次部署请按下表顺序进行。每一步先完成该部件文档中的验证，再进入下一步；刷写 RCP 前按说明暂时停用可能占用 Zigbee 串口的 HA 网关条目。
+以下说明仅供参考与备忘
 
 | 顺序 | 部件 | 部署内容 | 部署说明 |
 | --- | --- | --- | --- |
@@ -72,39 +69,12 @@
 
 ** 本项目提供的openssh预构建版本，编译时使用最新的`10.6p2`，官方已修复"sshole" 密码认证绕过漏洞（CVE-2026-123158）
 
-各部件的发布包从对应目录的`deploy`获取，已改造的网关应按目标部件说明更新，不要重复运行底层首次安装器覆盖现有启动链。
-
-部署前可从项目根目录进行离线校验：
-
-```sh
-python3 verify-release.py
-```
-
-安装完成后，可经 SSH 只读核对发布文件与网关的一致性。将 `GATEWAY_ADDRESS` 替换为实际网关 IP：
-
-```sh
-python3 verify-installed.py --gateway GATEWAY_ADDRESS
-```
-
-网关上检查 OTBR 运行状态：
-
-```sh
-sh /data/otbr/status.sh
-```
-
-修改网关配置后，先检查再重启：
-
-```sh
-sh /data/otbr/check.sh
-sh /data/otbr/restart.sh
-```
-
-
-
 ## 自行构建
 本项目提供已编译好的静态二进制程序，如你需要重新编译，可参阅[构建准备](BUILD-PREPARATION.md)和各部件 README 的“手动构建步骤简易说明”
 
-
+## 版本迁移与故障恢复
+* 从0.2.x版本迁移到v0.3.0或以上版本时，需要做特殊处理，否则将导致设备无法正常启动，参考[版本迁移](migrate_faultsave/migrate_from_0.2.x_to_0.3.0/readme.md)
+* 如设备无法启动，参考[故障恢复](migrate_faultsave/faultsave/readme.md)
 ## 依赖许可
 
 本项目使用多个独立上游项目。下表列出主要依赖及随源码保留的许可入口；依赖内部的其他第三方文件仍以各自版权和许可证声明为准。
