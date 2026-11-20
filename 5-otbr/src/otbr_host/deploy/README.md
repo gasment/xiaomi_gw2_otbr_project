@@ -1,5 +1,10 @@
 # OTBR 程序安装包
 
+## post_init 模块
+
+本组件只增删 `otbr` 模块，并由 `/data/otbr/boot-manager.sh` 管理 OTBR、RCP mode 和 RCP/openmiio 前置条件。RCP mode 与 openmiio 安装器不再直接修改 `post_init.sh`。
+
+
 包内只含程序、脚本、示例和公共 CA，**不包含实际 config.yaml/secrets.yaml**。Host 从网关 /data/otbr/config.yaml 读取运行配置，用户在网关编辑。
 
 ## 安装或升级
@@ -58,7 +63,7 @@ sh /data/otbr/uninstall.sh
 卸载恢复先前启动链和 IPv6 sysctl，保留用户配置/状态/备份，不删除 BLE/TUN/SSH，也不自动刷回 Zigbee。若启动钩子后来被别人改动，会保留并报错，避免覆盖。
 
 服务启动保存并启用 IPv6、forwarding 和 LAN accept_ra=2，停止恢复原值；不重配 IPv4。复用原 RCP/BLE 隔离链。HA 查询在独立线程，HTTP/HTTPS、响应上限、5 分钟缓存、冲突拒绝与失败退避均已接入。HTTPS 校验证书，用户在网关维护自签名 CA。完整 BBR/MLR 组播与 NAT64 尚未启用。
-# 0.2.5 可选功能
+# 0.3.0 可选功能
 
 版本以包内 VERSION 为准。thread_proxy_api 始终编入 Host，但只有网关配置中存在同名顶层映射时才启动；缺省不启用。完整参数和节点/HA 验证见源码 THREAD-PROXY.md。端口默认 TCP 6065、Thread 内 UDP 6064，独立于网关实体 Native API 6053。旧配置无需修改即可继续运行。
 

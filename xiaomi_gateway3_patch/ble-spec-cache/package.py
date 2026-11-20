@@ -21,6 +21,9 @@ files = {'install.sh': (here / 'install.sh').read_bytes(), 'README.md': (here / 
          'LICENSE': (here / 'LICENSE').read_bytes(),
          'VERSION': (version + '\n').encode()}
 files.update({'payload/' + p.name: p.read_bytes() for p in (here / 'payload').iterdir() if p.is_file()})
+for p in (here / 'post-init').rglob('*'):
+    if p.is_file():
+        files['post-init/' + p.relative_to(here / 'post-init').as_posix()] = p.read_bytes()
 files['payload/spec-cache.lua'] = (here / 'src/spec-cache.lua').read_bytes()
 files['payload/ble-cache-clock'] = (here / 'build/ble-cache-clock').read_bytes()
 payload = {name.removeprefix('payload/'): data for name, data in files.items() if name.startswith('payload/')}

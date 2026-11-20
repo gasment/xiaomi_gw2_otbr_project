@@ -1,6 +1,6 @@
 {
-  "project_version": "0.2.5",
-  "release_date": "2026-11-17",
+  "project_version": "0.3.0",
+  "release_date": "2026-11-20",
   "gateway": "GATEWAY_ADDRESS",
   "kernel": "4.9.84",
   "profile": "bbr-userspace-af-packet",
@@ -14,7 +14,7 @@
   ],
   "archive_deployment_file_matches": 39,
   "installed_file_matches": 45,
-  "boot_chain_file_matches": 5,
+  "boot_chain_file_matches": "4 modules plus single stock anchor",
   "shared_build_sources_directory": "0-build-src",
   "shared_dependency_datasets": 10,
   "shared_component_links": 18,
@@ -22,12 +22,13 @@
   "project_version_source": "VERSION",
   "build_root": ".",
   "development_archive_used_for_build": false,
-  "source_version": "0.2.5",
-  "frozen_deployment_version": "0.2.5",
+  "source_version": "0.3.0",
+  "frozen_deployment_version": "0.3.0",
   "source_build_status": "rebuilt_and_reboot_accepted_0015",
   "user_compilation_performed": true,
-  "current_release_evidence": "release-audit/RELEASE-0.2.5.json",
+  "current_release_evidence": "release-audit/RELEASE-0.3.0.json",
   "stock_firmware_baseline": "1.0.8_0015",
   "kernel_build": "Linux version 4.9.84 (yanjinming@embd-normal-2004) (gcc version 9.1.0 (GCC) ) #1 SMP PREEMPT Wed Aug 19 11:58:20 CST 2026",
-  "baseline_runtime_evidence": "release-audit/BASELINE-1.0.8_0015.json"
+  "baseline_runtime_evidence": "release-audit/BASELINE-1.0.8_0015.json",
+  "post_init_architecture": "modular-api-1"
 }

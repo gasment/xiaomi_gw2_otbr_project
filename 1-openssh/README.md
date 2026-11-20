@@ -1,5 +1,10 @@
 > GitHub 源码版：大型构建依赖和预构建包不随仓库提供。构建前按 [BUILD-RESOURCES.md](../BUILD-RESOURCES.md) 补齐资源并恢复链接；安装包从 Release 获取。
 
+## post_init 模块
+
+本组件只增删 `# BEGIN/END MI-GW2 POST-INIT MODULE: openssh` 块，不再替换整份 `/data/scripts/post_init.sh`。启动失败只写日志，最终原厂锚点仍会执行。
+
+
 
 ## 部件说明
 
@@ -9,11 +14,11 @@ OpenSSH Portable 10.6p2，提交 `d449e662b6b8b8cb20e852d8084c269af1c5e8f1`。AR
 
 ## 打包版本部署方法
 
-适用于尚未安装后续 TUN/RCP/OTBR 的原厂启动链。先用原有 FTP 上传 `deploy/mi_gateway_2_openssh_deploy-0.2.5.tar.gz` 到网关 `/tmp`，在 Telnet 中执行：
+适用于尚未安装后续 TUN/RCP/OTBR 的原厂启动链。先用原有 FTP 上传 `deploy/mi_gateway_2_openssh_deploy-0.3.0.tar.gz` 到网关 `/tmp`，在 Telnet 中执行：
 
 ```sh
 cd /tmp
-tar -xzf mi_gateway_2_openssh_deploy-0.2.5.tar.gz
+tar -xzf mi_gateway_2_openssh_deploy-0.3.0.tar.gz
 sh /tmp/mi_gateway_2_openssh_deploy/install.sh
 ```
 

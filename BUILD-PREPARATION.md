@@ -128,32 +128,11 @@ tar -xzf 0-build-src/downloads/yaml-cpp-0.9.0.tar.gz --strip-components=1 -C 0-b
 
 ## 5. 两份无线 GBL 与可选发布资源
 
-直接把资源清单中的两份精确 GBL 放到 `0-build-src/firmware`；也可以从本项目的 Windows Release 包取出，步骤如下。
-
-从本项目 Release 下载 `mi-gw2-windows-deploy-0.2.0.zip` 及对应 `.sha256`，放入 `0-build-src/downloads`，再执行：
-
-```sh
-cd 0-build-src/downloads
-sha256sum -c mi-gw2-windows-deploy-0.2.0.zip.sha256
-unzip mi-gw2-windows-deploy-0.2.0.zip -d release
-cd "$PROJECT_ROOT"
-tar -xzf 0-build-src/downloads/release/mi-gw2-auto-deploy-0.2.0.tar.gz -C 0-build-src/downloads/release
-tar -xzf 0-build-src/downloads/release/mi-gw2-auto-deploy/assets/rcp-native-0.2.0.tar.gz -C 0-build-src/downloads/release
-mkdir -p 0-build-src/firmware
-cp 0-build-src/downloads/release/rcp-native/firmware/*.gbl 0-build-src/firmware/
-```
+直接把资源清单中的两份精确 GBL 放到 `0-build-src/firmware`。仓库不再提供包含旧版整包安装器的 Windows 部署 ZIP，也不应从自动部署 EXE 中提取或替换构建资源。
 
 RCP 工具构建会校验两份 GBL，不重新编译无线固件，也不会执行刷写。普通 Host 构建不需要 Silicon Labs SDK。仅重编无线固件或外部 openmiio 时才需要清单中的可选 SDK／Go 环境。
 
-若维护者还要重新打包 Windows 部署 ZIP，可把同一已解压目录中的九个发布资源放到仓库同级 release：
-
-```sh
-mkdir -p ../release
-cp 0-build-src/downloads/release/mi-gw2-auto-deploy/assets/* ../release/
-python3 verify-release.py --artifacts ../release
-```
-
-此处是复用已发布资源；自行编译的新产物仍需重新验收并更新发布指纹，不能直接当作原已验证发布件。
+Windows 管理端从各部件 `deploy` 目录直接汇集资源，构建入口为 `auto-deploy/gui-python/build.ps1`。自行编译的新产物仍需重新验收并更新发布指纹，不能直接当作原已验证发布件。
 
 ## 6. ARM 静态 OpenSSL
 

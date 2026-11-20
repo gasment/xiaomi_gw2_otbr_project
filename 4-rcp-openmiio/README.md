@@ -1,20 +1,25 @@
 > GitHub 源码版：大型构建依赖和预构建包不随仓库提供。构建前按 [BUILD-RESOURCES.md](../BUILD-RESOURCES.md) 补齐资源并恢复链接；安装包从 Release 获取。
 
-# 4 — RCP 与 Xiaomi Gateway 3 BLE 共存（项目版本 0.2.5）
+## post_init 边界
+
+RCP/openmiio supervisor 由 OTBR boot manager 启动，不再直接拥有或替换 `post_init.sh`。
+
+
+# 4 — RCP 与 Xiaomi Gateway 3 BLE 共存（项目版本 0.3.0）
 
 ## 部件说明
 
 仅在网关管理 openmiio，启动参数固定为 `miio mqtt cache central`，去掉 z3/zigbee.tcp，让蓝牙继续向 HA 上报、UART 留给 OTBR。不修改 HA 集成文件，不伪造 openmiio 哈希，不改 root 空密码。
 
-本项目源码是 src/rcp-openmiio-package 的启动入口、guard、卸载和兼容检查脚本。openmiio 是外部依赖：1.2.1，可执行文件已从当前网关只读归档至 deploy/dependencies/openmiio_agent 并核对 SHA256。它不是本项目重编译的产物；对应精确源码提交未确认，上游源码预留在 src/external/openmiio_agent。
+本项目源码是 src/rcp-openmiio-package 的启动入口、guard、卸载和兼容检查脚本。openmiio 是外部依赖，最低版本为 1.2.1：高于或等于 1.2.1 的现有版本会保留，低于 1.2.1 时才替换。1.2.1 基线的可执行文件已从当前网关只读归档至 deploy/dependencies/openmiio_agent 并核对 SHA256。它不是本项目重编译的产物；对应精确源码提交未确认，上游源码预留在 src/external/openmiio_agent。
 
 ## 打包版本部署方法
 
-完成第 3 部件且确认隔离正常后，将 `deploy/rcp-openmiio-0.2.5.tar.gz` 上传 `/tmp`。安装器要求 `/data/openmiio_agent` 已是验证版本；若文件不存在，可先通过 SFTP 上传 deploy/dependencies 的可执行依赖到该路径，再 `chmod 755 /data/openmiio_agent`。已有运行中但版本不匹配时先协调 HA/原管理流程，不覆盖运行文件绕过校验。
+完成第 3 部件且确认隔离正常后，将 `deploy/rcp-openmiio-0.3.0.tar.gz` 上传 `/tmp`。安装器要求 `/data/openmiio_agent` 已是验证版本；若文件不存在，可先通过 SFTP 上传 deploy/dependencies 的可执行依赖到该路径，再 `chmod 755 /data/openmiio_agent`。已有运行中但版本不匹配时先协调 HA/原管理流程，不覆盖运行文件绕过校验。
 
 ```sh
 cd /tmp
-tar -xzf rcp-openmiio-0.2.5.tar.gz
+tar -xzf rcp-openmiio-0.3.0.tar.gz
 sh /tmp/rcp-openmiio/install.sh
 sh /data/rcp-openmiio/start.sh --now
 ```

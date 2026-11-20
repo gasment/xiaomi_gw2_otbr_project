@@ -9,15 +9,33 @@ fail() { echo "ERROR: $*" >&2; exit 1; }
 [ ! -e "$STATE" ] || fail 'Session already exists. Restore and reboot first.'
 [ "$(cat /sys/class/gpio/gpio43/value)" = 1 ] || fail 'Unexpected ISP level.'
 [ "$(cat /sys/class/gpio/gpio44/value)" = 0 ] || fail 'Unexpected RESET level.'
-PIDS=$(pidof openmiio_agent || true)
-MONITORS=$(ps | awk '/\/bin\/app_monitor[.]sh/ {print $1}')
-[ -n "$PIDS" ] && [ -n "$MONITORS" ] || fail 'Expected original services not found.'
+SERVICES=
+for D in /proc/[0-9]*; do
+    [ -d "$D" ] || continue
+    PID=${D##*/}
+    [ "$PID" = "$$" ] && continue
+    CMD=$(tr '\000' ' ' <"$D/cmdline" 2>/dev/null || :)
+    case "$CMD" in
+        *openmiio_agent*|*app_monitor.sh*)
+            case " $SERVICES " in
+                *" $PID "*) ;;
+                *) SERVICES="$SERVICES $PID" ;;
+            esac
+            ;;
+    esac
+done
+if [ -z "$SERVICES" ]; then
+    echo 'FACTORY_WARNING: original openmiio/app_monitor services are already absent; continuing with UART ownership checks.'
+fi
 mkdir "$STATE"
 : > "$STATE/paused-pids"
 cleanup() { for PID in $(cat "$STATE/paused-pids"); do kill -CONT "$PID" 2>/dev/null || true; done; }
 trap cleanup 0
 trap 'exit 1' 1 2 15
-for PID in $PIDS $MONITORS; do
+for PID in $SERVICES; do
+    case "$PID" in
+        ''|*[!0-9]*) continue ;;
+    esac
     if grep -q '^State:.*T' "/proc/$PID/status"; then fail 'A service is already stopped.'; fi
     printf '%s\n' "$PID" >> "$STATE/paused-pids"
     kill -STOP "$PID"

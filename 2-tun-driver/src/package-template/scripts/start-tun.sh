@@ -3,7 +3,7 @@ set -eu
 BASE=/data/tun
 fail() { echo "TUN ERROR: $*" >&2; exit 1; }
 [ -f "$BASE/enabled" ] || { echo 'TUN autostart is disabled.'; exit 0; }
-[ "$(cat /proc/version)" = "$(cat "$BASE/expected-proc-version.txt")" ] || fail 'Kernel build differs from the validated target; module was not loaded.'
+sh "$BASE/check-firmware.sh" 1.0.8_0015 >/dev/null || fail 'LUMI_VERSION is older than 1.0.8_0015; module was not loaded.'
 [ "$(uname -r)" = 4.9.84 ] || fail 'Unsupported kernel release.'
 if ! grep -q '^tun ' /proc/modules; then
     insmod "$BASE/tun.ko"

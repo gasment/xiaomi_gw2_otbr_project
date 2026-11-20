@@ -1,5 +1,10 @@
 # 小米多模网关 2：RCP 启动隔离
 
+## post_init 边界
+
+RCP mode 是 OTBR 的内部前置步骤，不再拥有或替换 `post_init.sh`。
+
+
 本包用于当前已验证的网关系统及既有 OpenSSH、TUN 部署。RCP 已刷入，并已通过本机 Spinel 探测；本包不刷固件、不创建 Thread 网络、不包含 OTBR。
 
 ## 安装
@@ -15,7 +20,7 @@ sh /tmp/rcp-mode/install.sh
 reboot
 ```
 
-安装器核对原厂两个脚本的精确 SHA256，要求现有启动入口与此前 TUN 部署一致。安装只写 /data，下一次启动生效；不会恢复当前暂停的原厂进程。若校验失败，保留报错，不强行绕过。不要执行原生刷写包的 restore-services.sh。
+安装器先备份当前 `/bin/fw_manager.sh` 与 `/bin/app_monitor.sh`，再根据已知代码结构生成兼容隔离副本，保留当前固件的其他启动逻辑。适用于 `LUMI_VERSION >= 1.0.8_0015`；无法识别脚本结构时拒绝安装。安装只写 /data，下一次启动生效；不会恢复当前暂停的原厂进程。不要执行原生刷写包的 restore-services.sh。
 
 ## 重启检查
 

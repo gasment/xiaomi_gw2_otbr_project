@@ -129,8 +129,8 @@ while :; do
             sleep 1
         done
     else
-        if ! (cd "$BASE" && sha256sum -c openmiio.sha256 >/dev/null 2>&1); then
-            echo 'ERROR: openmiio binary differs from the BLE-tested build; restart withheld. Revalidate after integration upgrades.'
+        if ! "$BASE/openmiio-version-check.sh" /data/openmiio_agent 1.2.1 >/dev/null 2>&1; then
+            echo 'ERROR: openmiio is older than 1.2.1 or its version cannot be verified; restart withheld.'
             sleep 10
             continue
         fi

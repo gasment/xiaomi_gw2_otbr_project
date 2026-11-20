@@ -7,22 +7,17 @@ fail() { echo "ERROR: $*" >&2; exit 1; }
 [ -x /bin/fw_manager.sh ] || fail 'Xiaomi stock service launcher not found.'
 command -v agetprop >/dev/null 2>&1 || fail 'Not a supported Xiaomi stock system.'
 agetprop | grep -Eq '\[ro.sys.model\]: \[lumi.gateway.(mcn001|mgl001)\]' || fail 'Unsupported gateway model.'
+for TOOL in awk cat cmp date grep kill mkdir mv rmdir sed sh sync; do
+    command -v "$TOOL" >/dev/null 2>&1 || fail "Missing command: $TOOL"
+done
 echo 'Checking deployment files...'
 sha256sum -c SHA256SUMS || fail 'File verification failed.'
 sh -n scripts/start-ssh.sh
-sh -n scripts/post_init.sh
+sh -n post-init/post-initctl.sh
+sh -n post-init/install-common.sh
+sh -n post-init/migrate-legacy.sh
 
 HOOK=/data/scripts/post_init.sh
-if [ -e "$HOOK" ]; then
-    if grep -q 'MI_GATEWAY2_OPENSSH_DEPLOY_V1' "$HOOK"; then
-        :
-    elif grep -q '/data/openssh/sbin/sshd' "$HOOK" && grep -q '^exec /bin/fw_manager.sh -r' "$HOOK"; then
-        # Recognise the simple hook already validated in this project.
-        :
-    else
-        fail 'An unrelated post_init.sh exists. Preserve/merge it manually before installing.'
-    fi
-fi
 
 FREE_KB=$(df -Pk /data | awk 'END {print $4}')
 [ "$FREE_KB" -ge 18000 ] || fail 'At least 18000 KiB free space is required on /data.'
@@ -67,9 +62,11 @@ if [ ! -s "$KEY" ]; then
 fi
 chmod 600 "$KEY"
 
-# Validate and start SSH before enabling its boot hook; keep existing sessions.
+# Establish the safe shared entry and register only the OpenSSH module.
+sh "$BASE/post-init/install-common.sh"
+/data/mi-gw2-post-init/post-initctl.sh add openssh /data/mi-gw2-post-init/modules/openssh.sh
+# Start or retain SSH after the stock fallback entry is already safe.
 /data/openssh/start-ssh.sh
-put scripts/post_init.sh "$HOOK" 755
 sync
 echo "Deployment complete. Configuration backups: $BACKUP"
 echo 'Connect to port 2223 as root with an empty password; SFTP is enabled.'

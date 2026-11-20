@@ -1,0 +1,10 @@
+{
+  "version": "0.3.0",
+  "artifact": "auto-deploy/gui-python/deploy/MiGateway2AutoDeploy-0.3.0.exe",
+  "sha256": "2f8dc50c9b8d7c5a4cea47b1dc9517bf9f56f1ed5a3a5cbec8dc3600e1cd5ddd",
+  "size": 34876790,
+  "framework": "Python 3.12 + CustomTkinter 6.0.0",
+  "packager": "PyInstaller 6.22.3 onefile windowed",
+  "uac_admin": true,
+  "gateway_modified_by_build": false
+}

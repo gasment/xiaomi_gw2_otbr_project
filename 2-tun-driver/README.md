@@ -1,6 +1,11 @@
 > GitHub 源码版：大型构建依赖和预构建包不随仓库提供。构建前按 [BUILD-RESOURCES.md](../BUILD-RESOURCES.md) 补齐资源并恢复链接；安装包从 Release 获取。
 
-# 2 — TUN 驱动（项目版本 0.2.5）
+## post_init 模块
+
+本组件只增删 `tun` 模块。模块在后台准备驱动；失败不会阻止最终原厂锚点。
+
+
+# 2 — TUN 驱动（项目版本 0.3.0）
 
 ## 部件说明
 
@@ -10,16 +15,16 @@
 
 ## 打包版本部署方法
 
-先完成 OpenSSH。上传 `deploy/mi_gateway_2_tun_deploy-0.2.5.tar.gz` 到 `/tmp`：
+先完成 OpenSSH。上传 `deploy/mi_gateway_2_tun_deploy-0.3.0.tar.gz` 到 `/tmp`：
 
 ```sh
 cd /tmp
-tar -xzf mi_gateway_2_tun_deploy-0.2.5.tar.gz
+tar -xzf mi_gateway_2_tun_deploy-0.3.0.tar.gz
 sh /tmp/mi_gateway_2_tun_deploy/install.sh
 reboot
 ```
 
-安装器核对精确 `/proc/version` 与已知启动链。已有后续 RCP/OTBR 包装时不要重装本层。
+安装器读取 `/etc/os-release` 中的 `LUMI_VERSION`，接受 `1.0.8_0015` 及更高版本；不再比较完整 `/proc/version` 构建串。更高版本的长期兼容性尚未逐版验收。已有后续 RCP/OTBR 包装时不要重装本层。
 
 ## 验证方法
 
@@ -46,4 +51,4 @@ ls -l /dev/net/tun
     sh build.sh
     ```
 
-    入口创建独立 kernel-work、修补 BSP Python3 调用、应用冻结配置，准备内核、构建 probe 和 tun.ko，执行 ABI/符号检查，再构建静态 smoke 程序。重建包写入 `src/build-output/`。禁止跳过不匹配报告直接加载；不同内核不能沿用本 ko。
+    入口创建独立 kernel-work、修补 BSP Python3 调用、应用冻结配置，准备内核、构建 probe 和 tun.ko，执行 ABI/符号检查，再构建静态 smoke 程序。重建包写入 `src/build-output/`。发布包按 `LUMI_VERSION >= 1.0.8_0015` 放行；更高 Xiaomi 固件若日后出现模块加载或符号不兼容，再单独适配。

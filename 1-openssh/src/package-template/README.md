@@ -1,5 +1,10 @@
 # 小米多模网关 2：OpenSSH 部署
 
+## post_init 模块
+
+本组件只增删 `# BEGIN/END MI-GW2 POST-INIT MODULE: openssh` 块，不再替换整份 `/data/scripts/post_init.sh`。启动失败只写日志，最终原厂锚点仍会执行。
+
+
 适用于已取得 root Telnet/FTP 权限、运行原厂系统的小米多模网关 2。资源来自本项目已验证的 ARMv7 静态 OpenSSH 10.6p2：SSH、MobaXterm SFTP 和重启自启动均已验证。本文仅包含部署，不包含编译。
 
 ## 部署后的连接方式

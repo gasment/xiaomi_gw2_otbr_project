@@ -1,0 +1,54 @@
+{
+  "version": "0.3.0",
+  "archives": [
+    {
+      "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+      "sha256": "a633e5271e99cb8a364f939760136b7365dc54a379b4ec79db280cef95cd9831"
+    },
+    {
+      "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.3.0.tar.gz",
+      "sha256": "2108445ea73a6100819fcd3974481592e8bcd6621cd0401f5ad4ae08475ee080"
+    },
+    {
+      "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.3.0.tar.gz",
+      "sha256": "848d3f166d1c9393fc2ab3dd3990b17755189abedd07ae7a523f9f20b0c8e975"
+    },
+    {
+      "artifact": "3-rcp-mode/deploy/rcp-mode-0.3.0.tar.gz",
+      "sha256": "d14bac7a93d3fae20a3cf665106a017d51f6eec617b36d19e4798412bbc2b23e"
+    },
+    {
+      "artifact": "3-rcp-mode/deploy/rcp-native-0.3.0.tar.gz",
+      "sha256": "39e9caec898c0b2984499a5c7495af83d5f7869b43a3cdedbf704809a4e1fb3b"
+    },
+    {
+      "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.3.0.tar.gz",
+      "sha256": "68ee4ded225cb5340df3fa48c87966017bc47b7a479b9d908b8079f330de35c8"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "sha256": "f9fe10c3923a3f2d6b82244417af6476382453621bf2d3567bd4f38022c10e05"
+    },
+    {
+      "artifact": "5-otbr/deploy/rcp-recovery-update-0.3.0.tar.gz",
+      "sha256": "3eb59bd9de68ad13e8190d460fe619967d328d482d6aab50ad8b1a94a938596a"
+    },
+    {
+      "artifact": "xiaomi_gateway3_patch/ble-spec-cache/deploy/ble-spec-cache-0.3.0.tar.gz",
+      "sha256": "8a6014c3ee0020e351a199a8d0607b54515b1824e740274f406d0305bb5df300"
+    },
+    {
+      "artifact": "auto-deploy/gui-python/deploy/MiGateway2AutoDeploy-0.3.0.exe",
+      "sha256": "2f8dc50c9b8d7c5a4cea47b1dc9517bf9f56f1ed5a3a5cbec8dc3600e1cd5ddd"
+    }
+  ],
+  "program_script_firmware_bytes_changed": false,
+  "post_init_architecture": "single-manifest-modules-api-1",
+  "stock_anchor": "exactly-once",
+  "rcp_and_openmiio_scope": "managed-by-otbr-boot-manager",
+  "compiled": false,
+  "gateway_modified": false,
+  "old_modular_packages_removed": true,
+  "powershell_gui_removed": true,
+  "windows_gui": "Python + CustomTkinter + PyInstaller onefile"
+}

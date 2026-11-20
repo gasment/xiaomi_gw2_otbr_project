@@ -1,24 +1,29 @@
 > GitHub 源码版：大型构建依赖和预构建包不随仓库提供。构建前按 [BUILD-RESOURCES.md](../BUILD-RESOURCES.md) 补齐资源并恢复链接；安装包从 Release 获取。
 
+## post_init 模块
+
+本组件只增删 `otbr` 模块，并由 `/data/otbr/boot-manager.sh` 管理 OTBR、RCP mode 和 RCP/openmiio 前置条件。RCP mode 与 openmiio 安装器不再直接修改 `post_init.sh`。
+
+
 # 5 — Xiaomi GW2 OTBR Host
 
 ## 部件说明
 
-当前版本 **0.2.5**，与根目录 VERSION 一致。静态 ARMv7/musl Host，适配原厂 Linux 4.9.84、MHCZ01P RCP 和 TUN，保留 BLE/openmiio 共存。包含 Web、Native API 七项网关实体、SRP/mDNS、Commissioner、拓扑/Ping/节点重启、用户态 BBR、RCP 复位恢复及可选 Thread Proxy。
+当前版本 **0.3.0**，与根目录 VERSION 一致。静态 ARMv7/musl Host，适配原厂 Linux 4.9.84、MHCZ01P RCP 和 TUN，保留 BLE/openmiio 共存。包含 Web、Native API 七项网关实体、SRP/mDNS、Commissioner、拓扑/Ping/节点重启、用户态 BBR、RCP 复位恢复及可选 Thread Proxy。
 
 Thread Proxy 始终编译，运行时由顶层 thread_proxy_api 配置启用；缺省不创建代理线程、端口或发现服务。详见 [代理说明](src/otbr_host/THREAD-PROXY.md)；网关实体与 LED 规则见 [实体说明](src/otbr_host/GATEWAY-ENTITIES.md)。共享依赖已经迁入 0-build-src，无需重复复制。
 
 ## 打包版本部署方法
 
-已有 1～4 部件的网关直接升级本部件。上传 **deploy/mi-gw2-otbr-0.2.5.tar.gz** 到网关临时目录，逐行执行：
+已有 1～4 部件的网关直接升级本部件。上传 **deploy/mi-gw2-otbr-0.3.0.tar.gz** 到网关临时目录，逐行执行：
 
 ```sh
 cd /tmp
-tar -xzf mi-gw2-otbr-0.2.5.tar.gz
+tar -xzf mi-gw2-otbr-0.3.0.tar.gz
 sh otbr-deploy/install.sh
 ```
 
-不需要额外叠加安装 rcp-recovery-update；完整 0.2.5 包已包含恢复脚本。安装器保留网关 config.yaml、secrets 和已有证书，升级会重启 Host。首次安装需在网关完成配置。
+不需要额外叠加安装 rcp-recovery-update；完整 0.3.0 包已包含恢复脚本。安装器保留网关 config.yaml、secrets 和已有证书，升级会重启 Host。首次安装需在网关完成配置。
 
 完整config配置参考：
 ```yaml

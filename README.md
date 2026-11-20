@@ -1,7 +1,7 @@
 # Xiaomi Multimode Gateway 2 OpenThread Border Router
 
 # 小米多模网关 2 OTBR 项目 
-* 当前版本 **0.2.5**（以根目录 [VERSION](VERSION) 为准）
+* 当前版本 **0.3.0**（以根目录 [VERSION](VERSION) 为准）
 * 关联项目：[ESPHome OpenThread & Thread BR Enhance Project](https://github.com/gasment/esphome_openthread_enhance_project)
 
 ## 项目介绍
@@ -26,7 +26,7 @@
 ## 使用前提
 - **网关型号**：必须为`lumi.gateway.mcn001`，SSD222D 主处理器、MHCZ01P 无线模块和原厂 Linux 4.9.84内核
 - **网关接入**：必须提供Telnet访问权限，使用Xiaomi Gateway3集成接入HA即可开启（固件版本低于1.0.7），并保存好设备KEY，参阅 [Xiaomi Gateway3](https://github.com/AlexxIT/XiaomiGateway3)
-- **网关固件**：必须为1.0.8_0015（截止2026.11.17），如低于此版本，先接入好Xiaomi Gateway3集成并保存好设备KEY，再进行OTA更新；如高于此版本，参阅[手动OTA](official_ota_packages/README.md) 尝试降级
+- **网关固件**：必须不低于 `1.0.8_0015`。该版本及以上允许安装；高于该版本的长期兼容性尚未逐版验收。低于此版本时，先接入 XiaomiGateway3 并保存设备 KEY，再进行 OTA 更新。
 ## 使用说明
 
 - **原厂访问前提**：部署前需自行取得 root Telnet / FTP 访问权限，本项目不提供解锁流程。SSH 是部署链的第一个部件。
@@ -41,15 +41,13 @@
 ## 自动部署
 自动部署仅适用于首次安装，如果网关存在已安装的组件，请不要使用自动部署，应参照手动部署独立更新。
 
-自动部署需要使用Windows & Powershell 并保持telnet空密码，请在自动部署完成后再设置root密码（如需要）
+自动部署使用 Windows 单文件程序，不需要安装 Python，也不需要解压组件 ZIP。
 
-下载并解压 Release 中的 **`mi-gw2-windows-deploy-x.x.x.zip`**
-
-0. 确保网关固件为**1.0.8_0015**，否则部署脚本会拒绝执行
-1. 下载 `mi-gw2-windows-deploy-x.x.x.zip` 并解压到 Windows 本地目录。
+0. 确保网关固件**不低于 1.0.8_0015**；TUN 通过 `/etc/os-release` 的 `LUMI_VERSION` 判断。
+1. 从 Release 下载 `MiGateway2AutoDeploy-0.3.0.exe` 及对应 `.sha256` 文件。
 2. 先暂时停用 HA Xiaomi Gateway 3 中对应的网关条目，避免原 Zigbee 串口被重新占用。
-3. 在解压目录用管理员权限打开`Deploy-Gateway.cmd`，根据提示输入网关IPv4地址，等待脚本执行完成，会自动退出，部署期间保持电脑与网关联网，不要关闭部署窗口
-4. 部署完成后使用ssh工具连接到网关2223端口（用户root密码空）（推荐Mobaxterm，可以使用sftp文件浏览器）,找到/data/otbr/config.yaml文件，按照项目文档内的5-otbr/README.md说明修改你的yaml
+3. 运行 EXE，输入网关 IP、端口和 root 密码，点击“连接并刷新”，选择组件后执行一键部署。
+4. 使用界面中的 YAML 上传功能创建或更新 `/data/otbr/config.yaml`，详细字段参照项目文档内的 `5-otbr/README.md`。
 5. 修改完成后在网关执行如下命令来启动OTBR
 
     ```sh

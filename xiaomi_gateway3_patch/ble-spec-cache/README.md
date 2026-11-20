@@ -1,6 +1,11 @@
 # BLE Spec 产品规则离线补丁（首版）
 
-这是 XiaomiGateway3/openmiio 的独立可选补丁，不依赖 RCP 或 OTBR，项目版本保持 0.2.5；暂不进入 Windows 自动部署主包。通过 openmiio 原有 Lua 扩展和一个本地 MQTT 时钟工作，不替换 openmiio 二进制、不修改 HA、不刷蓝牙或 RCP。
+## post_init 模块
+
+本组件只增删 `ble-cache` 模块。没有本地 MQTT/openmiio 时模块自行失败或重试，不会阻止最终原厂锚点。
+
+
+这是 XiaomiGateway3/openmiio 的独立可选补丁，不依赖 RCP 或 OTBR，项目版本保持 0.3.0；暂不进入 Windows 自动部署主包。通过 openmiio 原有 Lua 扩展和一个本地 MQTT 时钟工作，不替换 openmiio 二进制、不修改 HA、不刷蓝牙或 RCP。
 
 ## 行为
 
@@ -15,13 +20,13 @@
 
 ## 部署
 
-前提：XiaomiGateway3 使用的 openmiio 已安装运行，原厂 1.0.8_0013/0015，openmiio 1.2.1 二进制校验一致。已有自定义 `/data/openmiio_agent.lua` 时安装器会保留它并拒绝覆盖。
+前提：XiaomiGateway3 使用的 openmiio 已安装运行，原厂 1.0.8_0013/0015，openmiio 版本不低于 1.2.1。高于或等于 1.2.1 的现有版本会保留，只有低于 1.2.1 时才替换。已有自定义 `/data/openmiio_agent.lua` 时安装器会保留它并拒绝覆盖。
 
-上传 `ble-spec-cache-0.2.5.tar.gz` 到网关 `/tmp`，执行：
+上传 `ble-spec-cache-0.3.0.tar.gz` 到网关 `/tmp`，执行：
 
 ```sh
 cd /tmp
-tar -xzf ble-spec-cache-0.2.5.tar.gz
+tar -xzf ble-spec-cache-0.3.0.tar.gz
 sh /tmp/ble-spec-cache/install.sh
 ```
 

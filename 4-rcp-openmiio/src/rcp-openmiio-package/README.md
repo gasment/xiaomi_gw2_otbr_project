@@ -1,6 +1,11 @@
 # 网关侧 RCP 与 Xiaomi Gateway 3 蓝牙共存
 
-仅修改网关 /data 下的启动管理。HA 集成不改、openmiio 二进制及其原校验不改。当前已实测：openmiio 1.2.1 使用 miio mqtt cache central 时，HA 收到新的蓝牙数据，RCP Spinel 探测正常且 UART 空闲。
+## post_init 边界
+
+RCP/openmiio supervisor 由 OTBR boot manager 启动，不再直接拥有或替换 `post_init.sh`。
+
+
+仅修改网关 /data 下的启动管理。HA 集成不改；openmiio 以 1.2.1 为最低版本，高于或等于该版本的现有二进制会保留，低于时才替换。当前已实测：openmiio 1.2.1 使用 miio mqtt cache central 时，HA 收到新的蓝牙数据，RCP Spinel 探测正常且 UART 空闲。
 
 ## 安装
 

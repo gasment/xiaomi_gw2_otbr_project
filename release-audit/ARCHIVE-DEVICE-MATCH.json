@@ -1,275 +1,2151 @@
 [
   {
-    "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.2.5.tar.gz",
+    "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.3.0.tar.gz",
     "member": "mi_gateway_2_openssh_deploy/payload/bin/ssh-keygen",
     "device_path": "/data/openssh/bin/ssh-keygen",
     "sha256": "58aa941477bf23cdf99b69a4956a7a07afcc65e7688e66cc8b38805b807b2acc",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.2.5.tar.gz",
+    "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.3.0.tar.gz",
     "member": "mi_gateway_2_openssh_deploy/payload/libexec/sshd-auth",
     "device_path": "/data/openssh/libexec/sshd-auth",
     "sha256": "efb91ef2a86685751f8a3125b761de833b354e0842532a729386ec650532b0c6",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.2.5.tar.gz",
+    "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.3.0.tar.gz",
     "member": "mi_gateway_2_openssh_deploy/payload/libexec/sshd-session",
     "device_path": "/data/openssh/libexec/sshd-session",
     "sha256": "d21599d548250c48841fae040d854b3dc66a3cefebba3b6485673a7006174b39",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.2.5.tar.gz",
+    "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.3.0.tar.gz",
     "member": "mi_gateway_2_openssh_deploy/payload/etc/sshd_config",
     "device_path": "/data/openssh/etc/sshd_config",
     "sha256": "6275c5a55a1050faa0f124d5f3b844d24c24ee5afa47549ced7643e35f3c8f94",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.2.5.tar.gz",
+    "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.3.0.tar.gz",
     "member": "mi_gateway_2_openssh_deploy/payload/sbin/sshd",
     "device_path": "/data/openssh/sbin/sshd",
     "sha256": "1cbcb7d1cca6e417cec0b801e0b73ce660804043020913826d327e638739b118",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.2.5.tar.gz",
+    "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.3.0.tar.gz",
     "member": "mi_gateway_2_openssh_deploy/scripts/start-ssh.sh",
     "device_path": "/data/openssh/start-ssh.sh",
     "sha256": "fd45e22c8dfeb759fc2aad397568014a47cfb85133041d61031399ad190ae41c",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.2.5.tar.gz",
+    "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.3.0.tar.gz",
     "member": "mi_gateway_2_tun_deploy/payload/tun.ko",
     "device_path": "/data/tun/tun.ko",
     "sha256": "99cb2d19c5d70b178d569f68e2f570a69d043ad7c85ef4e9e8e155ff73db5de1",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.2.5.tar.gz",
+    "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.3.0.tar.gz",
     "member": "mi_gateway_2_tun_deploy/payload/tun-smoke",
     "device_path": "/data/tun/tun-smoke",
     "sha256": "eb814d6f7c66a5680a94c3f70f9642009d7fdc5b971105417487224d4fe78fa5",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.2.5.tar.gz",
+    "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.3.0.tar.gz",
     "member": "mi_gateway_2_tun_deploy/payload/expected-proc-version.txt",
     "device_path": "/data/tun/expected-proc-version.txt",
     "sha256": "fdfd61b4e0a92e019f9f7b3ec8102130a07dbeb229aed2a432a0ece3994bc1f1",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.2.5.tar.gz",
+    "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.3.0.tar.gz",
     "member": "mi_gateway_2_tun_deploy/scripts/start-tun.sh",
     "device_path": "/data/tun/start-tun.sh",
-    "sha256": "499f964c24dfe332c2236e4779f46168582c582d820efa97edeeba48142fba05",
-    "status": "MATCH"
+    "sha256": "57d12f46d7c61401f23d2b3872faec840b8f5b80f5a2603ce9d390f0ac8996c5",
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.2.5.tar.gz",
+    "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.3.0.tar.gz",
     "member": "mi_gateway_2_tun_deploy/scripts/uninstall-autostart.sh",
     "device_path": "/data/tun/uninstall-autostart.sh",
-    "sha256": "abf41d7d11daa53e6bd8ebcc5c66595c1a342fad4d9043a45c3c61df567bbb46",
-    "status": "MATCH"
+    "sha256": "fd725dbedf62171b3fc8433e613e084e1b72f1aeb746a4b8dc335d28ee456af4",
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.2.5.tar.gz",
+    "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.3.0.tar.gz",
     "member": "mi_gateway_2_tun_deploy/scripts/post_init.sh",
     "device_path": "/data/tun/managed-post_init.sh",
     "sha256": "60b5fec81761c048d7a70303d2253e98d18675f374746e95dc733c92ba267200",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "3-rcp-mode/deploy/rcp-mode-0.2.5.tar.gz",
+    "artifact": "3-rcp-mode/deploy/rcp-mode-0.3.0.tar.gz",
     "member": "rcp-mode/payload/app_monitor.sh",
     "device_path": "/data/rcp-mode/app_monitor.sh",
     "sha256": "030e9f0a1e4900c8806170b937420024b452b80d3e4d991dd1f8ea9c87d99b3a",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "3-rcp-mode/deploy/rcp-mode-0.2.5.tar.gz",
+    "artifact": "3-rcp-mode/deploy/rcp-mode-0.3.0.tar.gz",
     "member": "rcp-mode/payload/stock.sha256",
     "device_path": "/data/rcp-mode/stock.sha256",
-    "sha256": "a1d98719ebcf0cf7d02d5668a85e583a3e56ac68fd67fbbbd3a37048ced8ba23",
-    "status": "MATCH"
+    "sha256": "31ad893f15406472d5d6bc5a23ee8c280b7f90415a302fd383480d5c6391e122",
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "3-rcp-mode/deploy/rcp-mode-0.2.5.tar.gz",
+    "artifact": "3-rcp-mode/deploy/rcp-mode-0.3.0.tar.gz",
     "member": "rcp-mode/payload/apply-mode.sh",
     "device_path": "/data/rcp-mode/apply-mode.sh",
-    "sha256": "38fb5257664fef8d6868aff759f9cd1dd85dd99abbbbe16673cb0114273158f2",
-    "status": "MATCH"
+    "sha256": "33136ba37352fe02840f2ea5240714e504c376c657bea232d16df71ca79fca4a",
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "3-rcp-mode/deploy/rcp-mode-0.2.5.tar.gz",
+    "artifact": "3-rcp-mode/deploy/rcp-mode-0.3.0.tar.gz",
     "member": "rcp-mode/payload/post_init.sh",
     "device_path": "/data/rcp-mode/post_init.sh",
     "sha256": "c08353c47b2f5cd1d35a12dea0a85b505e4f6c03d87a579a9e233fcda4102697",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "3-rcp-mode/deploy/rcp-mode-0.2.5.tar.gz",
+    "artifact": "3-rcp-mode/deploy/rcp-mode-0.3.0.tar.gz",
     "member": "rcp-mode/payload/payload.sha256",
     "device_path": "/data/rcp-mode/payload.sha256",
-    "sha256": "b791f91a7ee94cb4b73722d6eb9834d5019aabe1e9274da1db471d5b586b3ab1",
-    "status": "MATCH"
+    "sha256": "0d941398f0817a302f2d05ed874a5bb7e8bc6fd57d2e069df24f8ccc62ac104f",
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "3-rcp-mode/deploy/rcp-mode-0.2.5.tar.gz",
+    "artifact": "3-rcp-mode/deploy/rcp-mode-0.3.0.tar.gz",
     "member": "rcp-mode/payload/fw_manager.sh",
     "device_path": "/data/rcp-mode/fw_manager.sh",
     "sha256": "a4510a08b8b10b4663d3e590300663897ec3209430c2a6db144b285200c32426",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "3-rcp-mode/deploy/rcp-mode-0.2.5.tar.gz",
+    "artifact": "3-rcp-mode/deploy/rcp-mode-0.3.0.tar.gz",
     "member": "rcp-mode/payload/uninstall.sh",
     "device_path": "/data/rcp-mode/uninstall.sh",
-    "sha256": "2c5ac31977fc2825cb3eba942d932926487e5798072a651e79cb6a34aa426e90",
-    "status": "MATCH"
+    "sha256": "4ecd0989ec32242277408573c227c1fda5fdd39b83ff0e01275bd94bf7cd4eb5",
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.2.5.tar.gz",
+    "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.3.0.tar.gz",
     "member": "rcp-openmiio/payload/openmiio.sha256",
     "device_path": "/data/rcp-openmiio/openmiio.sha256",
     "sha256": "5f80e2645d1620b5c3beb587cff810def43efb7678eb4b758f485b94ba0b2ccf",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.2.5.tar.gz",
+    "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.3.0.tar.gz",
     "member": "rcp-openmiio/payload/post_init.sh",
     "device_path": "/data/rcp-openmiio/post_init.sh",
     "sha256": "b0dfd26acca73ba97ac3e11b34e8977025716a0c973fc44e0cc3f2b0bfcaf1be",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.2.5.tar.gz",
+    "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.3.0.tar.gz",
     "member": "rcp-openmiio/payload/start.sh",
     "device_path": "/data/rcp-openmiio/start.sh",
     "sha256": "a23f08bf04e32039717bb6d12fae1ba13a2667c5400321a5b240e9a907d0a27e",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.2.5.tar.gz",
+    "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.3.0.tar.gz",
     "member": "rcp-openmiio/payload/openmiio_agent.guard.sh",
     "device_path": "/data/rcp-openmiio/openmiio_agent.guard.sh",
-    "sha256": "dd658c7cbfd424dce15b4bf0c7100565ae4fb5ec78298fe22a2f56efb42923d7",
-    "status": "MATCH"
+    "sha256": "1f75e18473a554359e11e952c0adacc3fb6f9a5ea4a9460a04eaeb20d5232814",
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.2.5.tar.gz",
+    "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.3.0.tar.gz",
     "member": "rcp-openmiio/payload/scripts.sha256",
     "device_path": "/data/rcp-openmiio/scripts.sha256",
-    "sha256": "27b075e98a3224e45c73ea3d955eb18b5e1ac2c361c90cb4a36fc05b7a7471bf",
-    "status": "MATCH"
+    "sha256": "805f82634395f37b334c2f004cb28b9da1766444eadf2c5923cfa5f2944277b8",
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.2.5.tar.gz",
+    "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.3.0.tar.gz",
     "member": "rcp-openmiio/payload/uninstall.sh",
     "device_path": "/data/rcp-openmiio/uninstall.sh",
-    "sha256": "fbf973a9a4babd5b01a37185243db1775d4add6c6cfccd71c2bd68e87fd0a31d",
-    "status": "MATCH"
+    "sha256": "8f391b2300697072aee24c4d48dd4d34f8700f8b31568864394ad659e5e546f7",
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/check.sh",
     "device_path": "/data/otbr/check.sh",
     "sha256": "b82f8465da48bacd723012800567170f1597a32577a757ef4f58dcde270b006b",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/common.sh",
     "device_path": "/data/otbr/common.sh",
     "sha256": "bb12988f34dd7bceadc37b56c34bb143bb82c3032bfb95bd6050b8d52d3fa1ae",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/init-config.sh",
     "device_path": "/data/otbr/init-config.sh",
     "sha256": "f53f3250a9fd30a4fb45f0ce83d5b2976b05ba8cc58e82c1c3f58a62bb7bbc98",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/mi-otbr-host",
     "device_path": "/data/otbr/mi-otbr-host",
-    "sha256": "b059a2d9f3fb20544d17659f7680dbfd5cfd272b9edca975be0b6724078f48e8",
-    "status": "MATCH"
+    "sha256": "c39394577ffbc0c543264a2d04aba0547b3fd6c7998299c4d89e8710891050b5",
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/post_init.sh",
     "device_path": "/data/otbr/post_init.sh",
     "sha256": "b7114284c8887d9581ab92550e3dd44ff54a522ccd384524131ea277de4e506d",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/rcp-recovery.sh",
     "device_path": "/data/otbr/rcp-recovery.sh",
     "sha256": "1ef60e31192fcda9901fb28fdfda6af28b3162e017c102dcaaa28b7748f27856",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/restart.sh",
     "device_path": "/data/otbr/restart.sh",
     "sha256": "6bc1263965f14bd2007e2ed985e65078f92b23e80cacae4258aacf72b31b49a3",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/rollback.sh",
     "device_path": "/data/otbr/rollback.sh",
     "sha256": "e3f409d35b5b6fbd8a9ae8fa30da55331e16aa26b07c2dc4047b0ce390d6ecf4",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/routing.sh",
     "device_path": "/data/otbr/routing.sh",
     "sha256": "897439d617de15a496b58d015a6a03c1940f5825f39e7bab3b632dc24fd056e3",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/start.sh",
     "device_path": "/data/otbr/start.sh",
     "sha256": "720690f53fba5f225436330fffe15d95535af167d43ede9234e65ce7c91984e1",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/status.sh",
     "device_path": "/data/otbr/status.sh",
     "sha256": "fed19578ee768740a6a0b41d71060ff6e5a81fd24e4303e0da4beada2a64298b",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/stop.sh",
     "device_path": "/data/otbr/stop.sh",
     "sha256": "dd4a0f5dfb5729e2a993919ac830a1fb474269a0ac81c69d85705be344b109b6",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/supervisor.sh",
     "device_path": "/data/otbr/supervisor.sh",
     "sha256": "7257b4955054d2f2d2299c8fb7165e3c45fa72ee8c13ee04bb883b672a143375",
-    "status": "MATCH"
+    "status": "PACKAGE_MATCH"
   },
   {
-    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.2.5.tar.gz",
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
     "member": "otbr-deploy/payload/uninstall.sh",
     "device_path": "/data/otbr/uninstall.sh",
-    "sha256": "46ebb23a483c00589e5d3a7bef15d1ab23da32b2bef1bf3736915f8cd43bdf01",
-    "status": "MATCH"
+    "sha256": "61e431d788909d328c46cd55fc52d71019868e20d9e4eec2a569eeabe886ad92",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "xiaomi_gateway3_patch/ble-spec-cache/deploy/ble-spec-cache-0.3.0.tar.gz",
+    "member": "ble-spec-cache/install.sh",
+    "device_path": "/data/ble-spec-cache/install.sh",
+    "sha256": "a2556e6af09dcc04be312aa8336ae54e96bf0bbc240c2afa1ce670dac5390875",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "xiaomi_gateway3_patch/ble-spec-cache/deploy/ble-spec-cache-0.3.0.tar.gz",
+    "member": "ble-spec-cache/payload/uninstall.sh",
+    "device_path": "/data/ble-spec-cache/uninstall.sh",
+    "sha256": "5ab9217b7d457ef022c8b4c133734467e5455fac2e83d7decb095e02a506c15b",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/post-initctl.sh",
+    "device_path": "/data/mi-gw2-post-init/post-initctl.sh",
+    "sha256": "c04947f45d446c7fed19fd4554712300416b09f78c27c96f56f2b89b990d2280",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/migrate-legacy.sh",
+    "device_path": "/data/mi-gw2-post-init/migrate-legacy.sh",
+    "sha256": "cab60b2f420e80ed4a7d9f21888f1270502631796f53e4eccb26efd607a50e76",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/openssh.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/openssh.sh",
+    "sha256": "1d883067461754bbec264af366a99073ddd769dec1cf70d721c8731bb7b93454",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/tun.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/tun.sh",
+    "sha256": "76ebef4cc2a15b93d2b4968dc0425fd79cb584f72a3eb248a2e3ed3e9a075bf9",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/ble-cache.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/ble-cache.sh",
+    "sha256": "fe649587c39b4005faf66831adc4bc0c77a7de5d23538df48e20106c51c8f13c",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+    "member": "post-init-modular/modules/otbr.sh",
+    "device_path": "/data/mi-gw2-post-init/modules/otbr.sh",
+    "sha256": "1cd039ae36f6a77a1eb2455d6f780e2065ac4c7880fa39530191758fa5e18c40",
+    "status": "PACKAGE_MATCH"
+  },
+  {
+    "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+    "member": "otbr-deploy/payload/boot-manager.sh",
+    "device_path": "/data/otbr/boot-manager.sh",
+    "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+    "status": "PACKAGE_MATCH"
   }
 ]

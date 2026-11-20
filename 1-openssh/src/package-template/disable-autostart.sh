@@ -1,12 +1,8 @@
 #!/bin/sh
 set -eu
-HOOK=/data/scripts/post_init.sh
-if [ -f "$HOOK" ] && grep -q 'MI_GATEWAY2_OPENSSH_DEPLOY_V1' "$HOOK"; then
-    chmod 644 "$HOOK"
-    sync
-    echo 'SSH autostart disabled. Existing SSH sessions remain active.'
-    echo 'The stock service launcher will be used on the next boot.'
-else
-    echo 'No boot hook managed by this deployment package was found.' >&2
-    exit 1
-fi
+CTL=/data/mi-gw2-post-init/post-initctl.sh
+[ -x "$CTL" ] || { echo 'Modular post-init manager is missing.' >&2; exit 1; }
+"$CTL" remove openssh
+sync
+echo 'OpenSSH boot module removed. Other modules and the stock anchor were not changed.'
+echo 'Existing SSH sessions and listener remain active until stopped or the gateway reboots.'

@@ -1,29 +1,33 @@
 #!/bin/sh
 set -eu
-cd "$(dirname "$0")"
+BASE=$(CDPATH= cd "$(dirname "$0")" && pwd)
+cd "$BASE"
+DEST=/data/rcp-mode
 fail() { echo "ERROR: $*" >&2; exit 1; }
 [ "$(id -u)" = 0 ] || fail 'Run as root on the gateway.'
-for tool in sha256sum cmp mount umount cp mv mkdir chmod chown sync grep; do
-    command -v "$tool" >/dev/null 2>&1 || fail "Missing tool: $tool"
+for TOOL in sha256sum cmp mount umount cp mv mkdir chmod chown sync grep awk; do
+    command -v "$TOOL" >/dev/null 2>&1 || fail "Missing tool: $TOOL"
 done
 sha256sum -c SHA256SUMS
-sha256sum -c payload/stock.sha256
-[ ! -e /data/rcp-mode ] || fail '/data/rcp-mode already exists; inspect the previous installation.'
-[ -x /data/openssh/start-ssh.sh ] || fail 'Expected working OpenSSH deployment is missing.'
-[ -x /data/tun/managed-post_init.sh ] || fail 'Expected TUN boot hook backup is missing.'
-cmp -s /data/scripts/post_init.sh /data/tun/managed-post_init.sh || fail 'Current boot hook differs from the known TUN hook.'
-for file in payload/*.sh; do sh -n "$file"; done
-mkdir /data/rcp-mode
-cp -p /data/scripts/post_init.sh /data/rcp-mode/original-post_init.sh
-cp payload/* /data/rcp-mode/
-chown -R 0:0 /data/rcp-mode
-chmod 700 /data/rcp-mode
-chmod 700 /data/rcp-mode/*.sh
-chmod 600 /data/rcp-mode/*.sha256
-(cd /data/rcp-mode && sha256sum -c payload.sha256)
-cp /data/rcp-mode/post_init.sh /data/scripts/post_init.sh.new
-chmod 755 /data/scripts/post_init.sh.new
-mv -f /data/scripts/post_init.sh.new /data/scripts/post_init.sh
+if [ -e "$DEST" ] && [ ! -f "$DEST/install.sh" ]; then fail 'Unmanaged /data/rcp-mode exists.'; fi
+mkdir -p "$DEST"
+BACKUP=$DEST/backups/$(date +%Y%m%d-%H%M%S)-$$
+mkdir -p "$BACKUP"
+cp -p /bin/fw_manager.sh "$BACKUP/fw_manager.sh"
+cp -p /bin/app_monitor.sh "$BACKUP/app_monitor.sh"
+for FILE in payload/*; do
+    NAME=${FILE##*/}
+    cp "$FILE" "$DEST/$NAME.new"
+    chmod 600 "$DEST/$NAME.new"
+    mv -f "$DEST/$NAME.new" "$DEST/$NAME"
+done
+sh scripts/patch-launchers.sh /bin/fw_manager.sh "$DEST/fw_manager.sh" /bin/app_monitor.sh "$DEST/app_monitor.sh"
+chown -R 0:0 "$DEST"
+chmod 700 "$DEST" "$DEST"/*.sh "$DEST"/fw_manager.sh "$DEST"/app_monitor.sh
+chmod 600 "$DEST"/*.sha256
+(cd "$DEST" && sha256sum app_monitor.sh apply-mode.sh fw_manager.sh post_init.sh stock.sha256 uninstall.sh > payload.sha256.new && mv -f payload.sha256.new payload.sha256)
+(cd "$DEST" && sha256sum -c payload.sha256)
 sync
-echo 'RCP startup isolation installed for NEXT BOOT. No running service, UART or firmware was changed.'
-echo 'Keep Home Assistant Xiaomi Gateway 3 integration disabled; reboot manually when ready.'
+echo 'RCP mode helper installed for the OTBR boot manager. post_init.sh was not changed.'
+echo 'The OTBR module applies this helper before stock startup on the next boot.'
+echo "Original launchers backed up to $BACKUP"

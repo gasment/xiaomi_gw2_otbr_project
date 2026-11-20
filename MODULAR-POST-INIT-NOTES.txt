@@ -1,0 +1,1 @@
+Extract this overlay at a project root. Version 0.3.0. Rebuild component packages after applying it.

@@ -1,6 +1,8 @@
 #!/bin/sh
 set -eu
-cd "$(dirname "$0")"
+BASE=$(CDPATH= cd "$(dirname "$0")" && pwd)
+cd "$BASE"
+DEST=/data/rcp-openmiio
 fail() { echo "ERROR: $*" >&2; exit 1; }
 [ "$(id -u)" = 0 ] || fail 'Run as root on the gateway.'
 for TOOL in cmp sha256sum cat cp mv chmod chown mkdir rmdir touch tr sleep kill pidof grep rm sync tail timeout agetprop; do
@@ -8,20 +10,18 @@ for TOOL in cmp sha256sum cat cp mv chmod chown mkdir rmdir touch tr sleep kill 
 done
 [ -x /bin/mbasis_cli ] || fail 'Missing stock mbasis_cli.'
 sha256sum -c SHA256SUMS
-sha256sum -c payload/openmiio.sha256
-cmp -s /data/scripts/post_init.sh /data/rcp-mode/post_init.sh || fail 'Expected RCP boot hook is not active.'
-grep -q '^# MI_GATEWAY2_RCP_MODE_V1$' /data/scripts/post_init.sh || fail 'RCP startup marker missing.'
-[ ! -e /data/rcp-openmiio ] || fail '/data/rcp-openmiio already exists; inspect it first.'
-for SCRIPT in payload/*.sh; do sh -n "$SCRIPT"; done
-mkdir /data/rcp-openmiio
-cp -p /data/scripts/post_init.sh /data/rcp-openmiio/original-post_init.sh
-cp payload/* /data/rcp-openmiio/
-chown -R 0:0 /data/rcp-openmiio
-chmod 700 /data/rcp-openmiio /data/rcp-openmiio/*.sh
-chmod 600 /data/rcp-openmiio/*.sha256
-cp /data/rcp-openmiio/post_init.sh /data/scripts/post_init.sh.new
-chmod 755 /data/scripts/post_init.sh.new
-mv -f /data/scripts/post_init.sh.new /data/scripts/post_init.sh
+payload/openmiio-version-check.sh /data/openmiio_agent 1.2.1
+if [ -e "$DEST" ] && [ ! -f "$DEST/install.sh" ] && [ ! -f "$DEST/start.sh" ]; then fail 'Unmanaged /data/rcp-openmiio exists.'; fi
+mkdir -p "$DEST"
+for FILE in payload/*; do
+    NAME=${FILE##*/}
+    cp "$FILE" "$DEST/$NAME.new"
+    chmod 600 "$DEST/$NAME.new"
+    mv -f "$DEST/$NAME.new" "$DEST/$NAME"
+done
+chown -R 0:0 "$DEST"
+chmod 700 "$DEST" "$DEST"/*.sh
+chmod 600 "$DEST"/*.sha256
 sync
-echo 'Gateway-only BLE/RCP autostart installed. HA files and openmiio binary were not changed.'
+echo 'RCP/openmiio helper installed for the OTBR boot manager. post_init.sh was not changed.'
 echo 'For this boot, run: sh /data/rcp-openmiio/start.sh --now'

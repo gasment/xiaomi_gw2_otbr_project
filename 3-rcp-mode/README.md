@@ -1,6 +1,11 @@
 > GitHub 源码版：大型构建依赖和预构建包不随仓库提供。构建前按 [BUILD-RESOURCES.md](../BUILD-RESOURCES.md) 补齐资源并恢复链接；安装包从 Release 获取。
 
-# 3 — RCP 本机刷写与原厂 Zigbee 启动隔离（项目版本 0.2.5）
+## post_init 边界
+
+RCP mode 是 OTBR 的内部前置步骤，不再拥有或替换 `post_init.sh`。
+
+
+# 3 — RCP 本机刷写与原厂 Zigbee 启动隔离（项目版本 0.3.0）
 
 ## 部件说明
 
@@ -16,8 +21,8 @@
 
 ```sh
 cd /tmp
-tar -xzf rcp-native-0.2.5.tar.gz
-tar -xzf rcp-mode-0.2.5.tar.gz
+tar -xzf rcp-native-0.3.0.tar.gz
+tar -xzf rcp-mode-0.3.0.tar.gz
 sh /tmp/rcp-native/prepare-local.sh
 sh /tmp/rcp-native/probe-bootloader.sh
 sh /tmp/rcp-native/flash-rcp.sh
@@ -27,7 +32,7 @@ sh /tmp/rcp-mode/install.sh
 reboot
 ```
 
-逐条检查成功结果后继续。原厂服务暂停期间不要执行 restore-services.sh 来拉起 Zigbee 主机。原生 prepare-local 要求原厂 monitor 与 openmiio 存在且未暂停；已改造系统不应为了重新验收而直接再刷。隔离安装器核对 stock 脚本哈希与 TUN 启动入口，只修改 /data 和启动时 bind mount。
+逐条检查成功结果后继续。原厂服务暂停期间不要执行 restore-services.sh 来拉起 Zigbee 主机。原生 prepare-local 要求原厂 monitor 与 openmiio 存在且未暂停；已改造系统不应为了重新验收而直接再刷。隔离安装器支持 `LUMI_VERSION >= 1.0.8_0015`：保存当前原厂脚本后，按已知结构自动屏蔽 Zigbee 启动和协调器 OTA；结构无法识别时拒绝安装。
 
 ## 验证方法
 

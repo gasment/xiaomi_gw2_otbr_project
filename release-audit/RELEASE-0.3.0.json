@@ -1,0 +1,117 @@
+{
+  "version": "0.3.0",
+  "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+  "archive_sha256": "546a09ba9f947768998dfd1da89d9bcc4d070d4cc6026e5996984ef360697b7e",
+  "host_sha256": "c39394577ffbc0c543264a2d04aba0547b3fd6c7998299c4d89e8710891050b5",
+  "payload_matches": 15,
+  "payload": [
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/boot-manager.sh",
+      "device_path": "/data/otbr/boot-manager.sh",
+      "sha256": "61bc16e057a8da0e9ac1f0bb1c5ce01c177026de507833573deea5845c30ab05",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/check.sh",
+      "device_path": "/data/otbr/check.sh",
+      "sha256": "b82f8465da48bacd723012800567170f1597a32577a757ef4f58dcde270b006b",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/common.sh",
+      "device_path": "/data/otbr/common.sh",
+      "sha256": "bb12988f34dd7bceadc37b56c34bb143bb82c3032bfb95bd6050b8d52d3fa1ae",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/init-config.sh",
+      "device_path": "/data/otbr/init-config.sh",
+      "sha256": "f53f3250a9fd30a4fb45f0ce83d5b2976b05ba8cc58e82c1c3f58a62bb7bbc98",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/mi-otbr-host",
+      "device_path": "/data/otbr/mi-otbr-host",
+      "sha256": "c39394577ffbc0c543264a2d04aba0547b3fd6c7998299c4d89e8710891050b5",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/post_init.sh",
+      "device_path": "/data/otbr/post_init.sh",
+      "sha256": "b7114284c8887d9581ab92550e3dd44ff54a522ccd384524131ea277de4e506d",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/rcp-recovery.sh",
+      "device_path": "/data/otbr/rcp-recovery.sh",
+      "sha256": "1ef60e31192fcda9901fb28fdfda6af28b3162e017c102dcaaa28b7748f27856",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/restart.sh",
+      "device_path": "/data/otbr/restart.sh",
+      "sha256": "6bc1263965f14bd2007e2ed985e65078f92b23e80cacae4258aacf72b31b49a3",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/rollback.sh",
+      "device_path": "/data/otbr/rollback.sh",
+      "sha256": "e3f409d35b5b6fbd8a9ae8fa30da55331e16aa26b07c2dc4047b0ce390d6ecf4",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/routing.sh",
+      "device_path": "/data/otbr/routing.sh",
+      "sha256": "897439d617de15a496b58d015a6a03c1940f5825f39e7bab3b632dc24fd056e3",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/start.sh",
+      "device_path": "/data/otbr/start.sh",
+      "sha256": "720690f53fba5f225436330fffe15d95535af167d43ede9234e65ce7c91984e1",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/status.sh",
+      "device_path": "/data/otbr/status.sh",
+      "sha256": "fed19578ee768740a6a0b41d71060ff6e5a81fd24e4303e0da4beada2a64298b",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/stop.sh",
+      "device_path": "/data/otbr/stop.sh",
+      "sha256": "dd4a0f5dfb5729e2a993919ac830a1fb474269a0ac81c69d85705be344b109b6",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/supervisor.sh",
+      "device_path": "/data/otbr/supervisor.sh",
+      "sha256": "7257b4955054d2f2d2299c8fb7165e3c45fa72ee8c13ee04bb883b672a143375",
+      "status": "PACKAGE_MATCH"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.0.tar.gz",
+      "member": "otbr-deploy/payload/uninstall.sh",
+      "device_path": "/data/otbr/uninstall.sh",
+      "sha256": "61e431d788909d328c46cd55fc52d71019868e20d9e4eec2a569eeabe886ad92",
+      "status": "PACKAGE_MATCH"
+    }
+  ],
+  "post_init_scope": "OTBR is one module; boot-manager owns RCP/openmiio prerequisites",
+  "stock_startup_contract": "external stock anchor runs once regardless of module failures",
+  "gateway_mutated_by_build": false
+}

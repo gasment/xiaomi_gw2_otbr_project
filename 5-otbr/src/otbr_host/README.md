@@ -71,8 +71,8 @@ Linux /node_restart 后端已改为与 ESP 节点内置 EHR1 UDP 协议兼容，
 
 ## 网关系统实体扩展
 
-新增 ipv4、uptime、reset、fw_ver、sys_led 的配置、实现边界与升级验收见 [GATEWAY-ENTITIES.md](GATEWAY-ENTITIES.md)。当前 0.2.5 发布件已包含这些更新。
+新增 ipv4、uptime、reset、fw_ver、sys_led 的配置、实现边界与升级验收见 [GATEWAY-ENTITIES.md](GATEWAY-ENTITIES.md)。当前发布件使用项目根 `VERSION` 作为 ESPHome API 固件版本。
 
-## 0.2.5 Thread Proxy
+## 0.3.0 Thread Proxy
 
 完整的可选代理实现与使用说明见 [THREAD-PROXY.md](THREAD-PROXY.md)。默认不启用，配置变更只需重启服务。用户已完成构建、部署和基本代理上报验收，当前包已同步至第 5 部件 deploy。
