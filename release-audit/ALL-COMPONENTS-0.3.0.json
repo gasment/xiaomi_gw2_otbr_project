@@ -2,7 +2,7 @@
   "version": "0.3.0",
   "archives": [
     {
-      "artifact": "tools/post-init/deploy/post-init-modular-0.3.0.tar.gz",
+      "artifact": "6-post-init/deploy/post-init-modular-0.3.0.tar.gz",
       "sha256": "a633e5271e99cb8a364f939760136b7365dc54a379b4ec79db280cef95cd9831"
     },
     {
@@ -34,11 +34,11 @@
       "sha256": "3eb59bd9de68ad13e8190d460fe619967d328d482d6aab50ad8b1a94a938596a"
     },
     {
-      "artifact": "xiaomi_gateway3_patch/ble-spec-cache/deploy/ble-spec-cache-0.3.0.tar.gz",
+      "artifact": "8-xiaomi-gateway3-patch/ble-spec-cache/deploy/ble-spec-cache-0.3.0.tar.gz",
       "sha256": "8a6014c3ee0020e351a199a8d0607b54515b1824e740274f406d0305bb5df300"
     },
     {
-      "artifact": "auto-deploy/gui-python/deploy/MiGateway2AutoDeploy-0.3.0.exe",
+      "artifact": "7-auto-deploy/gui-python/deploy/MiGateway2AutoDeploy-0.3.0.exe",
       "sha256": "2f8dc50c9b8d7c5a4cea47b1dc9517bf9f56f1ed5a3a5cbec8dc3600e1cd5ddd"
     }
   ],

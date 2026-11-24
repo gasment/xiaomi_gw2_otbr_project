@@ -102,7 +102,7 @@ static size_t get(unsigned tid,uint32_t prop,unsigned char *result,size_t cap) {
         }
         fprintf(stderr,"GET property %u timed out, attempt %d/3\n",prop,attempt+1);
     }
-    die("No valid Spinel property response at 460800"); return 0;
+    die("No valid Spinel property response at the selected baud rate"); return 0;
 }
 static uint32_t one_uint(unsigned tid,uint32_t prop,const char *label) {
     unsigned char value[64]; size_t n=get(tid,prop,value,sizeof(value)),pos=0; uint32_t v;
@@ -110,7 +110,9 @@ static uint32_t one_uint(unsigned tid,uint32_t prop,const char *label) {
     printf("%s=%u\n",label,v); return v;
 }
 int main(int argc,char **argv) {
-    if(argc>2) { fprintf(stderr,"Usage: spinel-probe [UART_DEVICE]\n"); return 2; }
+    int legacy = argc > 1 && strcmp(argv[1], "--legacy") == 0;
+    if (legacy) { --argc; ++argv; }
+    if(argc>2) { fprintf(stderr,"Usage: spinel-probe [--legacy] [UART_DEVICE]\n"); return 2; }
     const char *device=argc==2?argv[1]:"/dev/ttyS1";
     setvbuf(stdout,NULL,_IONBF,0); atexit(cleanup);
     uart=open(device,O_RDWR|O_NOCTTY|O_NONBLOCK);
@@ -118,12 +120,16 @@ int main(int argc,char **argv) {
     if(ioctl(uart,TIOCEXCL)) die("TIOCEXCL");
     struct termios t;
     if(tcgetattr(uart,&t)) die("tcgetattr");
-    cfmakeraw(&t); t.c_cflag|=CLOCAL|CREAD|CRTSCTS; t.c_cflag&=~(CSTOPB|PARENB);
+    cfmakeraw(&t); t.c_cflag|=CLOCAL|CREAD; t.c_cflag&=~(CSTOPB|PARENB|CRTSCTS);
+    if (legacy) t.c_cflag |= CRTSCTS;
     t.c_cc[VMIN]=0; t.c_cc[VTIME]=0;
-    if(cfsetispeed(&t,B460800) || cfsetospeed(&t,B460800) || tcsetattr(uart,TCSANOW,&t)) die("UART configuration");
+    speed_t rate = legacy ? B460800 : B115200;
+    if(cfsetispeed(&t,rate) || cfsetospeed(&t,rate) || tcsetattr(uart,TCSANOW,&t)) die("UART configuration");
     unsigned char value[1024]; size_t n=get(1,2,value,sizeof(value)-1);
     if(!n) die("Empty version string");
     value[n]=0; printf("NCP_VERSION=%s\n",value);
+    unsigned char release_version[sizeof(value)];
+    memcpy(release_version, value, n + 1);
     if(!strstr((const char *)value,"OPENTHREAD")) die("Unexpected firmware version string");
     n=get(2,1,value,sizeof(value)); size_t pos=0; uint32_t major,minor;
     if(unpack(value,n,&pos,&major) || unpack(value,n,&pos,&minor)) die("Invalid protocol version");
@@ -134,6 +140,9 @@ int main(int argc,char **argv) {
     uint32_t api=one_uint(4,0xb0,"RCP_API_VERSION");
     uint32_t minimum=one_uint(5,0xb1,"RCP_MIN_HOST_API_VERSION");
     if(api<minimum) die("Inconsistent RCP API versions");
+    if (!legacy && (strncmp((const char *)release_version, "SL-OPENTHREAD/2.5.3.0_GitHub-1fceb225b;",
+                            sizeof("SL-OPENTHREAD/2.5.3.0_GitHub-1fceb225b;") - 1) || api != 10))
+        die("Unexpected 2.5.3.0 test RCP version or API");
     puts("SPINEL_RCP_PROBE_PASS");
     puts("Only PROP_VALUE_GET requests were sent; no reset, SET, flash or network configuration command.");
     return 0;

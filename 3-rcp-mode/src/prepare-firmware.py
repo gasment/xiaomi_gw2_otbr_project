@@ -1,15 +1,23 @@
 from pathlib import Path
 import hashlib
+import tarfile
 root=Path(__file__).resolve().parent
-firmware=root.parents[1]/'0-build-src/firmware'
+version=(root.parent.parent/'5-otbr'/'VERSION').read_text().strip()
+archive=root.parent/('deploy/rcp-native-'+version+'.tar.gz')
 names={
- 'lumi-gateway-mgl001_opentread_rcp_2.5.3.0_GitHub-1fceb225b_gsdk_2024.6.3_460800.gbl':'faeedf5976e832342c4139e84968a7a32a1a6badb328f30a4346e5c735202d59',
+ 'lumi-gateway-mgl001_openthread_rcp_2.5.3.0_115200.gbl':'c70c5ddfa78840129422893a7f8850f02330f1937bc57a2ab29f87961d496d89',
  'xiaomi_stock_ncp_6.6.6.0_build218.gbl':'389c55ea876a0dc7dbcde2cbb1bc1aefc9cf884bb2850663077629dc51c9fed0'}
 for name,expected in names.items():
- p=firmware/name
- if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=expected:
-  raise SystemExit('Missing/mismatched firmware input: '+name+'; see BUILD-RESOURCES.md')
-for slot in (root/'rcp_lab/firmware',root/'rcp_lab/native-tools/rcp-native/firmware'):
- if not slot.is_symlink() or slot.resolve()!=firmware.resolve():
-  raise SystemExit('Restore dependency links first: python3 tools/restore-dependencies.py --create-links --component 3')
-print('Verified shared firmware inputs ready; no package extraction, radio access or flash.')
+    canonical=root/'rcp_lab/firmware'/name
+    if canonical.is_file():
+        data=canonical.read_bytes()
+    else:
+        with tarfile.open(archive) as package:
+            data=package.extractfile('rcp-native/firmware/'+name).read()
+    if hashlib.sha256(data).hexdigest()!=expected: raise SystemExit('Firmware mismatch: '+name)
+    for directory in (root/'rcp_lab/firmware',root/'rcp_lab/native-tools/rcp-native/firmware'):
+        directory.mkdir(parents=True,exist_ok=True)
+        target=directory/name
+        if not target.is_file(): target.write_bytes(data)
+        elif target.read_bytes()!=data: raise SystemExit('Firmware mismatch: '+str(target))
+print('RCP and stock rollback inputs verified.')

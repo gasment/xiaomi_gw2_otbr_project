@@ -51,7 +51,7 @@ python -m pip install aioesphomeapi==46.12.0 PyYAML==6.0.3 cryptography==50.0.2
 │   ├── noise-c/
 │   └── yaml-cpp/
 └── firmware/
-    ├── lumi-gateway-mgl001_opentread_rcp_2.5.3.0_GitHub-1fceb225b_gsdk_2024.6.3_460800.gbl
+    ├── lumi-gateway-mgl001_openthread_rcp_2.5.3.0_115200.gbl
     └── xiaomi_stock_ncp_6.6.6.0_build218.gbl
 ```
 
@@ -132,7 +132,7 @@ tar -xzf 0-build-src/downloads/yaml-cpp-0.9.0.tar.gz --strip-components=1 -C 0-b
 
 RCP 工具构建会校验两份 GBL，不重新编译无线固件，也不会执行刷写。普通 Host 构建不需要 Silicon Labs SDK。仅重编无线固件或外部 openmiio 时才需要清单中的可选 SDK／Go 环境。
 
-Windows 管理端从各部件 `deploy` 目录直接汇集资源，构建入口为 `auto-deploy/gui-python/build.ps1`。自行编译的新产物仍需重新验收并更新发布指纹，不能直接当作原已验证发布件。
+Windows 管理端从各部件 `deploy` 目录直接汇集资源，构建入口为 `7-auto-deploy/gui-python/build.ps1`。自行编译的新产物仍需重新验收并更新发布指纹，不能直接当作原已验证发布件。
 
 ## 6. ARM 静态 OpenSSL
 

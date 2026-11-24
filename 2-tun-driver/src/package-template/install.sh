@@ -44,6 +44,7 @@ sh "$BASE/post-init/install-common.sh"
 /data/mi-gw2-post-init/post-initctl.sh add tun /data/mi-gw2-post-init/modules/tun.sh
 # Test readiness now; a runtime failure does not prevent later boot retries.
 sh "$DEST/start-tun.sh"
+put VERSION "$DEST/VERSION" 644
 sync
 echo "TUN deployment complete. post_init backup: $BACKUP"
 echo 'Existing SSH, root password and Xiaomi services were not changed or restarted.'

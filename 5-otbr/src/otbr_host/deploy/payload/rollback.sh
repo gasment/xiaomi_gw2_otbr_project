@@ -3,6 +3,7 @@ set -eu
 BASE=/data/otbr
 [ -f "$BASE/previous/mi-otbr-host" ] || { echo 'No previous Host release; use uninstall.sh for first-install rollback.' >&2; exit 1; }
 sh "$BASE/stop.sh"
+[ -f "$BASE/previous/VERSION" ] || rm -f "$BASE/VERSION"
 for F in "$BASE"/previous/*; do
     [ -f "$F" ] || continue
     NAME=${F##*/}

@@ -28,7 +28,7 @@ async def exercise(port, key):
             assert info.name=='mi-otbr-api-test' and info.mac_address.lower()=='02:00:00:00:00:01'
             assert info.manufacturer == 'Xiaomi' and info.model == 'mi_gateway2_otbr'
             assert not info.project_name and not info.project_version and not info.compilation_time
-            assert info.esphome_version == (Path(__file__).resolve().parents[4]/'VERSION').read_text().strip()
+            assert info.esphome_version == (Path(__file__).resolve().parents[3]/'VERSION').read_text().strip()
             entities,services=await api.list_entities_services()
             assert {e.object_id for e in entities}==expected and not services
             assert len({e.key for e in entities})==len(entities)

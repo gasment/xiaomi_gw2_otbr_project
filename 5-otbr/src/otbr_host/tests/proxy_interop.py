@@ -56,7 +56,7 @@ async def exercise(binary, encrypted):
             client = APIClient('127.0.0.1', port, noise_psk=key, provide_time=False)
             await client.connect(login=False)
             info = await client.device_info(); assert info.manufacturer == 'Xiaomi'
-            assert info.esphome_version == (Path(__file__).resolve().parents[4]/'VERSION').read_text().strip()
+            assert info.esphome_version == (Path(__file__).resolve().parents[3]/'VERSION').read_text().strip()
             entities, services = await client.list_entities_services()
             assert not entities and not services
             metadata = asyncio.Event(); received = asyncio.Event(); empty = asyncio.Event()

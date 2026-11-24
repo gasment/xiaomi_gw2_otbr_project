@@ -30,7 +30,7 @@ async def main(host, port):
                          for k, v in info.properties.items()}
                 assert re.fullmatch(r'[0-9a-fA-F]{12}', props.get('mac', '')), 'Missing stable MAC TXT'
                 assert 'project_name' not in props and 'project_version' not in props, 'Legacy project metadata advertised'
-                assert props.get('version') == (Path(__file__).resolve().parents[4]/'VERSION').read_text().strip(), 'OTBR version mismatch'
+                assert props.get('version') == (Path(__file__).resolve().parents[3]/'VERSION').read_text().strip(), 'OTBR version mismatch'
                 assert props.get('network') in ('wifi', 'ethernet'), 'Missing backbone TXT'
                 encryption = props.get('api_encryption')
                 assert encryption in (None, 'Noise_NNpsk0_25519_ChaChaPoly_SHA256'), 'Unexpected encryption TXT'

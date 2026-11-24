@@ -9,7 +9,29 @@ for TOOL in sha256sum cmp mount umount cp mv mkdir chmod chown sync grep awk; do
     command -v "$TOOL" >/dev/null 2>&1 || fail "Missing tool: $TOOL"
 done
 sha256sum -c SHA256SUMS
-if [ -e "$DEST" ] && [ ! -f "$DEST/install.sh" ]; then fail 'Unmanaged /data/rcp-mode exists.'; fi
+if [ -e "$DEST" ] || [ -L "$DEST" ]; then
+    [ -d "$DEST" ] && [ ! -L "$DEST" ] || fail 'Unsafe /data/rcp-mode path.'
+    if [ -f "$DEST/payload.sha256" ] &&
+       [ -x "$DEST/apply-mode.sh" ] &&
+       (cd "$DEST" && sha256sum -c payload.sha256 >/dev/null 2>&1); then
+        SAME=yes
+        # The verified installed manifest covers stock.sha256. Stock fingerprints
+        # can differ between reference builds without changing the helper.
+        for NAME in apply-mode.sh post_init.sh uninstall.sh; do
+            if ! cmp -s "payload/$NAME" "$DEST/$NAME"; then SAME=no; fi
+        done
+        if [ "$SAME" = yes ]; then
+            echo 'RCP mode helper already verified; retained existing launchers and their backups.'
+            exit 0
+        fi
+    elif [ ! -f "$DEST/install.sh" ]; then
+        fail 'Unmanaged or incomplete /data/rcp-mode exists.'
+    fi
+fi
+if grep -q 'RCP mode: stock coordinator OTA skipped' /bin/fw_manager.sh ||
+   grep -q 'RCP mode: do not restart stock Zigbee services' /bin/app_monitor.sh; then
+    fail 'RCP isolation is active. Restore unmounted stock launchers before replacing an incompatible helper.'
+fi
 mkdir -p "$DEST"
 BACKUP=$DEST/backups/$(date +%Y%m%d-%H%M%S)-$$
 mkdir -p "$BACKUP"

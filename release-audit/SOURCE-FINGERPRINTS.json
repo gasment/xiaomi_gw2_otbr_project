@@ -22,7 +22,7 @@
     },
     {
       "path": "openssh-portable/.gitignore",
-      "sha256": "4932eea89548d119d53ae2a200bba8b2b381f67b597d119015b8f0b8b7935050"
+      "sha256": "7c82f4cf809b189651bcb28f15ffc9a2aa54a43f23a02007a8d75e1562fb8e11"
     },
     {
       "path": "openssh-portable/.skipped-commit-ids",
@@ -2084,7 +2084,7 @@
     },
     {
       "path": "tun_lab/fetch-toolchain.sh",
-      "sha256": "8354517c3c9205b48c2c10ed1a6695c41382ca7b2c2ff091a2e7f6427749d737"
+      "sha256": "b4190b00ad8f2ef1c0cea214791a5918000423c8a7d6ffbcb87447b54dabc454"
     },
     {
       "path": "tun_lab/gateway-network-symbols.txt",
@@ -2112,7 +2112,7 @@
     },
     {
       "path": "tun_lab/prepare-tree.py",
-      "sha256": "21910b802125ca1e96a5497282a666fdd5842e94673e44a40440a7a0a220d7a3"
+      "sha256": "792b530f8f3dc511a74ede73a3a58ec932533455fd8ec6fea50e1b5b6eaa4843"
     },
     {
       "path": "tun_lab/probe-report.baseline.txt",
@@ -2186,7 +2186,7 @@
     },
     {
       "path": "prepare-firmware.py",
-      "sha256": "f413ca22d61e97033ded91a5c0245cb268613a9f6bbc4b7feaa69c2519cd9b59"
+      "sha256": "d199246da00528edf982ea426c09e70d20524e406af6e5f3a6c4c4c13104a344"
     },
     {
       "path": "rcp-mode-package/README.md",

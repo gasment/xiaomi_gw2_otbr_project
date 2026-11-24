@@ -100,12 +100,12 @@
     "name": "rcp-firmware",
     "path": "0-build-src/firmware",
     "marker_sha256": {
-      "lumi-gateway-mgl001_opentread_rcp_2.5.3.0_GitHub-1fceb225b_gsdk_2024.6.3_460800.gbl": "faeedf5976e832342c4139e84968a7a32a1a6badb328f30a4346e5c735202d59",
+      "lumi-gateway-mgl001_openthread_rcp_2.5.3.0_115200.gbl": "c70c5ddfa78840129422893a7f8850f02330f1937bc57a2ab29f87961d496d89",
       "xiaomi_stock_ncp_6.6.6.0_build218.gbl": "389c55ea876a0dc7dbcde2cbb1bc1aefc9cf884bb2850663077629dc51c9fed0"
     },
     "components": [
       "3"
     ],
-    "source": "darkxst/silabs-firmware-builder 20250627 RCP; verified stock GBL from release assets"
+    "source": "Nabu Casa build with Simplicity SDK 2026.6.1; verified RCP and stock GBL from rcp-native deployment"
   }
 ]

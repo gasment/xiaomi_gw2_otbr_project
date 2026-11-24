@@ -11,7 +11,7 @@ import time
 
 root=Path(__file__).resolve().parent
 exe=root/'radio-flasher-host'
-firmware=root.parent/'firmware/lumi-gateway-mgl001_opentread_rcp_2.5.3.0_GitHub-1fceb225b_gsdk_2024.6.3_460800.gbl'
+firmware=root.parent/'firmware/lumi-gateway-mgl001_openthread_rcp_2.5.3.0_115200.gbl'
 original=firmware.read_bytes()
 menu=b'\r\nGecko Bootloader v1.9.2\r\n1. upload gbl\r\n2. run\r\n3. ebl info\r\nBL > '
 

@@ -13,7 +13,12 @@ sha256sum -c SHA256SUMS
 chmod 700 payload/mi-otbr-host
 [ ! -e payload/config.yaml ] && [ ! -e payload/secrets.yaml ] || { echo 'Invalid package: runtime config must not be in payload.' >&2; exit 1; }
 if [ -f /data/otbr/config.yaml ]; then
-    payload/mi-otbr-host /data/otbr/config.yaml --check-config
+    if cmp -s examples/config.example /data/otbr/config.yaml &&
+       { [ ! -f /data/otbr/secrets.yaml ] || cmp -s examples/secrets.example /data/otbr/secrets.yaml; }; then
+        echo OTBR_CONFIG_TEMPLATE_DETECTED
+    else
+        payload/mi-otbr-host /data/otbr/config.yaml --check-config
+    fi
 fi
 PREREQ_OK=yes
 [ -f /data/rcp-openmiio/start.sh ] && [ -f /data/rcp-mode/apply-mode.sh ] || PREREQ_OK=no
@@ -58,7 +63,9 @@ if [ -n "$UART_BUSY" ]; then
 fi
 mkdir -p /data/otbr/previous /data/otbr/certs /data/otbr/state
 chmod 700 /data/otbr /data/otbr/previous /data/otbr/state
-for F in payload/*; do
+# The rollback snapshot must track the version of the previous Host.
+rm -f /data/otbr/previous/VERSION
+for F in payload/* VERSION; do
     [ -f "$F" ] || continue
     NAME=${F##*/}
     case "$NAME" in config.yaml|secrets.yaml) echo 'Refusing to overwrite gateway runtime YAML' >&2; exit 1;; esac

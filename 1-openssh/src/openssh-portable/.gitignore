@@ -37,8 +37,3 @@ sshd-auth
 !regress/unittests/**/Makefile
 tags
 
-
-# These contrib files are source inputs, not generated build output.
-!/contrib/Makefile
-!/contrib/cygwin/Makefile
-!/contrib/hpux/sshd

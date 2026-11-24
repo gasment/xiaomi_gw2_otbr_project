@@ -8,7 +8,7 @@ output=root/'build-output'; output.mkdir(exist_ok=True)
 def pack(template,arcname,filename,replacements=None):
     with tempfile.TemporaryDirectory(prefix='component-repack-',dir=output) as directory:
         stage=Path(directory)/arcname; shutil.copytree(root/template,stage)
-        (stage/"VERSION").write_text((root.parent.parent/"VERSION").read_text())
+        (stage/"VERSION").write_text((root.parent/"VERSION").read_text())
         for src,dest in (replacements or {}).items():
             p=stage/dest; p.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(root/src,p)
         # Refresh only project-managed relative manifests, never stock or
