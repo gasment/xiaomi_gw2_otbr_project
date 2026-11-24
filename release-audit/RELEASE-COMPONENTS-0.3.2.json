@@ -1,0 +1,55 @@
+{
+  "otbr_version": "0.3.2",
+  "gui_version": "0.3.1",
+  "rcp": {
+    "version": "2.5.3.0",
+    "baud_rate": 115200,
+    "flow_control": "none",
+    "gbl_sha256": "c70c5ddfa78840129422893a7f8850f02330f1937bc57a2ab29f87961d496d89",
+    "source_rebuild_sha256": "dec063dfff6814c4eadb56a5f407d8990834d1d3791c17f03429d576299bad22",
+    "release_image": "same bytes as the separately tested 115200 image"
+  },
+  "artifacts": [
+    {
+      "artifact": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.3.0.tar.gz",
+      "sha256": "47bdd4a568ccede490b27f98cb3f385b2a23bddcce290f7355a880111f2dd517"
+    },
+    {
+      "artifact": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.3.0.tar.gz",
+      "sha256": "00af1bb35959c4f41d75191cca616513967d5fb0f2a777191a4dedfd4c54cb86"
+    },
+    {
+      "artifact": "3-rcp-mode/deploy/rcp-mode-0.3.2.tar.gz",
+      "sha256": "b543a7f7dd53d4fa43a8a26de2e23a9c330c2fa5d96b6e4d256247358d2a8c2b"
+    },
+    {
+      "artifact": "3-rcp-mode/deploy/rcp-native-0.3.2.tar.gz",
+      "sha256": "6ee748fcc30b79c83e51154462b0d0869780485c68db910ebff759fbeffeb850"
+    },
+    {
+      "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.3.2.tar.gz",
+      "sha256": "d74b9d28a3548a4dbbbd9157b0a4eae4a3148f7ef1d3bb75341846bd47ba30b8"
+    },
+    {
+      "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.2.tar.gz",
+      "sha256": "7699e071e38d5db79ca9323c6f87ac6f37332e40f2bbc5e40776ee31f7581757"
+    },
+    {
+      "artifact": "5-otbr/deploy/rcp-recovery-update-0.3.0.tar.gz",
+      "sha256": "3eb59bd9de68ad13e8190d460fe619967d328d482d6aab50ad8b1a94a938596a"
+    },
+    {
+      "artifact": "6-post-init/deploy/post-init-modular-0.3.0.tar.gz",
+      "sha256": "a633e5271e99cb8a364f939760136b7365dc54a379b4ec79db280cef95cd9831"
+    },
+    {
+      "artifact": "8-xiaomi-gateway3-patch/ble-spec-cache/deploy/ble-spec-cache-0.3.0.tar.gz",
+      "sha256": "82c3ea862fa7012b731c6de186a22849702515448d5e8c6782bc1d7bbbdfd1c2"
+    },
+    {
+      "artifact": "7-auto-deploy/gui-python/deploy/MiGateway2AutoDeploy-0.3.1.exe",
+      "sha256": "ff1041c951b80569cdc55632b99af900a1858056b75b264732ae23716f94fb3a"
+    }
+  ],
+  "gateway_modified_by_build": false
+}

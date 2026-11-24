@@ -27,8 +27,8 @@ struct Config {
   std::vector<std::string> candidates;
   std::string backbone_policy{"follow_default_route"};
   unsigned switch_delay_ms{3000};
-  std::string uart_device{"/dev/ttyS1"}, flow_control{"hardware"};
-  unsigned baud_rate{460800};
+  std::string uart_device{"/dev/ttyS1"}, flow_control{"none"};
+  unsigned baud_rate{115200};
   std::optional<int> output_power; // Requested dBm; absent means keep RCP default.
   bool commissioner_enabled{false}, force_dataset{false};
   std::string commissioner_id;

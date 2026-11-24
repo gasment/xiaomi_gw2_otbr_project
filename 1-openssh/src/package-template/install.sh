@@ -67,6 +67,7 @@ sh "$BASE/post-init/install-common.sh"
 /data/mi-gw2-post-init/post-initctl.sh add openssh /data/mi-gw2-post-init/modules/openssh.sh
 # Start or retain SSH after the stock fallback entry is already safe.
 /data/openssh/start-ssh.sh
+put VERSION /data/openssh/VERSION 644
 sync
 echo "Deployment complete. Configuration backups: $BACKUP"
 echo 'Connect to port 2223 as root with an empty password; SFTP is enabled.'

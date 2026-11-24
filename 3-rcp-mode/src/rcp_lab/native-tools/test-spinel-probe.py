@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import termios
 import pty
 import select
 import subprocess
@@ -42,8 +43,9 @@ for corrupt in [False,True]:
                         for v in frame[2:-2]:
                             prop|=(v&127)<<shift; shift+=7
                             if not v&128: break
+                        assert termios.tcgetattr(slave)[4:6] == [termios.B115200] * 2
                         requests+=1
-                        values={2:b'SL-OPENTHREAD/2.5.3.0_Test; EFR32\0',1:b'\x04\x03',5:packed(512)+packed(513),176:packed(10),177:packed(4)}
+                        values={2:b'SL-OPENTHREAD/2.5.3.0_GitHub-1fceb225b; EFR32\0',1:b'\x04\x03',5:packed(512)+packed(513),176:packed(10),177:packed(4)}
                         reply=bytearray(encode(bytes([header,6])+packed(prop)+values[prop]))
                         if corrupt and not sent_bad: reply[-2]^=1; sent_bad=True
                         os.write(master,reply)

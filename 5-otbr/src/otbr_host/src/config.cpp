@@ -255,12 +255,8 @@ Config load_config(const std::string &filename) {
   if (br["update_interval"]) c.update_interval_ms = duration(r, br["update_interval"], "update_interval");
   auto uart = br["rcp"];
   if (!uart.IsDefined()) uart = Node(YAML::NodeType::Map);
-  keys(uart, {"device", "baud_rate", "flow_control", "rcp_connectivity"}, "thread_br.rcp (replace ESP32 GPIO fields with device/baud_rate/flow_control)");
-  c.uart_device = r.optional(uart, "device", "/dev/ttyS1", "rcp");
-  if (c.uart_device.rfind("/dev/", 0) != 0) fail("rcp.device", "expected an absolute /dev path");
-  if (uart["baud_rate"]) c.baud_rate = r.number(uart["baud_rate"], 9600, 4000000, "rcp.baud_rate");
-  c.flow_control = r.optional(uart, "flow_control", "hardware", "rcp");
-  if (c.flow_control != "hardware") fail("rcp.flow_control", "validated MHCZ01P firmware requires hardware RTS/CTS");
+  // Accept legacy keys so existing gateway-owned YAML continues to load.
+  keys(uart, {"device", "baud_rate", "flow_control", "rcp_connectivity"}, "thread_br.rcp");
   c.ha_url = r.optional(br, "ha_url", "", "thread_br");
   c.ha_token = r.optional(br, "ha_token", "", "thread_br");
   c.ha_ca_file = r.optional(br, "ha_ca_file", c.ha_ca_file, "thread_br");

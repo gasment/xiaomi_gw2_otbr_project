@@ -28,7 +28,15 @@ int main(int argc, char **argv) {
     minimal["thread_br"]["rcp_connectivity"] = minimal["thread_br"]["rcp"]["rcp_connectivity"];
     minimal["thread_br"].remove("rcp"); write(minimal);
     auto defaults = otbr_host::load_config(target.string());
-    require(defaults.uart_device == "/dev/ttyS1" && defaults.baud_rate == 460800 && defaults.flow_control == "hardware", "omitted RCP block uses gateway defaults");
+    require(defaults.uart_device == "/dev/ttyS1" && defaults.baud_rate == 115200 && defaults.flow_control == "none", "omitted RCP block uses gateway defaults");
+    auto legacy_uart = YAML::Clone(original);
+    legacy_uart["thread_br"]["rcp"]["device"] = "/dev/ttyS9";
+    legacy_uart["thread_br"]["rcp"]["baud_rate"] = 460800;
+    legacy_uart["thread_br"]["rcp"]["flow_control"] = "hardware";
+    write(legacy_uart);
+    auto ignored_uart = otbr_host::load_config(target.string());
+    require(ignored_uart.uart_device == defaults.uart_device && ignored_uart.baud_rate == defaults.baud_rate && ignored_uart.flow_control == defaults.flow_control, "legacy UART fields are ignored");
+    require(ignored_uart.entities.at("rcp_connectivity").id == c.entities.at("rcp_connectivity").id, "legacy RCP entity remains configured");
     require(defaults.entities.at("rcp_connectivity").id == c.entities.at("rcp_connectivity").id, "top-level connectivity metadata retained");
     minimal["api"].remove("encryption");
     minimal["thread_br"]["backbone"] = YAML::Clone(minimal["thread_br"]["backbone_config"]);

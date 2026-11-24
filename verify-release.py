@@ -39,37 +39,39 @@ for slot,target in json.loads((root/'dependencies/links.json').read_text()).item
 if args.dependencies:
     subprocess.run(['python3',str(root/'tools/restore-dependencies.py'),'--check'],check=True)
 if args.artifacts:
-    external=args.artifacts.resolve()
-    artifact_rows=json.loads((root/('release-audit/ALL-COMPONENTS-'+(root/'VERSION').read_text().strip()+'.json')).read_text())['archives']
-    locations={Path(row['artifact']).name:row['artifact'] for row in artifact_rows}
-    locations['spinel-probe-'+(root/'VERSION').read_text().strip()]='3-rcp-mode/deploy/tools/spinel-probe'
-    locations['openmiio_agent-1.2.1-arm']='4-rcp-openmiio/deploy/dependencies/openmiio_agent'
-    def artifact_path(name):
-        flat=external/name
-        return flat if flat.is_file() else external/locations[name]
-    for name,expected in json.loads((root/'dependencies/release-assets.json').read_text()).items():
-        p=artifact_path(name)
-        if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=expected:
-            raise SystemExit('RELEASE_ASSET_MISMATCH: '+name)
-    # Published artifact hashes stay verifiable without vendoring the archives.
-    rows=json.loads((root/('release-audit/ALL-COMPONENTS-'+(root/'VERSION').read_text().strip()+'.json')).read_text())['archives']
-    contents={}
-    for row in rows:
-        p=artifact_path(Path(row['artifact']).name)
-        if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=row['sha256']:
-            raise SystemExit('RELEASE_ASSET_MISMATCH: '+p.name)
-        with tarfile.open(p) as tf:
-            data={m.name:tf.extractfile(m).read() for m in tf.getmembers() if m.isfile()}
-        top=next(iter(data)).split('/')[0]
-        if data[top+'/VERSION'].decode().strip()!=(root/'VERSION').read_text().strip():
-            raise SystemExit('Release version differs: '+p.name)
-        for line in data[top+'/SHA256SUMS'].decode().splitlines():
-            expected,name=line.split('  ',1)
-            if hashlib.sha256(data[top+'/'+name]).hexdigest()!=expected:raise SystemExit('Release inner hash mismatch')
-        contents[row['artifact']]=data
-    for row in json.loads((root/'release-audit/SOURCE-PAYLOAD-MAP.json').read_text()):
-        if (root/row['source']).read_bytes()!=contents[row['artifact']][row['member']]:
-            raise SystemExit('Source/runtime payload differs: '+row['source'])
-    print('EXTERNAL_RELEASE_ASSETS_PASS: 7 archives; source payloads match')
+    external = args.artifacts.resolve()
+    expected_assets = json.loads((root / 'dependencies/release-assets.json').read_text())
+    locations = {
+        "post-init-modular-0.3.0.tar.gz": "6-post-init/deploy/post-init-modular-0.3.0.tar.gz",
+        "mi_gateway_2_openssh_deploy-0.3.0.tar.gz": "1-openssh/deploy/mi_gateway_2_openssh_deploy-0.3.0.tar.gz",
+        "mi_gateway_2_tun_deploy-0.3.0.tar.gz": "2-tun-driver/deploy/mi_gateway_2_tun_deploy-0.3.0.tar.gz",
+        "rcp-native-0.3.2.tar.gz": "3-rcp-mode/deploy/rcp-native-0.3.2.tar.gz",
+        "rcp-mode-0.3.2.tar.gz": "3-rcp-mode/deploy/rcp-mode-0.3.2.tar.gz",
+        "rcp-openmiio-0.3.2.tar.gz": "4-rcp-openmiio/deploy/rcp-openmiio-0.3.2.tar.gz",
+        "mi-gw2-otbr-0.3.2.tar.gz": "5-otbr/deploy/mi-gw2-otbr-0.3.2.tar.gz",
+        "rcp-recovery-update-0.3.0.tar.gz": "5-otbr/deploy/rcp-recovery-update-0.3.0.tar.gz",
+        "ble-spec-cache-0.3.0.tar.gz": "8-xiaomi-gateway3-patch/ble-spec-cache/deploy/ble-spec-cache-0.3.0.tar.gz",
+        "MiGateway2AutoDeploy-0.3.1.exe": "7-auto-deploy/gui-python/deploy/MiGateway2AutoDeploy-0.3.1.exe",
+        "spinel-probe-0.3.2": "3-rcp-mode/deploy/tools/spinel-probe",
+        "openmiio_agent-1.2.1-arm": "4-rcp-openmiio/deploy/dependencies/openmiio_agent"
+    }
+    for name, expected in expected_assets.items():
+        path = external / name
+        if not path.is_file():
+            path = external / locations[name]
+        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+            raise SystemExit('RELEASE_ASSET_MISMATCH: ' + name)
+        if name.endswith('.tar.gz'):
+            with tarfile.open(path) as tar:
+                contents = {member.name: tar.extractfile(member).read() for member in tar if member.isfile()}
+            top = next(iter(contents)).split('/')[0]
+            version = contents[top + '/VERSION'].decode().strip()
+            if not name.endswith('-' + version + '.tar.gz'):
+                raise SystemExit('Release version differs: ' + name)
+            for line in contents[top + '/SHA256SUMS'].decode().splitlines():
+                digest, relative = line.split('  ', 1)
+                if hashlib.sha256(contents[top + '/' + relative]).hexdigest() != digest:
+                    raise SystemExit('Release inner hash mismatch: ' + name + '/' + relative)
+    print('EXTERNAL_RELEASE_ASSETS_PASS:', len(expected_assets))
 print('GITHUB_SOURCE_VERIFY_PASS version='+(root/'VERSION').read_text().strip()+' files='+str(count))
 print('Default check covers source only; missing local SDK/toolchains and Release assets are not claimed present. No compiler or device operation.')

@@ -50,7 +50,7 @@ async def main():
         info = await client.device_info()
         assert info.manufacturer == 'Xiaomi' and info.model == 'mi_gateway2_otbr', 'Device identity metadata mismatch'
         assert not info.project_name and not info.project_version and not info.compilation_time, 'Legacy firmware suffix metadata'
-        assert info.esphome_version == (Path(__file__).resolve().parents[4]/'VERSION').read_text().strip(), 'OTBR version mismatch'
+        assert info.esphome_version == (Path(__file__).resolve().parents[3]/'VERSION').read_text().strip(), 'OTBR version mismatch'
         entities, _ = await client.list_entities_services()
         by_id = {e.object_id:e for e in entities}
         assert all(name in by_id for name in expected.values()), 'Some gateway entities are not advertised'

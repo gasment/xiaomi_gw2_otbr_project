@@ -77,7 +77,7 @@ sh /tmp/rcp-native/flash-rcp.sh
 脚本会再次校验包内文件、通过 GPIO 进入 Bootloader，并上传固定镜像：
 
 ```text
-lumi-gateway-mgl001_opentread_rcp_2.5.3.0_GitHub-1fceb225b_gsdk_2024.6.3_460800.gbl
+lumi-gateway-mgl001_openthread_rcp_2.5.3.0_115200.gbl
 ```
 
 UART 刷写波特率固定为 115200、RTS/CTS，发送方式为 XMODEM-CRC 128 字节块。工具先验证 GBL 类型、CRC、允许的标签和应用编程范围；拒绝 Bootloader/security 更新标签。收到 Bootloader 的 `Serial upload complete` 和菜单后，才发送运行应用命令。
@@ -92,11 +92,29 @@ APPLICATION_UPLOAD_PASS: bootloader accepted image; run command sent.
 
 ## 五、RCP 刷入后的状态
 
-RCP 应用使用 **460800**，Bootloader 仍使用 **115200**。波特率由使用串口的程序分别设置，不是永久修改 Linux 串口配置。
+RCP 应用使用 **115200**，Bootloader 仍使用 **115200**。波特率由使用串口的程序分别设置，不是永久修改 Linux 串口配置。
 
 此时原 Zigbee Linux 服务仍处于暂停状态。**不要执行 restore-services.sh 去恢复 EZSP 服务，也先不要重启。** 原厂主机只支持 Zigbee EZSP，不能用于 RCP；下一步需要配置持久 RCP 模式及本机 OTBR/Spinel 验证。
 
-当前原生工具只实现 Bootloader 探测和 GBL 上传，不包含本机 Spinel/RCP 应用探测器。刷写成功后保留完整输出，再进行后续应用验证。不要把旧的 WSL `probe-rcp.sh` 直接用于本流程：它要求另外存在 TCP 8899 桥接，而本流程没有启动网络桥。
+已增加独立的本机 Spinel 只读探测器。先在 WSL 构建：
+
+```sh
+cd ./3-rcp-mode/src/rcp_lab/native-tools
+sh build-spinel-probe.sh
+```
+
+该脚本先运行正常回复与损坏 CRC 回复的模拟测试，再交叉编译。将生成的 spinel-probe 上传到网关 /tmp，在仍保持原 Zigbee 服务暂停的情况下执行：
+
+```sh
+chmod 755 /tmp/spinel-probe
+/tmp/spinel-probe
+```
+
+探测器直接以 115200、8N1、无硬件流控 访问 /dev/ttyS1，只发送 PROP_VALUE_GET，读取 NCP_VERSION、协议版本、能力列表、RCP API 和最低主机 API，不发送 RESET、SET、网络配置或刷写命令。成功标志为 SPINEL_RCP_PROBE_PASS。这个探测不验证无线射频是否能正常收发，后续仍需要 OTBR 实测。
+
+若超时或属性报错，保留输出，不恢复原 Zigbee 服务或盲目改固件。不要把旧的 WSL probe-rcp.sh 直接用于本流程：它要求另外存在 TCP 8899 桥接，而本流程没有启动网络桥。
+
+最新记录：用户已提供本机上传日志，Bootloader 显示 Serial upload complete，工具显示 APPLICATION_UPLOAD_PASS。RCP 应用通信待上述探测验证。
 
 ## 六、网关本机刷回原厂 Zigbee
 

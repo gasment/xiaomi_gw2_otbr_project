@@ -9,21 +9,21 @@
 
 ## 部件说明
 
-当前版本 **0.3.0**，与根目录 VERSION 一致。静态 ARMv7/musl Host，适配原厂 Linux 4.9.84、MHCZ01P RCP 和 TUN，保留 BLE/openmiio 共存。包含 Web、Native API 七项网关实体、SRP/mDNS、Commissioner、拓扑/Ping/节点重启、用户态 BBR、RCP 复位恢复及可选 Thread Proxy。
+当前版本 **0.3.2**，由本部件的 VERSION 管理。静态 ARMv7/musl Host，适配原厂 Linux 4.9.84、MHCZ01P RCP 和 TUN，保留 BLE/openmiio 共存。包含 Web、Native API 七项网关实体、SRP/mDNS、Commissioner、拓扑/Ping/节点重启、用户态 BBR、RCP 复位恢复及可选 Thread Proxy。
 
 Thread Proxy 始终编译，运行时由顶层 thread_proxy_api 配置启用；缺省不创建代理线程、端口或发现服务。详见 [代理说明](src/otbr_host/THREAD-PROXY.md)；网关实体与 LED 规则见 [实体说明](src/otbr_host/GATEWAY-ENTITIES.md)。共享依赖已经迁入 0-build-src，无需重复复制。
 
 ## 打包版本部署方法
 
-已有 1～4 部件的网关直接升级本部件。上传 **deploy/mi-gw2-otbr-0.3.0.tar.gz** 到网关临时目录，逐行执行：
+已有 RCP 2.5.3.0／115200 和隔离层的网关可单独更新 Host。使用 230400 或 460800 的网关，请使用新版 GUI 更新 OTBR/RCP 卡片，并启用自动刷入 RCP 固件。上传 **deploy/mi-gw2-otbr-0.3.2.tar.gz** 到网关临时目录，逐行执行：
 
 ```sh
 cd /tmp
-tar -xzf mi-gw2-otbr-0.3.0.tar.gz
+tar -xzf mi-gw2-otbr-0.3.2.tar.gz
 sh otbr-deploy/install.sh
 ```
 
-不需要额外叠加安装 rcp-recovery-update；完整 0.3.0 包已包含恢复脚本。安装器保留网关 config.yaml、secrets 和已有证书，升级会重启 Host。首次安装需在网关完成配置。
+不需要额外叠加安装 rcp-recovery-update；完整 0.3.2 包已包含恢复脚本。安装器保留网关 config.yaml、secrets 和已有证书，升级会重启 Host。首次安装需在网关完成配置。
 
 完整config配置参考：
 ```yaml

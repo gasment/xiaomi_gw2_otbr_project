@@ -5,9 +5,11 @@
 RCP/openmiio supervisor 由 OTBR boot manager 启动，不再直接拥有或替换 `post_init.sh`。
 
 
-# 4 — RCP 与 Xiaomi Gateway 3 BLE 共存（项目版本 0.3.0）
+# 4 — RCP 与 Xiaomi Gateway 3 BLE 共存
 
 ## 部件说明
+
+随 OTBR 软件栈部署，包名后缀取自 [OTBR 版本](../5-otbr/VERSION)。
 
 仅在网关管理 openmiio，启动参数固定为 `miio mqtt cache central`，去掉 z3/zigbee.tcp，让蓝牙继续向 HA 上报、UART 留给 OTBR。不修改 HA 集成文件，不伪造 openmiio 哈希，不改 root 空密码。
 
@@ -15,11 +17,11 @@ RCP/openmiio supervisor 由 OTBR boot manager 启动，不再直接拥有或替�
 
 ## 打包版本部署方法
 
-完成第 3 部件且确认隔离正常后，将 `deploy/rcp-openmiio-0.3.0.tar.gz` 上传 `/tmp`。安装器要求 `/data/openmiio_agent` 已是验证版本；若文件不存在，可先通过 SFTP 上传 deploy/dependencies 的可执行依赖到该路径，再 `chmod 755 /data/openmiio_agent`。已有运行中但版本不匹配时先协调 HA/原管理流程，不覆盖运行文件绕过校验。
+完成第 3 部件且确认隔离正常后，将 `deploy/rcp-openmiio-0.3.2.tar.gz` 上传 `/tmp`。安装器要求 `/data/openmiio_agent` 已是验证版本；若文件不存在，可先通过 SFTP 上传 deploy/dependencies 的可执行依赖到该路径，再 `chmod 755 /data/openmiio_agent`。已有运行中但版本不匹配时先协调 HA/原管理流程，不覆盖运行文件绕过校验。
 
 ```sh
 cd /tmp
-tar -xzf rcp-openmiio-0.3.0.tar.gz
+tar -xzf rcp-openmiio-0.3.2.tar.gz
 sh /tmp/rcp-openmiio/install.sh
 sh /data/rcp-openmiio/start.sh --now
 ```

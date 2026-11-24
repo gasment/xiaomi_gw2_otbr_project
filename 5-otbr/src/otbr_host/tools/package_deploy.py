@@ -16,7 +16,7 @@ build_tag = 'host-bbr-arm' if profile == 'bbr' else 'host-arm'
 binary = root / 'build' / build_tag / 'mi-otbr-host'
 if len(sys.argv) != 1: raise SystemExit('No config argument: runtime YAML belongs on the gateway.')
 if not binary.is_file(): raise SystemExit('Build the ARM Host first: sh build-release.sh')
-version = (root.parents[2] / 'VERSION').read_text().strip()
+version = (root.parents[1] / 'VERSION').read_text().strip()
 binary_data = binary.read_bytes()
 if b'OTBR_HOST_VERSION=' + version.encode() not in binary_data or b'THREAD_PROXY_RUNTIME_ENABLED' not in binary_data:
     raise SystemExit('Host binary is older than current VERSION or lacks the built-in proxy; rebuild before packaging.')
@@ -61,7 +61,7 @@ with tempfile.TemporaryDirectory(prefix='release-', dir=root / 'build') as tempo
       shutil.copy2(path, stage / 'licenses' / (name + '-LICENSE'))
     shutil.copy2(root / 'deps.lock.json', stage / 'deps.lock.json')
     shutil.copy2(root / 'THREAD-PROXY.md', stage / 'THREAD-PROXY.md')
-    shutil.copy2(root.parents[2] / 'VERSION', stage / 'VERSION')
+    shutil.copy2(root.parents[1] / 'VERSION', stage / 'VERSION')
     for p in stage.rglob('*.sh'):
       p.chmod(0o700); subprocess.run(['sh', '-n', str(p)], check=True)
     files = sorted(p for p in stage.rglob('*') if p.is_file())

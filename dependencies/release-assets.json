@@ -1,14 +1,14 @@
 {
-  "post-init-modular-0.3.0.tar.gz": "c8443b9f478df5b7bfc341202920c785776d3fb0f7f476588ca8d87903f28573",
-  "mi_gateway_2_openssh_deploy-0.3.0.tar.gz": "2108445ea73a6100819fcd3974481592e8bcd6621cd0401f5ad4ae08475ee080",
-  "mi_gateway_2_tun_deploy-0.3.0.tar.gz": "848d3f166d1c9393fc2ab3dd3990b17755189abedd07ae7a523f9f20b0c8e975",
-  "rcp-mode-0.3.0.tar.gz": "d14bac7a93d3fae20a3cf665106a017d51f6eec617b36d19e4798412bbc2b23e",
-  "rcp-native-0.3.0.tar.gz": "9f9990f70b5d22b0f0db2c42f1e3a9b202ead028813eba3f7c3d1e41272290ca",
-  "rcp-openmiio-0.3.0.tar.gz": "68ee4ded225cb5340df3fa48c87966017bc47b7a479b9d908b8079f330de35c8",
-  "mi-gw2-otbr-0.3.0.tar.gz": "546a09ba9f947768998dfd1da89d9bcc4d070d4cc6026e5996984ef360697b7e",
+  "mi_gateway_2_tun_deploy-0.3.0.tar.gz": "00af1bb35959c4f41d75191cca616513967d5fb0f2a777191a4dedfd4c54cb86",
   "rcp-recovery-update-0.3.0.tar.gz": "3eb59bd9de68ad13e8190d460fe619967d328d482d6aab50ad8b1a94a938596a",
-  "ble-spec-cache-0.3.0.tar.gz": "ccc867c64eaa63a0829c46db9322c1b5260e050c8274565d7227844ceae2543b",
-  "MiGateway2AutoDeploy-0.3.0.exe": "11602a0fb814affa61aeded8ebbc8e0897c49a8579160ec7288b5a97eaad73c4",
-  "spinel-probe-0.3.0": "520c74520c005a87403e5f677d93d2c26fc756b17f2548881d40ec7c82667602",
-  "openmiio_agent-1.2.1-arm": "98c2c62611e4bd97e4d2a49ea6e70835fd3c05d6e66007d65bcc95c126462574"
+  "mi_gateway_2_openssh_deploy-0.3.0.tar.gz": "47bdd4a568ccede490b27f98cb3f385b2a23bddcce290f7355a880111f2dd517",
+  "rcp-native-0.3.2.tar.gz": "6ee748fcc30b79c83e51154462b0d0869780485c68db910ebff759fbeffeb850",
+  "mi-gw2-otbr-0.3.2.tar.gz": "7699e071e38d5db79ca9323c6f87ac6f37332e40f2bbc5e40776ee31f7581757",
+  "ble-spec-cache-0.3.0.tar.gz": "82c3ea862fa7012b731c6de186a22849702515448d5e8c6782bc1d7bbbdfd1c2",
+  "spinel-probe-0.3.2": "957fd9cbd788511f4236574f62e0d210d25d8d52cd746221f67125387068cba8",
+  "openmiio_agent-1.2.1-arm": "98c2c62611e4bd97e4d2a49ea6e70835fd3c05d6e66007d65bcc95c126462574",
+  "post-init-modular-0.3.0.tar.gz": "a633e5271e99cb8a364f939760136b7365dc54a379b4ec79db280cef95cd9831",
+  "rcp-mode-0.3.2.tar.gz": "b543a7f7dd53d4fa43a8a26de2e23a9c330c2fa5d96b6e4d256247358d2a8c2b",
+  "rcp-openmiio-0.3.2.tar.gz": "d74b9d28a3548a4dbbbd9157b0a4eae4a3148f7ef1d3bb75341846bd47ba30b8",
+  "MiGateway2AutoDeploy-0.3.1.exe": "ff1041c951b80569cdc55632b99af900a1858056b75b264732ae23716f94fb3a"
 }

@@ -5,13 +5,15 @@
 RCP mode 是 OTBR 的内部前置步骤，不再拥有或替换 `post_init.sh`。
 
 
-# 3 — RCP 本机刷写与原厂 Zigbee 启动隔离（项目版本 0.3.0）
+# 3 — RCP 本机刷写与原厂 Zigbee 启动隔离
 
 ## 部件说明
 
+随 OTBR 软件栈部署，包名后缀取自 [OTBR 版本](../5-otbr/VERSION)。
+
 本部件补齐两个连续阶段：先将 MHCZ01P/EFR32MG21 刷成 OpenThread RCP，再隔离原厂 Zigbee 主机/监控/已检查 OTA 路径。刷写全部在网关执行。
 
-发行 RCP：`lumi-gateway-mgl001_opentread_rcp_2.5.3.0_GitHub-1fceb225b_gsdk_2024.6.3_460800.gbl`，来自 darkxst/silabs-firmware-builder 的 20250627 发行。硬件 UART `/dev/ttyS1`，460800、RTS/CTS；Gecko Bootloader 1.9.2。附 Zigbee `6.6.6.0 build218` 应用 GBL 供回退，不包含 bootloader 镜像和量产整片擦除步骤。
+发行 RCP：`lumi-gateway-mgl001_openthread_rcp_2.5.3.0_115200.gbl`，基于 darkxst 构建器与 Simplicity SDK 2024.6.3。硬件 UART `/dev/ttyS1`，115200、8N1、无硬件流控；Gecko Bootloader 1.9.2。附 Zigbee `6.6.6.0 build218` 应用 GBL 供回退，不包含 bootloader 镜像和量产整片擦除步骤。
 
 `src/rcp_lab/native-tools` 是本项目 C 刷写器/探测器、PTY 回归和构建源码；`src/rcp-mode-package` 是隔离脚本源码
 
@@ -21,8 +23,8 @@ RCP mode 是 OTBR 的内部前置步骤，不再拥有或替换 `post_init.sh`�
 
 ```sh
 cd /tmp
-tar -xzf rcp-native-0.3.0.tar.gz
-tar -xzf rcp-mode-0.3.0.tar.gz
+tar -xzf rcp-native-0.3.2.tar.gz
+tar -xzf rcp-mode-0.3.2.tar.gz
 sh /tmp/rcp-native/prepare-local.sh
 sh /tmp/rcp-native/probe-bootloader.sh
 sh /tmp/rcp-native/flash-rcp.sh
@@ -59,4 +61,4 @@ sh build.sh
 
 输出在 `src/build-output/`；其中 rcp-mode 仅重新打包 Shell，不需要编译。
 
-若要重建无线固件本身，另行复制 silabs-firmware-builder 和 Simplicity SDK 2024.6.3 至 external 对应目录，参考 `references/rcp-manifest.example`、rcp-project.slcp 与上游工具要求。构建目标 EFR32MG21A020F512IM32，非本项目自有完整 SDK
+无线固件构建入口为本部件的 `src/firmware/build.sh`。使用 darkxst 构建器及 Simplicity SDK 2024.6.3。使用 darkxst 构建器 tag 20250627。可通过 `RCP_BUILD_RESOURCES` 指定含构建器、SDK、ARM GCC 和 Commander 的目录，并通过 `RCP_BUILDER_ROOTFS` 指定含 SLC、ZAP 和 Python 依赖的构建根文件系统。复建输出位于 `src/build-output/firmware/`，本次发布保留已长测镜像的原始字节。

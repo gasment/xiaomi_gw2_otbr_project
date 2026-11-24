@@ -1,3 +1,5 @@
-# 本地构建资源
+# 共享构建依赖
 
-此目录不随 GitHub 源码包含工具链、SDK、静态库或固件。资源位置、版本和补齐流程见 [BUILD-RESOURCES.md](../BUILD-RESOURCES.md)。实际资源由 Git 忽略，保留在本地即可。
+各部件通过内部相对软链接复用本目录中的工具链、SDK、静态库和上游源码。内容与可选缺失源码见根 DEPENDENCIES.md。
+
+DEPENDENCY-MANIFEST.json 记录关键文件指纹与上游修订；DEPENDENCY-LINKS.json 记录部件的相对链接。保留原有许可证、上游 Git 元数据、工具链执行权限和软链接，不要展开所有链接重复复制 SDK。

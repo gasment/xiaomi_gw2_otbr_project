@@ -213,7 +213,7 @@ int main(int argc, char **argv) {
     std::filesystem::create_directories(config.state_directory);
     const auto first_links = snapshot_links(config.candidates, config.thread_interface);
     const auto initial = initial_interface(config, first_links);
-    auto url = "spinel+hdlc+uart://" + config.uart_device + "?uart-baudrate=" + std::to_string(config.baud_rate) + "&uart-flow-control&uart-exclusive";
+    auto url = "spinel+hdlc+uart://" + config.uart_device + "?uart-baudrate=" + std::to_string(config.baud_rate) + "&uart-exclusive";
     // Use Spinel's power setter so its RCP recovery path also restores this request.
     if (config.output_power) url += "&tx-power=" + std::to_string(*config.output_power);
     std::vector<const char *> urls{url.c_str()};

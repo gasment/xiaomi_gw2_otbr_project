@@ -20,19 +20,21 @@
 - **Thread Proxy API**：可选的 Thread 节点到 HA 转发代理，兼容项目配套的 ESP32 / nRF52 客户端；不配置时不启用，修改配置后重启服务即可应用。
 - **运行维护**：服务自启动、进程监督、RCP 复位恢复及 BLE / RCP 串口隔离。
 
-项目按五个部件组织，各部件保留构建源码、部署模板和说明文档，预构建发布件从 Release 或 deploy 目录获取。GitHub 源码不包含大型工具链、SDK 。
+部署相关源码位于 `1-openssh` 至 `6-post-init`。其中 `3-rcp-mode` 和 `4-rcp-openmiio` 是 OTBR/RCP 卡片的配套部件，随 `5-otbr` 同步部署，版本统一由 [5-otbr/VERSION](5-otbr/VERSION) 管理。预构建发布件从 Release 或各部件的 `deploy` 目录获取。GitHub 源码不包含大型工具链和 SDK。
+
+当前 OTBR 为 **0.3.2**，Windows GUI 为 **0.3.1**，配套 RCP 为 **2.5.3.0／115200**。从 230400 或 460800 升级时，使用新版 GUI 并启用安装 OTBR 时自动刷入 RCP。
 
 
 ## 使用前提
 - **网关型号**：必须为`lumi.gateway.mcn001`，SSD222D 主处理器、MHCZ01P 无线模块和原厂 Linux 4.9.84内核
 - **网关接入**：必须提供Telnet访问权限，使用Xiaomi Gateway3集成接入HA即可开启（固件版本低于1.0.7），并保存好设备KEY，参阅 [Xiaomi Gateway3](https://github.com/AlexxIT/XiaomiGateway3)
-- **网关固件**：必须不低于 `1.0.8_0015`。该版本及以上允许安装；高于该版本的长期兼容性尚未逐版验收。低于此版本时，先接入 XiaomiGateway3 并保存设备 KEY，再进行 OTA 更新。如你无法使用米家更新，或需要降级到`1.0.8_0015`，参考[手动OTA](official_ota_packages/README.md)
+- **网关固件**：必须不低于 `1.0.8_0015`。该版本及以上允许安装；高于该版本的长期兼容性尚未逐版验收。低于此版本时，先接入 XiaomiGateway3 并保存设备 KEY，再进行 OTA 更新。如你无法使用米家更新，或需要降级到`1.0.8_0015`，参考[手动OTA](9-official-ota-packages/README.md)
 ## 使用说明
 
 - **原厂访问前提**：部署前需自行取得 root Telnet / FTP 访问权限，本项目不提供解锁流程。SSH 是部署链的第一个部件。
 - **Zigbee 与 Thread 的取舍**：无线模块改为单协议 RCP 后，原厂 Zigbee 功能会停止。附带恢复原厂 Zigbee 应用固件的路径，但不保证继承原 Zigbee 网络配置；不提供现有无线 Flash 的完整免拆备份。
 - **蓝牙共存范围**：通过网关侧 openmiio 管理保留 Xiaomi Gateway 3 的 BLE / Mesh 通道，不需要修改 HA 集成。实际蓝牙上报仍需以 HA 收到设备新状态为准。
-- **可信局域网使用**：为兼容现有原厂访问及 Xiaomi Gateway 3 工作方式，默认保留 root 空密码。Telnet、SSH、MQTT 和管理接口应仅供可信局域网访问，不应直接暴露到公网。Native API 的 Noise 加密可选，Web 支持 Basic 认证。如需为root设置密码，需要为Xiaomi Gateway 3集成打补丁，参阅[XiaomiGateway3 密码补丁](xiaomi_gateway3_patch/README.md)
+- **可信局域网使用**：为兼容现有原厂访问及 Xiaomi Gateway 3 工作方式，默认保留 root 空密码。Telnet、SSH、MQTT 和管理接口应仅供可信局域网访问，不应直接暴露到公网。Native API 的 Noise 加密可选，Web 支持 Basic 认证。如需为root设置密码，需要为Xiaomi Gateway 3集成打补丁，参阅[XiaomiGateway3 密码补丁](8-xiaomi-gateway3-patch/README.md)
 - **配置归网关所有**：用户直接编辑网关 `/data/otbr/config.yaml` 与需要的 `secrets.yaml`，检查通过后重启服务；项目和通用部署包不携带用户凭据、Thread Dataset 或 SSH 主机私钥。
 - **兼容范围**：Native API 是用于 HA 接入的独立实现，不包含完整 ESPHome 框架。Thread Proxy 需配套 HA 集成和节点客户端（详情见[ESPHome OpenThread & Thread BR Enhance Project - Thread 代理](https://esphome-openthread-enhance-pj.netlify.app/Thread%E4%BB%A3%E7%90%86/Thread%E4%BB%A3%E7%90%86.html)）；节点远程重启也需要节点支持相应协议。
 - **验证范围**：已实测基本 Thread 接入、指定本 BR 的 LAN 路由、SRP / mDNS、BBR 基础双向多播及代理上报；
@@ -40,7 +42,7 @@
 
 ## 自动部署
 
-自动部署流程使用 Windows GUI程序管理。
+自动部署使用 [Windows GUI](7-auto-deploy/README.md) 管理。GUI 先部署 [post-init 启动管理](6-post-init/README.md)，再按所选组件部署。
 
 ![alt text](image.png)
 
@@ -72,8 +74,8 @@
 本项目提供已编译好的静态二进制程序，如你需要重新编译，可参阅[构建准备](BUILD-PREPARATION.md)和各部件 README 的“手动构建步骤简易说明”
 
 ## 版本迁移与故障恢复
-* 从0.2.x版本迁移到v0.3.0或以上版本时，需要做特殊处理，否则将导致设备无法正常启动，参考[版本迁移](migrate_faultsave/migrate_from_0.2.x_to_0.3.0/readme.md)
-* 如设备无法启动，参考[故障恢复](migrate_faultsave/faultsave/readme.md)
+* 从0.2.x版本迁移到v0.3.0或以上版本时，需要做特殊处理，否则将导致设备无法正常启动，参考[版本迁移](10-migrate-faultsave/migrate_from_0.2.x_to_0.3.0/readme.md)
+* 如设备无法启动，参考[故障恢复](10-migrate-faultsave/faultsave/readme.md)
 ## 依赖许可
 
 本项目使用多个独立上游项目。下表列出主要依赖及随源码保留的许可入口；依赖内部的其他第三方文件仍以各自版权和许可证声明为准。

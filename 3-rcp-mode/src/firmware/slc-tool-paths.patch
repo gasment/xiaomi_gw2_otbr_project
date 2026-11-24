@@ -1,0 +1,13 @@
+diff --git a/tools/build_project.py b/tools/build_project.py
+index 6421693..ca97bfa 100755
+--- a/tools/build_project.py
++++ b/tools/build_project.py
+@@ -414,6 +414,8 @@ def main():
+             "--toolchain", "toolchain_gcc",
+             "--sdk", sdk,
+             "--output-type", args.build_system,
++            "--tool-path=/opt/silabs/python",
++            "--tool-path=/opt/silabs/zap",
+         ],
+         "slc generate"
+     )

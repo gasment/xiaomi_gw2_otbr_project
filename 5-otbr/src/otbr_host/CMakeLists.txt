@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 project(mi_otbr_host LANGUAGES C CXX)
-# VERSION belongs to the enclosing project, independent of its directory name.
-set(MI_OTBR_VERSION_FILE "${CMAKE_CURRENT_SOURCE_DIR}/../../../VERSION")
+# VERSION belongs to the OTBR component.
+set(MI_OTBR_VERSION_FILE "${CMAKE_CURRENT_SOURCE_DIR}/../../VERSION")
 set_property(DIRECTORY APPEND PROPERTY CMAKE_CONFIGURE_DEPENDS "${MI_OTBR_VERSION_FILE}")
 file(READ "${MI_OTBR_VERSION_FILE}" MI_OTBR_PROJECT_VERSION)
 string(STRIP "${MI_OTBR_PROJECT_VERSION}" MI_OTBR_PROJECT_VERSION)

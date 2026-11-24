@@ -1,0 +1,29 @@
+VSVersionInfo(
+  ffi=FixedFileInfo(
+    filevers=(@GUI_VERSION_TUPLE@),
+    prodvers=(@GUI_VERSION_TUPLE@),
+    mask=0x3f,
+    flags=0x0,
+    OS=0x40004,
+    fileType=0x1,
+    subtype=0x0,
+    date=(0, 0)
+  ),
+  kids=[
+    StringFileInfo([
+      StringTable(
+        u'080404b0',
+        [
+          StringStruct(u'CompanyName', u'Xiaomi Gateway 2 OTBR Project'),
+          StringStruct(u'FileDescription', u'Xiaomi Gateway 2 OTBR Component Manager'),
+          StringStruct(u'FileVersion', u'@GUI_VERSION@'),
+          StringStruct(u'InternalName', u'MiGateway2AutoDeploy'),
+          StringStruct(u'OriginalFilename', u'MiGateway2AutoDeploy.exe'),
+          StringStruct(u'ProductName', u'Xiaomi Gateway 2 OTBR'),
+          StringStruct(u'ProductVersion', u'@GUI_VERSION@')
+        ]
+      )
+    ]),
+    VarFileInfo([VarStruct(u'Translation', [2052, 1200])])
+  ]
+)
