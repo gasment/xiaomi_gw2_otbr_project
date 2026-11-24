@@ -1,6 +1,6 @@
 {
   "otbr_version": "0.3.2",
-  "gui_version": "0.3.2",
+  "gui_version": "0.3.1",
   "rcp": {
     "version": "2.5.3.0",
     "baud_rate": 115200,
@@ -47,8 +47,8 @@
       "sha256": "82c3ea862fa7012b731c6de186a22849702515448d5e8c6782bc1d7bbbdfd1c2"
     },
     {
-      "artifact": "7-auto-deploy/gui-python/deploy/MiGateway2AutoDeploy-0.3.2.exe",
-      "sha256": "221831bbdc35b284c1ffa662ecdf8ae4069a1e4ea9f7790b1f5dd82275e2ca0f"
+      "artifact": "7-auto-deploy/gui-python/deploy/MiGateway2AutoDeploy-0.3.1.exe",
+      "sha256": "145243f6c86cc2bc6be25c2c34a2060fd4e09cf74eb04e403444b9f020198e31"
     }
   ],
   "gateway_modified_by_build": false

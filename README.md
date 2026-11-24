@@ -22,7 +22,7 @@
 
 部署相关源码位于 `1-openssh` 至 `6-post-init`。其中 `3-rcp-mode` 和 `4-rcp-openmiio` 是 OTBR/RCP 卡片的配套部件，随 `5-otbr` 同步部署，版本统一由 [5-otbr/VERSION](5-otbr/VERSION) 管理。预构建发布件从 Release 或各部件的 `deploy` 目录获取。GitHub 源码不包含大型工具链和 SDK。
 
-当前 OTBR 和 Windows GUI 为 **0.3.2**，配套 RCP 为 **2.5.3.0／115200**。从 230400 或 460800 升级时，使用新版 GUI 并启用安装 OTBR 时自动刷入 RCP。
+当前 OTBR 为 **0.3.2**，Windows GUI 为 **0.3.1**，配套 RCP 为 **2.5.3.0／115200**。从 230400 或 460800 升级时，使用新版 GUI 并启用安装 OTBR 时自动刷入 RCP。
 
 
 ## 使用前提

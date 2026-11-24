@@ -44,8 +44,8 @@ powershell -ExecutionPolicy Bypass -File .\build.ps1
 输出：
 
 ```text
-deploy/MiGateway2AutoDeploy-0.3.2.exe
-deploy/MiGateway2AutoDeploy-0.3.2.exe.sha256
+deploy/MiGateway2AutoDeploy-0.3.1.exe
+deploy/MiGateway2AutoDeploy-0.3.1.exe.sha256
 ```
 
 PyInstaller 会把 Python、Tcl/Tk、CustomTkinter、Pillow、图标和全部部署资源打入单文件。构建不依赖目标电脑安装 Python。

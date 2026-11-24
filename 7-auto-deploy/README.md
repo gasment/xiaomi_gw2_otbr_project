@@ -3,18 +3,18 @@
 当前自动部署入口是 Python 单文件程序：
 
 ```text
-MiGateway2AutoDeploy-0.3.2.exe
+MiGateway2AutoDeploy-0.3.1.exe
 ```
 
 程序运行在 Windows，不需要目标电脑安装 Python、PowerShell 模块或 FTP 工具。网关侧业务仍使用各部件 `deploy` 目录中各自版本的安装包。
 
 ## 使用
 
-1. 从 Release 下载 `MiGateway2AutoDeploy-0.3.2.exe` 和对应的 `.sha256` 文件。
+1. 从 Release 下载 `MiGateway2AutoDeploy-0.3.1.exe` 和对应的 `.sha256` 文件。
 2. 可选地核对文件哈希：
 
    ```powershell
-   (Get-FileHash .\MiGateway2AutoDeploy-0.3.2.exe -Algorithm SHA256).Hash.ToLower()
+   (Get-FileHash .\MiGateway2AutoDeploy-0.3.1.exe -Algorithm SHA256).Hash.ToLower()
    ```
 
 3. 启动 EXE，接受管理员权限提示。

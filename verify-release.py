@@ -51,7 +51,7 @@ if args.artifacts:
         "mi-gw2-otbr-0.3.2.tar.gz": "5-otbr/deploy/mi-gw2-otbr-0.3.2.tar.gz",
         "rcp-recovery-update-0.3.0.tar.gz": "5-otbr/deploy/rcp-recovery-update-0.3.0.tar.gz",
         "ble-spec-cache-0.3.0.tar.gz": "8-xiaomi-gateway3-patch/ble-spec-cache/deploy/ble-spec-cache-0.3.0.tar.gz",
-        "MiGateway2AutoDeploy-0.3.2.exe": "7-auto-deploy/gui-python/deploy/MiGateway2AutoDeploy-0.3.2.exe",
+        "MiGateway2AutoDeploy-0.3.1.exe": "7-auto-deploy/gui-python/deploy/MiGateway2AutoDeploy-0.3.1.exe",
         "spinel-probe-0.3.2": "3-rcp-mode/deploy/tools/spinel-probe",
         "openmiio_agent-1.2.1-arm": "4-rcp-openmiio/deploy/dependencies/openmiio_agent"
     }
