@@ -42,6 +42,10 @@ COLORS = {
 }
 
 
+def ui_font(size: int = 13, weight: str = "normal") -> ctk.CTkFont:
+    return ctk.CTkFont(family="Microsoft YaHei UI", size=size, weight=weight)
+
+
 def is_admin() -> bool:
     if os.name != "nt":
         return True
@@ -67,7 +71,7 @@ class ComponentCard(ctk.CTkFrame):
             self,
             text=title,
             variable=variable,
-            font=ctk.CTkFont(size=15, weight="bold"),
+            font=ui_font(size=15, weight="bold"),
             text_color=COLORS["text"],
             fg_color=COLORS["accent"],
             hover_color=COLORS["accent_hover"],
@@ -78,7 +82,7 @@ class ComponentCard(ctk.CTkFrame):
             self,
             text=subtitle,
             text_color=COLORS["muted"],
-            font=ctk.CTkFont(size=11),
+            font=ui_font(size=11),
             justify="left",
             wraplength=330,
         ).grid(row=1, column=0, sticky="w", padx=16, pady=(0, 10))
@@ -95,7 +99,7 @@ class ComponentCard(ctk.CTkFrame):
             corner_radius=12,
             fg_color=COLORS["card_alt"],
             text_color=COLORS["muted"],
-            font=ctk.CTkFont(size=11, weight="bold"),
+            font=ui_font(size=11, weight="bold"),
         )
 
     def update_status(self, status: ComponentStatus) -> None:
@@ -194,13 +198,13 @@ class GatewayApp(ctk.CTk):
         ctk.CTkLabel(
             sidebar,
             text="Xiaomi Gateway 2",
-            font=ctk.CTkFont(size=21, weight="bold"),
+            font=ui_font(size=21, weight="bold"),
             text_color=COLORS["text"],
         ).grid(row=1, column=0)
         ctk.CTkLabel(
             sidebar,
             text="OTBR 组件管理",
-            font=ctk.CTkFont(size=14),
+            font=ui_font(size=14),
             text_color=COLORS["muted"],
         ).grid(row=2, column=0, pady=(0, 26))
         ctk.CTkLabel(
@@ -210,7 +214,7 @@ class GatewayApp(ctk.CTk):
             corner_radius=14,
             fg_color=COLORS["card_alt"],
             text_color=COLORS["accent"],
-            font=ctk.CTkFont(size=11, weight="bold"),
+            font=ui_font(size=11, weight="bold"),
         ).grid(row=3, column=0, padx=48, sticky="ew")
 
         self.connection_state = ctk.CTkLabel(
@@ -220,21 +224,21 @@ class GatewayApp(ctk.CTk):
             corner_radius=17,
             fg_color=COLORS["card"],
             text_color=COLORS["muted"],
-            font=ctk.CTkFont(size=12, weight="bold"),
+            font=ui_font(size=12, weight="bold"),
         )
         self.connection_state.grid(row=4, column=0, padx=28, pady=(24, 8), sticky="ew")
         self.admin_state = ctk.CTkLabel(
             sidebar,
             text="管理员权限：是" if is_admin() else "管理员权限：否",
             text_color=COLORS["green"] if is_admin() else COLORS["orange"],
-            font=ctk.CTkFont(size=11),
+            font=ui_font(size=11),
         )
         self.admin_state.grid(row=5, column=0, pady=(0, 20))
         self.system_state = ctk.CTkLabel(
             sidebar,
             text="固件：未读取\n内核：未读取",
             text_color=COLORS["muted"],
-            font=ctk.CTkFont(size=10),
+            font=ui_font(size=10),
             justify="left",
             wraplength=208,
         )
@@ -243,7 +247,7 @@ class GatewayApp(ctk.CTk):
         ctk.CTkLabel(
             sidebar,
             text="操作提示",
-            font=ctk.CTkFont(size=13, weight="bold"),
+            font=ui_font(size=13, weight="bold"),
             text_color=COLORS["text"],
         ).grid(row=7, column=0, padx=22, pady=(18, 0), sticky="w")
         ctk.CTkLabel(
@@ -251,7 +255,7 @@ class GatewayApp(ctk.CTk):
             text="先刷新状态，再勾选组件。\nOTBR 会自动包含 TUN、RCP mode\n和 RCP/openmiio。",
             justify="left",
             text_color=COLORS["muted"],
-            font=ctk.CTkFont(size=11),
+            font=ui_font(size=11),
         ).grid(row=8, column=0, padx=22, pady=(8, 18), sticky="w")
 
     def _build_main(self) -> None:
@@ -271,20 +275,20 @@ class GatewayApp(ctk.CTk):
         ctk.CTkLabel(
             header,
             text="组件管理",
-            font=ctk.CTkFont(size=28, weight="bold"),
+            font=ui_font(size=28, weight="bold"),
             text_color=COLORS["text"],
         ).grid(row=0, column=0, sticky="w")
         ctk.CTkLabel(
             header,
             text="安全部署、状态检查和原厂恢复",
-            font=ctk.CTkFont(size=13),
+            font=ui_font(size=13),
             text_color=COLORS["muted"],
         ).grid(row=1, column=0, sticky="w", pady=(2, 0))
 
         connection = ctk.CTkFrame(controls, fg_color=COLORS["card"], corner_radius=16)
         connection.grid(row=1, column=0, sticky="ew", pady=(0, 14))
         connection.grid_columnconfigure(5, weight=1)
-        ctk.CTkLabel(connection, text="网关 IP", text_color=COLORS["muted"]).grid(row=0, column=0, padx=(18, 8), pady=16)
+        ctk.CTkLabel(connection, text="网关 IP", font=ui_font(), text_color=COLORS["muted"]).grid(row=0, column=0, padx=(18, 8), pady=16)
         self.ip_var = ctk.StringVar(value="")
         self.ip_entry = self._entry(
             connection,
@@ -293,11 +297,11 @@ class GatewayApp(ctk.CTk):
             placeholder="输入网关 IPv4",
         )
         self.ip_entry.grid(row=0, column=1, padx=(0, 16), pady=16)
-        ctk.CTkLabel(connection, text="Telnet", text_color=COLORS["muted"]).grid(row=0, column=2, padx=(0, 8), pady=16)
+        ctk.CTkLabel(connection, text="Telnet", font=ui_font(), text_color=COLORS["muted"]).grid(row=0, column=2, padx=(0, 8), pady=16)
         self.port_var = ctk.StringVar(value="23")
         self.port_entry = self._entry(connection, self.port_var, width=72)
         self.port_entry.grid(row=0, column=3, padx=(0, 16), pady=16)
-        ctk.CTkLabel(connection, text="root 密码", text_color=COLORS["muted"]).grid(row=0, column=4, padx=(0, 8), pady=16)
+        ctk.CTkLabel(connection, text="root 密码", font=ui_font(), text_color=COLORS["muted"]).grid(row=0, column=4, padx=(0, 8), pady=16)
         self.password_var = ctk.StringVar()
         self.password_entry = self._entry(connection, self.password_var, width=112, show="*")
         self.password_entry.grid(row=0, column=5, sticky="ew", padx=(0, 10), pady=16)
@@ -309,7 +313,7 @@ class GatewayApp(ctk.CTk):
             corner_radius=10,
             fg_color=COLORS["accent"],
             hover_color=COLORS["accent_hover"],
-            font=ctk.CTkFont(size=12, weight="bold"),
+            font=ui_font(size=12, weight="bold"),
             command=self.connect_and_refresh,
         )
         self.connect_button.grid(row=0, column=6, padx=(0, 18), pady=16)
@@ -348,7 +352,7 @@ class GatewayApp(ctk.CTk):
         ctk.CTkLabel(
             options,
             text="可选项",
-            font=ctk.CTkFont(size=13, weight="bold"),
+            font=ui_font(size=13, weight="bold"),
             text_color=COLORS["muted"],
         ).grid(row=0, column=0, columnspan=2, padx=16, pady=(8, 0), sticky="w")
         self.reboot_var = ctk.BooleanVar(value=True)
@@ -364,6 +368,7 @@ class GatewayApp(ctk.CTk):
             ctk.CTkCheckBox(
                 options,
                 text=text,
+                font=ui_font(),
                 variable=var,
                 text_color=COLORS["text"],
                 fg_color=COLORS["accent"],
@@ -390,7 +395,7 @@ class GatewayApp(ctk.CTk):
                 width=100,
                 height=38,
                 corner_radius=11,
-                font=ctk.CTkFont(size=13, weight="bold"),
+                font=ui_font(size=13, weight="bold"),
                 text_color=COLORS["text"],
             )
             button.grid(row=0, column=column, padx=(16 if column == 0 else 6, 6), pady=14, sticky="ew")
@@ -408,7 +413,7 @@ class GatewayApp(ctk.CTk):
             log_header,
             text="就绪",
             text_color=COLORS["muted"],
-            font=ctk.CTkFont(size=12),
+            font=ui_font(size=12),
         )
         self.status_label.grid(row=0, column=0, sticky="w")
         self.progress = ctk.CTkProgressBar(log_card, progress_color=COLORS["accent"])
@@ -417,6 +422,7 @@ class GatewayApp(ctk.CTk):
         ctk.CTkButton(
             log_header,
             text="清空",
+            font=ui_font(),
             width=64,
             height=26,
             fg_color=COLORS["card_alt"],
@@ -460,6 +466,7 @@ class GatewayApp(ctk.CTk):
             height=34,
             show=show,
             placeholder_text=placeholder,
+            font=ui_font(),
             fg_color="#0d1728",
             border_color=COLORS["border"],
             text_color=COLORS["text"],

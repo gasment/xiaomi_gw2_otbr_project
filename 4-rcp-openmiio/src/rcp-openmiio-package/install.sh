@@ -10,7 +10,7 @@ for TOOL in cmp sha256sum cat cp mv chmod chown mkdir rmdir touch tr sleep kill 
 done
 [ -x /bin/mbasis_cli ] || fail 'Missing stock mbasis_cli.'
 sha256sum -c SHA256SUMS
-payload/openmiio-version-check.sh /data/openmiio_agent 1.2.1
+sh payload/openmiio-version-check.sh /data/openmiio_agent 1.2.1
 if [ -e "$DEST" ] && [ ! -f "$DEST/install.sh" ] && [ ! -f "$DEST/start.sh" ]; then fail 'Unmanaged /data/rcp-openmiio exists.'; fi
 mkdir -p "$DEST"
 for FILE in payload/*; do

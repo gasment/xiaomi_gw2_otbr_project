@@ -147,7 +147,7 @@
     "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.3.2.tar.gz",
     "member": "rcp-openmiio/install.sh",
     "source": "4-rcp-openmiio/src/rcp-openmiio-package/install.sh",
-    "sha256": "a6b3ca75e4e6aea54597cc68b96cdad3cbf482d49762174da7921b26165d586d"
+    "sha256": "325fe624b8c0ba50d84991305fe62e32b66c30a4b29273131d94d51d4b83cf88"
   },
   {
     "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.3.2.tar.gz",

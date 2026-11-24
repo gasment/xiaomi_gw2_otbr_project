@@ -58,7 +58,7 @@ def isolated(tree, package, command):
          "--ro-bind", "/etc/alternatives", "/etc/alternatives",
          "--symlink", "usr/lib", "/lib", "--symlink", "usr/lib64", "/lib64",
          "--bind", str(tree / "data"), "/data", "--ro-bind", str(tree / "bin"), "/bin",
-         "--ro-bind", str(package), "/pkg", "--dev", "/dev", "--chdir", "/pkg",
+         "--ro-bind", str(package), "/pkg", "--dev", "/dev", "--tmpfs", "/tmp", "--chdir", "/pkg",
          "/usr/bin/sh", "-c", command],
         capture_output=True, text=True, env={"PATH": "/usr/bin:/bin", "LC_ALL": "C"}, timeout=30,
     )
@@ -125,7 +125,16 @@ class Offline:
             if result.returncode:
                 raise self.module.GatewayError(result.stdout + result.stderr)
         elif directory == "rcp-openmiio":
-            shutil.copytree(source / "payload", data / "rcp-openmiio", dirs_exist_ok=True)
+            if not getattr(self.engine, "asset_names", {}).get("rcp-openmiio", "").endswith("-0.3.2.tar.gz"):
+                shutil.copytree(source / "payload", data / "rcp-openmiio", dirs_exist_ok=True)
+            else:
+                probe = source / "payload/openmiio-version-check.sh"
+                probe.chmod(0o644)
+                result = isolated(self.tree, source, "sh install.sh")
+                if result.returncode:
+                    raise self.module.GatewayError(result.stdout + result.stderr)
+                assert "OPENMIIO_VERSION_OK" in result.stdout
+                assert (data / "rcp-openmiio/openmiio-version-check.sh").stat().st_mode & 0o100
         elif directory in LABELS:
             label = LABELS[directory]
             dest = data / label
@@ -217,6 +226,12 @@ def seed(module, assets, tree):
         (tree / folder).mkdir(parents=True)
     for name, script in (("fw_manager.sh", STOCK_FW), ("app_monitor.sh", STOCK_MONITOR)):
         (tree / "bin" / name).write_text(script)
+    for name in ("mbasis_cli", "agetprop"):
+        stub = tree / "bin" / name
+        stub.write_text("#!/usr/bin/sh\nexit 0\n")
+        stub.chmod(0o755)
+    agent = tree / "data/openmiio_agent"
+    agent.write_text("#!/usr/bin/sh\necho 'openmiio_agent version 1.2.1'\n")
     state = Offline(module, assets, tree)
     state.deploy(set(LABELS.values()))
     dest = tree / "data/otbr"

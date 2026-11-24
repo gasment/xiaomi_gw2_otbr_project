@@ -9,6 +9,6 @@
   "openmiio_agent-1.2.1-arm": "98c2c62611e4bd97e4d2a49ea6e70835fd3c05d6e66007d65bcc95c126462574",
   "post-init-modular-0.3.0.tar.gz": "a633e5271e99cb8a364f939760136b7365dc54a379b4ec79db280cef95cd9831",
   "rcp-mode-0.3.2.tar.gz": "b543a7f7dd53d4fa43a8a26de2e23a9c330c2fa5d96b6e4d256247358d2a8c2b",
-  "rcp-openmiio-0.3.2.tar.gz": "da9c7fb3b534361b5f34cc6a32f3ca2a36034d1da05dc95ca821930bba9c7040",
-  "MiGateway2AutoDeploy-0.3.1.exe": "145243f6c86cc2bc6be25c2c34a2060fd4e09cf74eb04e403444b9f020198e31"
+  "rcp-openmiio-0.3.2.tar.gz": "d74b9d28a3548a4dbbbd9157b0a4eae4a3148f7ef1d3bb75341846bd47ba30b8",
+  "MiGateway2AutoDeploy-0.3.1.exe": "ff1041c951b80569cdc55632b99af900a1858056b75b264732ae23716f94fb3a"
 }

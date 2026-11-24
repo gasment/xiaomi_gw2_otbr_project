@@ -3,6 +3,8 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+import customtkinter as ctk
+
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from app import COLORS, GatewayApp
@@ -13,6 +15,14 @@ from resources import VERSION
 def test_ui_smoke() -> None:
     app = GatewayApp()
     app.withdraw()
+    widgets = [app]
+    for widget in widgets:
+        widgets.extend(widget.winfo_children())
+        if isinstance(widget, (ctk.CTkButton, ctk.CTkCheckBox, ctk.CTkEntry, ctk.CTkLabel, ctk.CTkTextbox)):
+            if isinstance(widget, ctk.CTkLabel) and not widget.cget("text"):
+                continue
+            expected = "Consolas" if widget is app.logbox else "Microsoft YaHei UI"
+            assert widget.cget("font").cget("family") == expected
     app.update_idletasks()
     app.cards["openssh"].update_status(ComponentStatus("yes", "yes", "0.3.9", "0.3.10"))
     app.update_idletasks()

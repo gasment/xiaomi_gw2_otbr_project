@@ -28,7 +28,7 @@
     },
     {
       "artifact": "4-rcp-openmiio/deploy/rcp-openmiio-0.3.2.tar.gz",
-      "sha256": "da9c7fb3b534361b5f34cc6a32f3ca2a36034d1da05dc95ca821930bba9c7040"
+      "sha256": "d74b9d28a3548a4dbbbd9157b0a4eae4a3148f7ef1d3bb75341846bd47ba30b8"
     },
     {
       "artifact": "5-otbr/deploy/mi-gw2-otbr-0.3.2.tar.gz",
@@ -48,7 +48,7 @@
     },
     {
       "artifact": "7-auto-deploy/gui-python/deploy/MiGateway2AutoDeploy-0.3.1.exe",
-      "sha256": "145243f6c86cc2bc6be25c2c34a2060fd4e09cf74eb04e403444b9f020198e31"
+      "sha256": "ff1041c951b80569cdc55632b99af900a1858056b75b264732ae23716f94fb3a"
     }
   ],
   "gateway_modified_by_build": false
